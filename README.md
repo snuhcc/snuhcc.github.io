@@ -1,46 +1,48 @@
 # HCC Lab — Official Website
 
-This repository contains the source code for the **Human Computer Computing Lab (HCC Lab)** homepage, hosted via GitHub Pages.
+Source code for the **Human Centered Computing Lab (HCC Lab)** homepage at Seoul National University, hosted via GitHub Pages.
 
 ## Tech Stack
 
-- **Jekyll** — static site generator
-- **GitHub Pages** — hosting
+- **Next.js 16** — React framework with static export
+- **TypeScript** — type safety
+- **Tailwind CSS** — styling
+- **GitHub Actions** — automated build & deploy
 
-## Site Structure (Planned)
+## Pages
 
-```
-_data/
-  members.yml        # lab member info
-  publications.yml   # paper list
-_pages/
-  about.md           # lab overview
-  research.md        # research topics & projects
-  people.md          # members
-  publications.md    # publications
-_posts/              # news & updates
-assets/
-  img/
-  css/
-```
+| Route | Description |
+|-------|-------------|
+| `/` | Lab overview, research areas, contact |
+| `/people` | Current members and alumni |
+| `/publications` | Full publication list with research area filters |
+| `/seminar` | Lab seminar history with slide downloads |
+| `/memories` | Lab events photo gallery |
 
-## Sections
+## Publications Auto-Sync
 
-- **Home** — lab introduction & highlights
-- **Research** — ongoing projects and research themes
-- **People** — faculty, graduate students, and alumni
-- **Publications** — papers, preprints, and demos
-- **News** — announcements, awards, and events
+Publications are automatically fetched from [OpenAlex](https://openalex.org) (Prof. Bongwon Suh, `A5027548665`) and saved to `src/data/publications.json`.
+
+The sync runs every Monday at 2AM UTC via GitHub Actions. To trigger manually:
+
+> **Actions** → **Sync Publications** → **Run workflow**
 
 ## Local Development
 
 ```bash
-bundle install
-bundle exec jekyll serve
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:4000` in your browser.
+Open `http://localhost:3000`.
+
+## Deployment
+
+Pushing to `master` automatically builds and deploys via GitHub Actions.
+
+> **Settings → Pages → Source** must be set to **GitHub Actions**.
 
 ## Contact
 
-For inquiries, please reach out via the lab website once it is live.
+Graduate School of Convergence Science and Technology, Seoul National University  
+Prof. Bongwon Suh — bongwon@snu.ac.kr

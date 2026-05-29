@@ -1,0 +1,178 @@
+{
+  "current": [
+    {
+      "name": "Bongwon Suh",
+      "email": "bongwon@snu.ac.kr",
+      "title": "Professor",
+      "fields": ["HAI", "HCI"],
+      "photo": "/images/people/bongwon-suh.png",
+      "bio": "Human-AI Interaction",
+      "url": "https://scholar.google.com/citations?user=-nlhtEkAAAAJ"
+    },
+    {
+      "name": "Jaehoon Choi",
+      "email": "hoon95@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HCI", "LLM", "NLP"],
+      "photo": "/images/people/jaehoon-choi.jpg",
+      "bio": "Conversational AI",
+      "url": null
+    },
+    {
+      "name": "Kieun Park",
+      "email": "kieun.park@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "NLP"],
+      "photo": "/images/people/kieun-park.jpeg",
+      "bio": "LLM Evaluation",
+      "url": null
+    },
+    {
+      "name": "Jeongwoo Ryu",
+      "email": "jeongwoo@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "NLP", "UX"],
+      "photo": "/images/people/jeongwoo-ryu.jpeg",
+      "bio": "AI Deliberation",
+      "url": null
+    },
+    {
+      "name": "Gibeom Park",
+      "email": "skymind@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["Medical AI", "Time Series", "XAI"],
+      "photo": null,
+      "bio": "Medical AI",
+      "url": null
+    },
+    {
+      "name": "Dongseok Heo",
+      "email": "ty8900@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "Medical AI", "NLP"],
+      "photo": "/images/people/dongseok-heo.jpeg",
+      "bio": "Clinical LLM Agents",
+      "url": null
+    },
+    {
+      "name": "Kitae Kim",
+      "email": "joseph423@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "Embodied AI"],
+      "photo": "/images/people/kitae-kim.jpg",
+      "bio": "Embodied AI",
+      "url": null
+    },
+    {
+      "name": "Junghwan Kim",
+      "email": "jhbale11@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "Time Series", "XAI"],
+      "photo": "/images/people/junghwan-kim.jpeg",
+      "bio": "Explainable AI",
+      "url": "https://linkedin.com/in/jhbale11"
+    },
+    {
+      "name": "Hyungwoo Song",
+      "email": "rotto95@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "NLP"],
+      "photo": "/images/people/hyungwoo-song.jpg",
+      "bio": "Multimodal AI",
+      "url": "https://hyungwoosong.notion.site"
+    },
+    {
+      "name": "Jung Lee",
+      "email": "leejungp2@snu.ac.kr",
+      "title": "Master's Student",
+      "fields": ["HAI", "HCI", "LLM", "UX"],
+      "photo": "/images/people/jung-lee.png",
+      "bio": "AI-Assisted Work",
+      "url": null
+    },
+    {
+      "name": "Hana Oh",
+      "email": "hana2001@snu.ac.kr",
+      "title": "Master's Student",
+      "fields": ["HAI", "HCI", "NLP", "Agentic AI"],
+      "photo": "/images/people/hana-oh.jpeg",
+      "bio": "Healthcare AI",
+      "url": "https://hanaisreal.github.io/"
+    },
+    {
+      "name": "Minjeong Shin",
+      "email": "shinmj1024@snu.ac.kr",
+      "title": "Master's Student",
+      "fields": ["HCI", "UX"],
+      "photo": "/images/people/minjeong-shin.jpeg",
+      "bio": "Physical AI",
+      "url": "https://queriamin.github.io/"
+    },
+    {
+      "name": "Jueun Lee",
+      "email": "audreylee@snu.ac.kr",
+      "title": "Master's Student",
+      "fields": ["Responsible AI", "Algorithmic Fairness"],
+      "photo": null,
+      "bio": "Responsible AI",
+      "url": null
+    },
+    {
+      "name": "Minchae Kim",
+      "email": "minchae@snu.ac.kr",
+      "title": "Master's Student",
+      "fields": ["HCI", "LLM", "Embodied AI"],
+      "photo": null,
+      "bio": "Embodied AI",
+      "url": null
+    },
+    {
+      "name": "Jihye Yoo",
+      "email": null,
+      "title": "Master's Student",
+      "fields": [],
+      "photo": null,
+      "bio": "",
+      "url": null
+    }
+  ],
+  "alumni": [
+    { "name": "Woochang Hyun",   "current": null,             "url": null },
+    { "name": "Hyeonseok Jeon",  "current": null,             "url": null },
+    { "name": "Sangrok Song",    "current": null,             "url": null },
+    { "name": "Yeonjoon Kim",    "current": null,             "url": null },
+    { "name": "Seungmin Han",    "current": null,             "url": null },
+    { "name": "Seungbae Seo",    "current": null,             "url": null },
+    { "name": "Sejun Park",      "current": null,             "url": null },
+    { "name": "Yonghwan Jung",   "current": null,             "url": null },
+    { "name": "Sangah Lee",      "current": null,                    "url": null },
+    { "name": "Sohyun Park",     "current": "Naver",                 "url": null },
+    { "name": "Seonhoon Kim",    "current": "Naver",                 "url": null },
+    { "name": "Taeyoung Lee",    "current": "Naver",                 "url": null },
+    { "name": "Hajin Lim",       "current": "Seoul National University", "url": null },
+    { "name": "Jihyun Lee",      "current": "Google",                "url": null },
+    { "name": "Yoori Kim",       "current": "LG U+",                 "url": null },
+    { "name": "Seonghyun Kim",   "current": "Naver",                 "url": null },
+    { "name": "Jungwoo Song",    "current": "Naver Webtoon",         "url": null },
+    { "name": "Daeryong Kim",    "current": "Kakao",                 "url": null },
+    { "name": "Sungwoo Lee",     "current": "Obzen",                 "url": null },
+    { "name": "Jinwoo Park",     "current": null,                    "url": null },
+    { "name": "Wondo Rhee",      "current": "Naver",                 "url": null },
+    { "name": "Hyunhoon Jeong",  "current": "Naver CLOVA",           "url": null },
+    { "name": "Beomgeun Bae",    "current": "LG Electronics",        "url": null },
+    { "name": "Jooyeong Song",   "current": "Obzen",                 "url": null },
+    { "name": "Sinwoo Kang",     "current": "SK Hynix",              "url": null },
+    { "name": "Joonyeob Kim",    "current": "Kakao",                 "url": null },
+    { "name": "Heekang Park",    "current": "Hyundai Mobis",         "url": null },
+    { "name": "Jaehong Lee",     "current": "LG CNS",                "url": null },
+    { "name": "Taeil Jeon",      "current": "SK Broadband",          "url": null },
+    { "name": "Wonho Lee",       "current": null,                    "url": null },
+    { "name": "Hyeseng Suh",     "current": null,                    "url": null },
+    { "name": "Donghun Lee",     "current": null,                    "url": null },
+    { "name": "Hyuncheol Lim",   "current": null,                    "url": null },
+    { "name": "Changhoon Oh",    "current": "Yonsei University",     "url": null },
+    { "name": "Seonghyeon Lee",  "current": null,                    "url": null },
+    { "name": "Jaeyoun You",     "current": null,                    "url": "https://jaeyyou.com" },
+    { "name": "Kyusik Kim",      "current": null,                    "url": "https://honey-jersey-b77.notion.site/Kyusik-Kim-0b1702c13d6d4602920b53a3c3fc90ab" }
+  ]
+}
