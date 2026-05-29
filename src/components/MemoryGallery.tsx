@@ -90,7 +90,6 @@ function Lightbox({
           width={1200}
           height={800}
           className="object-contain max-h-[80vh] w-full"
-          unoptimized
         />
       </div>
 
@@ -161,8 +160,7 @@ export default function MemoryGallery({ memories }: { memories: MemoryEvent[] })
                           alt={memory.name}
                           fill
                           className="object-cover"
-                          unoptimized
-                        />
+                                        />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center bg-slate-100">
                           <span className="text-xs text-slate-400 uppercase tracking-widest">No photo</span>
