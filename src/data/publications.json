@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-05-28T15:17:34.407Z",
+  "updatedAt": "2026-05-29T07:37:42.058Z",
   "publications": [
     {
       "id": "https://openalex.org/W7153979846",
       "title": "\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Healthcare Journeys to Deriving Design Implications for North Korean Defectors' Adaptation",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Hyungwoo Song",
         "Jeongha Kim",
@@ -18,7 +18,7 @@
       "doi": "https://doi.org/10.1145/3772318.3790752",
       "url": "https://doi.org/10.1145/3772318.3790752",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "healthcare"
       ]
@@ -27,7 +27,7 @@
       "id": "https://openalex.org/W7153991775",
       "title": "\"What Keeps Fans on the Silent Field?\": Understanding Lean-Back Football Fans via AI Sports Broadcasting in Non-Event Time",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Kyusik Kim",
         "Jaehoon Choi",
@@ -40,7 +40,7 @@
       "doi": "https://doi.org/10.1145/3772318.3791932",
       "url": "https://doi.org/10.1145/3772318.3791932",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media"
       ]
@@ -49,7 +49,7 @@
       "id": "https://openalex.org/W7153709259",
       "title": "“Just Listening Was Enough—Until It Wasn't”: Relationship-Stage-Aware Cognitive Scaffolding in AI Companions",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Minchae Kim",
         "Hyungwoo Song",
@@ -59,7 +59,7 @@
       "doi": "https://doi.org/10.1145/3772363.3798512",
       "url": "https://doi.org/10.1145/3772363.3798512",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -68,7 +68,7 @@
       "id": "https://openalex.org/W7153788075",
       "title": "Supporting or Hindering? Understanding the Divergent Effects of LLM Assistance on Critical Thinking in Academic Reading",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Seunghyun Bae",
         "Hyungwoo Song",
@@ -79,7 +79,7 @@
       "doi": "https://doi.org/10.1145/3772363.3798788",
       "url": "https://doi.org/10.1145/3772363.3798788",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -88,7 +88,7 @@
       "id": "https://openalex.org/W7153845321",
       "title": "From Objects to Influences: Rethinking Deletion in Learning-Based Systems",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jeongwoo Ryu",
         "Hyungwoo Song",
@@ -99,7 +99,7 @@
       "doi": "https://doi.org/10.1145/3772363.3798494",
       "url": "https://doi.org/10.1145/3772363.3798494",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility",
         "data-intelligence"
@@ -109,7 +109,7 @@
       "id": "https://openalex.org/W7153874688",
       "title": "\"What Can I Control?\": Designing an Attribution Reframing Chatbot for Early-Career Employees' Workplace Stress Management",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jung Lee",
         "Jaehoon Choi",
@@ -120,7 +120,7 @@
       "doi": "https://doi.org/10.1145/3772363.3798873",
       "url": "https://doi.org/10.1145/3772363.3798873",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -129,7 +129,7 @@
       "id": "https://openalex.org/W7153894086",
       "title": "When Nurses Meet Vibe-Coding: Shifting from Problem Talk to Situated Specification in Participatory Design",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Junghwan Kim",
         "Kieun Park",
@@ -140,7 +140,7 @@
       "doi": "https://doi.org/10.1145/3772363.3798470",
       "url": "https://doi.org/10.1145/3772363.3798470",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "healthcare",
@@ -168,7 +168,7 @@
       "doi": "https://doi.org/10.2196/preprints.96501",
       "url": "https://doi.org/10.2196/preprints.96501",
       "openAccess": true,
-      "type": "article",
+      "type": "posted-content",
       "areas": [
         "human-ai",
         "healthcare"
@@ -192,7 +192,7 @@
       "doi": "https://doi.org/10.1158/1538-7445.am2026-5053",
       "url": "https://doi.org/10.1158/1538-7445.am2026-5053",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare",
         "accessibility",
@@ -216,7 +216,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2603.12632",
       "url": "https://doi.org/10.48550/arxiv.2603.12632",
       "openAccess": true,
-      "type": "preprint",
+      "type": "article",
       "areas": [
         "healthcare"
       ]
@@ -225,7 +225,7 @@
       "id": "https://openalex.org/W7133309924",
       "title": "CodeVoyager: Integrating Interactive Visual Aids with LLMs for Code Comprehension",
       "year": 2026,
-      "venue": null,
+      "venue": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
       "authors": [
         "Yeonjoon Kim",
         "Kyochul Jang",
@@ -236,7 +236,7 @@
       "doi": "https://doi.org/10.1145/3742413.3789057",
       "url": "https://doi.org/10.1145/3742413.3789057",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "accessibility"
@@ -246,7 +246,7 @@
       "id": "https://openalex.org/W4415444971",
       "title": "AltCAT: An Alt Text Authoring Tool with Automatic Generation and Culturally-Aware Translation",
       "year": 2025,
-      "venue": null,
+      "venue": "Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility",
       "authors": [
         "Hyungwoo Song",
         "Jaehoon Choi",
@@ -257,7 +257,7 @@
       "doi": "https://doi.org/10.1145/3663547.3759732",
       "url": "https://doi.org/10.1145/3663547.3759732",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media",
         "accessibility"
@@ -267,7 +267,7 @@
       "id": "https://openalex.org/W4412377098",
       "title": "Conversational Argument Search Under Selective Exposure: Strategies for Balanced Perspective Access",
       "year": 2025,
-      "venue": null,
+      "venue": "Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval",
       "authors": [
         "Kyusik Kim",
         "Jeongwoo Ryu",
@@ -279,7 +279,7 @@
       "doi": "https://doi.org/10.1145/3726302.3730175",
       "url": "https://doi.org/10.1145/3726302.3730175",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "social-media"
@@ -302,7 +302,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2506.22853",
       "url": "https://doi.org/10.48550/arxiv.2506.22853",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "human-ai"
       ]
@@ -322,7 +322,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2506.14199",
       "url": "https://doi.org/10.48550/arxiv.2506.14199",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "human-ai",
         "social-media"
@@ -332,7 +332,7 @@
       "id": "https://openalex.org/W4409883750",
       "title": "BleacherBot: AI Agent as a Sports Co-Viewing Partner",
       "year": 2025,
-      "venue": null,
+      "venue": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Kyusik Kim",
         "Hyungwoo Song",
@@ -343,7 +343,7 @@
       "doi": "https://doi.org/10.1145/3706598.3714178",
       "url": "https://doi.org/10.1145/3706598.3714178",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "social-media"
@@ -353,7 +353,7 @@
       "id": "https://openalex.org/W4409767187",
       "title": "Cinema Multiverse Lounge: Enhancing Film Appreciation via Multi-Agent Conversations",
       "year": 2025,
-      "venue": null,
+      "venue": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jeongwoo Ryu",
         "Kyusik Kim",
@@ -365,7 +365,7 @@
       "doi": "https://doi.org/10.1145/3706598.3713641",
       "url": "https://doi.org/10.1145/3706598.3713641",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "social-media"
@@ -375,7 +375,7 @@
       "id": "https://openalex.org/W4409720435",
       "title": "\"I feel you, but...\": Exploring the Boundaries of Pragmatic Markers in Real-time Voice-based Conversational Agents",
       "year": 2025,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Minjeong Shin",
         "Jaehoon Choi",
@@ -386,7 +386,7 @@
       "doi": "https://doi.org/10.1145/3706599.3719797",
       "url": "https://doi.org/10.1145/3706599.3719797",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -395,7 +395,7 @@
       "id": "https://openalex.org/W4409720233",
       "title": "\"Ask Sir Oliver Ingham\": LLM-based Social Simulations for History Education",
       "year": 2025,
-      "venue": null,
+      "venue": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Kieun Park",
         "Hyungwoo Song",
@@ -406,7 +406,7 @@
       "doi": "https://doi.org/10.1145/3706599.3719728",
       "url": "https://doi.org/10.1145/3706599.3719728",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "accessibility"
@@ -428,7 +428,7 @@
       "doi": "https://doi.org/10.1158/1538-7445.am2025-1037",
       "url": "https://doi.org/10.1158/1538-7445.am2025-1037",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare",
         "accessibility",
@@ -439,7 +439,7 @@
       "id": "https://openalex.org/W4408550677",
       "title": "AltAuthor: A Context-Aware Alt Text Authoring Tool with Image Classification and LMM-Powered Accessibility Compliance",
       "year": 2025,
-      "venue": null,
+      "venue": "Companion Proceedings of the 30th International Conference on Intelligent User Interfaces",
       "authors": [
         "Hyungwoo Song",
         "Minjeong Shin",
@@ -452,7 +452,7 @@
       "doi": "https://doi.org/10.1145/3708557.3716366",
       "url": "https://doi.org/10.1145/3708557.3716366",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -461,7 +461,7 @@
       "id": "https://openalex.org/W4412944506",
       "title": "Blinded by Context: Unveiling the Halo Effect of MLLM in AI Hiring",
       "year": 2025,
-      "venue": null,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
       "authors": [
         "Kyusik Kim",
         "Jeongwoo Ryu",
@@ -471,7 +471,7 @@
       "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1338",
       "url": "https://doi.org/10.18653/v1/2025.findings-acl.1338",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "data-intelligence"
@@ -492,7 +492,7 @@
       "doi": "https://doi.org/10.4162/nrp.2025.19.2.241",
       "url": "https://doi.org/10.4162/nrp.2025.19.2.241",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare"
       ]
@@ -522,7 +522,7 @@
       "id": "https://openalex.org/W4403577451",
       "title": "LEX-GNN: Label-Exploring Graph Neural Network for Accurate Fraud Detection",
       "year": 2024,
-      "venue": null,
+      "venue": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
       "authors": [
         "Woochang Hyun",
         "I.W.C. Lee",
@@ -531,7 +531,7 @@
       "doi": "https://doi.org/10.1145/3627673.3679956",
       "url": "https://doi.org/10.1145/3627673.3679956",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "data-intelligence"
       ]
@@ -540,7 +540,7 @@
       "id": "https://openalex.org/W4400525719",
       "title": "Self-Referential Review: Exploring the Impact of Self-Reference Effect in Review",
       "year": 2024,
-      "venue": null,
+      "venue": "Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval",
       "authors": [
         "Kyusik Kim",
         "Hyungwoo Song",
@@ -549,7 +549,7 @@
       "doi": "https://doi.org/10.1145/3626772.3657969",
       "url": "https://doi.org/10.1145/3626772.3657969",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media",
         "data-intelligence"
@@ -567,7 +567,7 @@
       "doi": "https://doi.org/10.1609/icwsm.v18i1.31421",
       "url": "https://doi.org/10.1609/icwsm.v18i1.31421",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "human-ai",
         "social-media",
@@ -578,7 +578,7 @@
       "id": "https://openalex.org/W4396833095",
       "title": "I feel being there, they feel being together: Exploring How Telepresence Robots Facilitate Long-Distance Family Communication",
       "year": 2024,
-      "venue": null,
+      "venue": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jiyeon Seo",
         "Hajin Lim",
@@ -588,7 +588,7 @@
       "doi": "https://doi.org/10.1145/3613904.3642305",
       "url": "https://doi.org/10.1145/3613904.3642305",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "healthcare"
       ]
@@ -597,7 +597,7 @@
       "id": "https://openalex.org/W4396827361",
       "title": "Exploring the Impact of User-Participated Customization in Experiencing Chatbot Failure",
       "year": 2024,
-      "venue": null,
+      "venue": "Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Hyungwoo Song",
         "Kyusik Kim",
@@ -608,7 +608,7 @@
       "doi": "https://doi.org/10.1145/3613905.3651102",
       "url": "https://doi.org/10.1145/3613905.3651102",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -617,7 +617,7 @@
       "id": "https://openalex.org/W4396833153",
       "title": "Enhancing Auto-Generated Baseball Highlights via Win Probability and Bias Injection Method",
       "year": 2024,
-      "venue": null,
+      "venue": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Kieun Park",
         "Hajin Lim",
@@ -627,7 +627,7 @@
       "doi": "https://doi.org/10.1145/3613904.3642021",
       "url": "https://doi.org/10.1145/3613904.3642021",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media"
       ]
@@ -679,7 +679,7 @@
       "doi": "https://doi.org/10.5626/jok.2023.50.11.985",
       "url": "https://doi.org/10.5626/jok.2023.50.11.985",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "data-intelligence"
       ]
@@ -696,7 +696,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2311.09230",
       "url": "https://doi.org/10.48550/arxiv.2311.09230",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "human-ai",
         "data-intelligence"
@@ -715,7 +715,7 @@
       "doi": "https://doi.org/10.1145/3610091",
       "url": "https://doi.org/10.1145/3610091",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "social-media"
       ]
@@ -735,7 +735,7 @@
       "doi": "https://doi.org/10.5850/jksct.2023.47.4.646",
       "url": "https://doi.org/10.5850/jksct.2023.47.4.646",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "human-ai"
       ]
@@ -754,7 +754,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2304.03148",
       "url": "https://doi.org/10.48550/arxiv.2304.03148",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "human-ai"
       ]
@@ -773,7 +773,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2304.03132",
       "url": "https://doi.org/10.48550/arxiv.2304.03132",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "data-intelligence"
       ]
@@ -828,7 +828,7 @@
       "doi": "https://doi.org/10.1109/bigdata55660.2022.10020415",
       "url": "https://doi.org/10.1109/bigdata55660.2022.10020415",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -847,7 +847,7 @@
       "doi": "https://doi.org/10.9728/dcs.2022.23.11.2269",
       "url": "https://doi.org/10.9728/dcs.2022.23.11.2269",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "accessibility"
       ]
@@ -856,7 +856,7 @@
       "id": "https://openalex.org/W4308374195",
       "title": "“Hide Your Video, Show Your Action!” Investigating a New Video Conferencing Interface for Virtual Studying",
       "year": 2022,
-      "venue": null,
+      "venue": "Companion Publication of the 2022 Conference on Computer Supported Cooperative Work and Social Computing",
       "authors": [
         "Soobin Cho",
         "Bongwon Suh",
@@ -865,7 +865,7 @@
       "doi": "https://doi.org/10.1145/3500868.3559451",
       "url": "https://doi.org/10.1145/3500868.3559451",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media"
       ]
@@ -874,7 +874,7 @@
       "id": "https://openalex.org/W4296604436",
       "title": "Countering Popularity Bias by Regularizing Score Differences",
       "year": 2022,
-      "venue": null,
+      "venue": "Proceedings of the 16th ACM Conference on Recommender Systems",
       "authors": [
         "Wondo Rhee",
         "Sung‐Min Cho",
@@ -883,7 +883,7 @@
       "doi": "https://doi.org/10.1145/3523227.3546757",
       "url": "https://doi.org/10.1145/3523227.3546757",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media"
       ]
@@ -902,7 +902,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2205.08076",
       "url": "https://doi.org/10.48550/arxiv.2205.08076",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "accessibility"
       ]
@@ -919,7 +919,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2203.14037",
       "url": "https://doi.org/10.48550/arxiv.2203.14037",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "data-intelligence"
       ]
@@ -940,7 +940,7 @@
       "doi": "https://doi.org/10.1145/3476085",
       "url": "https://doi.org/10.1145/3476085",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "human-ai",
         "social-media"
@@ -961,7 +961,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2109.01729",
       "url": "https://doi.org/10.48550/arxiv.2109.01729",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "human-ai",
         "healthcare"
@@ -971,7 +971,7 @@
       "id": "https://openalex.org/W3174098556",
       "title": "“I wrote as if I were telling a story to someone I knew.”: Designing Chatbot Interactions for Expressive Writing in Mental Health",
       "year": 2021,
-      "venue": null,
+      "venue": "Designing Interactive Systems Conference 2021",
       "authors": [
         "Sohyun Park",
         "Anja Thieme",
@@ -983,7 +983,7 @@
       "doi": "https://doi.org/10.1145/3461778.3462143",
       "url": "https://doi.org/10.1145/3461778.3462143",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai",
         "healthcare"
@@ -993,7 +993,7 @@
       "id": "https://openalex.org/W3161769503",
       "title": "VisLab: Crowdsourcing Visualization Experiments in the Wild",
       "year": 2021,
-      "venue": null,
+      "venue": "Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jinhan Choi",
         "Changhoon Oh",
@@ -1003,7 +1003,7 @@
       "doi": "https://doi.org/10.1145/3411763.3451826",
       "url": "https://doi.org/10.1145/3411763.3451826",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -1012,7 +1012,7 @@
       "id": "https://openalex.org/W3161607221",
       "title": "Toward a Unified Framework for Visualization Design Guidelines",
       "year": 2021,
-      "venue": null,
+      "venue": "Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jinhan Choi",
         "Changhoon Oh",
@@ -1022,7 +1022,7 @@
       "doi": "https://doi.org/10.1145/3411763.3451702",
       "url": "https://doi.org/10.1145/3411763.3451702",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -1042,7 +1042,7 @@
       "doi": "https://doi.org/10.2196/22099",
       "url": "https://doi.org/10.2196/22099",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare",
         "accessibility"
@@ -1072,7 +1072,7 @@
       "doi": "https://doi.org/10.1016/j.surg.2020.12.033",
       "url": "https://doi.org/10.1016/j.surg.2020.12.033",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare"
       ]
@@ -1098,7 +1098,7 @@
       "id": "https://openalex.org/W3095099377",
       "title": "Not Too Much, Nor Too Less",
       "year": 2020,
-      "venue": null,
+      "venue": "Companion Publication of the 2020 Conference on Computer Supported Cooperative Work and Social Computing",
       "authors": [
         "Soobin Cho",
         "Bongwon Suh",
@@ -1107,7 +1107,7 @@
       "doi": "https://doi.org/10.1145/3406865.3418308",
       "url": "https://doi.org/10.1145/3406865.3418308",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -1127,7 +1127,7 @@
       "doi": "https://doi.org/10.2196/preprints.22099",
       "url": "https://doi.org/10.2196/preprints.22099",
       "openAccess": true,
-      "type": "preprint",
+      "type": "posted-content",
       "areas": [
         "healthcare",
         "accessibility"
@@ -1137,7 +1137,7 @@
       "id": "https://openalex.org/W3040360103",
       "title": "Understanding How People Reason about Aesthetic Evaluations of Artificial Intelligence",
       "year": 2020,
-      "venue": null,
+      "venue": "Proceedings of the 2020 ACM Designing Interactive Systems Conference",
       "authors": [
         "Changhoon Oh",
         "Seonghyun Kim",
@@ -1151,7 +1151,7 @@
       "doi": "https://doi.org/10.1145/3357236.3395430",
       "url": "https://doi.org/10.1145/3357236.3395430",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -1169,7 +1169,7 @@
       "doi": "https://doi.org/10.17210/jhsk.2020.06.15.2.17",
       "url": "https://doi.org/10.17210/jhsk.2020.06.15.2.17",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "human-ai"
       ]
@@ -1178,7 +1178,7 @@
       "id": "https://openalex.org/W3030120704",
       "title": "Bot in the Bunch: Facilitating Group Chat Discussion by Improving Efficiency and Participation with a Chatbot",
       "year": 2020,
-      "venue": null,
+      "venue": "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Soomin Kim",
         "Jinsu Eun",
@@ -1189,7 +1189,7 @@
       "doi": "https://doi.org/10.1145/3313831.3376785",
       "url": "https://doi.org/10.1145/3313831.3376785",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "human-ai"
       ]
@@ -1198,7 +1198,7 @@
       "id": "https://openalex.org/W3030174958",
       "title": "Understanding User Perception of Automated News Generation System",
       "year": 2020,
-      "venue": null,
+      "venue": "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Changhoon Oh",
         "Jinhan Choi",
@@ -1213,7 +1213,7 @@
       "doi": "https://doi.org/10.1145/3313831.3376811",
       "url": "https://doi.org/10.1145/3313831.3376811",
       "openAccess": true,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "social-media"
       ]
@@ -1235,7 +1235,7 @@
       "doi": "https://doi.org/10.1007/s11423-020-09743-y",
       "url": "https://doi.org/10.1007/s11423-020-09743-y",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "accessibility"
       ]
@@ -1252,7 +1252,7 @@
       "doi": "https://doi.org/10.48550/arxiv.1911.00936",
       "url": "https://doi.org/10.48550/arxiv.1911.00936",
       "openAccess": true,
-      "type": "preprint",
+      "type": "text",
       "areas": [
         "data-intelligence"
       ]
@@ -1278,7 +1278,7 @@
       "id": "https://openalex.org/W3002551113",
       "title": "Leveraging Smartwatches to Estimate Students' Perceived Difficulty and Interest in Online Video Lectures",
       "year": 2019,
-      "venue": null,
+      "venue": "Proceedings of the 2019 11th International Conference on Education Technology and Computers",
       "authors": [
         "Jinhan Choi",
         "Jeongyun Han",
@@ -1291,14 +1291,13 @@
       "doi": "https://doi.org/10.1145/3369255.3369291",
       "url": "https://doi.org/10.1145/3369255.3369291",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W4288110919",
       "title": "Enhancing VAEs for collaborative filtering",
       "year": 2019,
-      "venue": null,
+      "venue": "Proceedings of the 13th ACM Conference on Recommender Systems",
       "authors": [
         "Daeryong Kim",
         "Bongwon Suh"
@@ -1306,7 +1305,7 @@
       "doi": "https://doi.org/10.1145/3298689.3347015",
       "url": "https://doi.org/10.1145/3298689.3347015",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "data-intelligence"
       ]
@@ -1315,7 +1314,7 @@
       "id": "https://openalex.org/W2943783006",
       "title": "Tell Me More",
       "year": 2019,
-      "venue": null,
+      "venue": "Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Hyunhoon Jung",
         "Changhoon Oh",
@@ -1327,8 +1326,7 @@
       "doi": "https://doi.org/10.1145/3290607.3312979",
       "url": "https://doi.org/10.1145/3290607.3312979",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2936230331",
@@ -1343,8 +1341,7 @@
       "doi": "https://doi.org/10.1080/0144929x.2019.1604805",
       "url": "https://doi.org/10.1080/0144929x.2019.1604805",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "journal-article"
     },
     {
       "id": "https://openalex.org/W2914084521",
@@ -1364,7 +1361,7 @@
       "doi": "https://doi.org/10.2196/12231",
       "url": "https://doi.org/10.2196/12231",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "human-ai",
         "healthcare"
@@ -1374,7 +1371,7 @@
       "id": "https://openalex.org/W2896540724",
       "title": "Touch+Finger",
       "year": 2018,
-      "venue": null,
+      "venue": "Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology",
       "authors": [
         "Hyunchul Lim",
         "Jungmin Chung",
@@ -1386,8 +1383,7 @@
       "doi": "https://doi.org/10.1145/3242587.3242651",
       "url": "https://doi.org/10.1145/3242587.3242651",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2891280802",
@@ -1404,7 +1400,7 @@
       "doi": "https://doi.org/10.20879/ct.2018.14.3.005",
       "url": "https://doi.org/10.20879/ct.2018.14.3.005",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "social-media"
       ]
@@ -1427,7 +1423,7 @@
       "doi": "https://doi.org/10.2196/preprints.12231",
       "url": "https://doi.org/10.2196/preprints.12231",
       "openAccess": true,
-      "type": "preprint",
+      "type": "posted-content",
       "areas": [
         "human-ai"
       ]
@@ -1447,14 +1443,13 @@
       "doi": null,
       "url": "https://openalex.org/W3192929449",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "article"
     },
     {
       "id": "https://openalex.org/W2888149080",
       "title": "Modeling Stock Prices with Text Contents in 10-Q Reports",
       "year": 2018,
-      "venue": null,
+      "venue": "2018 19th IEEE/ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD)",
       "authors": [
         "Wonho Lee",
         "Bongwon Suh"
@@ -1462,14 +1457,13 @@
       "doi": "https://doi.org/10.1109/snpd.2018.8441051",
       "url": "https://doi.org/10.1109/snpd.2018.8441051",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2796000004",
       "title": "I Lead, You Help but Only with Enough Details",
       "year": 2018,
-      "venue": null,
+      "venue": "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Changhoon Oh",
         "Jungwoo Song",
@@ -1481,14 +1475,13 @@
       "doi": "https://doi.org/10.1145/3173574.3174223",
       "url": "https://doi.org/10.1145/3173574.3174223",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2798547188",
       "title": "PairRing",
       "year": 2018,
-      "venue": null,
+      "venue": "Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Jungmin Chung",
         "Changhoon Oh",
@@ -1498,8 +1491,7 @@
       "doi": "https://doi.org/10.1145/3170427.3188590",
       "url": "https://doi.org/10.1145/3170427.3188590",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2774556007",
@@ -1518,14 +1510,13 @@
       "doi": "https://doi.org/10.17210/jhsk.2017.11.12.4.65",
       "url": "https://doi.org/10.17210/jhsk.2017.11.12.4.65",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "journal-article"
     },
     {
       "id": "https://openalex.org/W2611652454",
       "title": "Us vs. Them",
       "year": 2017,
-      "venue": null,
+      "venue": "Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Changhoon Oh",
         "Taeyoung Lee",
@@ -1537,14 +1528,13 @@
       "doi": "https://doi.org/10.1145/3025453.3025539",
       "url": "https://doi.org/10.1145/3025453.3025539",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2535498947",
       "title": "OctaRing",
       "year": 2016,
-      "venue": null,
+      "venue": "Proceedings of the 29th Annual Symposium on User Interface Software and Technology",
       "authors": [
         "Hyunchul Lim",
         "Jungmin Chung",
@@ -1555,14 +1545,13 @@
       "doi": "https://doi.org/10.1145/2984751.2984780",
       "url": "https://doi.org/10.1145/2984751.2984780",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2511458541",
       "title": "WhichHand",
       "year": 2016,
-      "venue": null,
+      "venue": "Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services Adjunct",
       "authors": [
         "Hyunchul Lim",
         "Gwangseok An",
@@ -1573,8 +1562,7 @@
       "doi": "https://doi.org/10.1145/2957265.2961857",
       "url": "https://doi.org/10.1145/2957265.2961857",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2952033691",
@@ -1590,14 +1578,13 @@
       "doi": "https://doi.org/10.48550/arxiv.1608.00447",
       "url": "https://doi.org/10.48550/arxiv.1608.00447",
       "openAccess": true,
-      "type": "preprint",
-      "areas": []
+      "type": "text"
     },
     {
       "id": "https://openalex.org/W2463094838",
       "title": "A System Designed to Collect Users' TV-Watching Data Using a Smart TV, Smartphones, and Smart Watches",
       "year": 2016,
-      "venue": null,
+      "venue": "Proceedings of the ACM International Conference on Interactive Experiences for TV and Online Video",
       "authors": [
         "Jehwan Seo",
         "Hyunchul Lim",
@@ -1609,14 +1596,13 @@
       "doi": "https://doi.org/10.1145/2932206.2933562",
       "url": "https://doi.org/10.1145/2932206.2933562",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2346764847",
       "title": "Understanding Participatory Hashtag Practices on Instagram",
       "year": 2016,
-      "venue": null,
+      "venue": "Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems",
       "authors": [
         "Changhoon Oh",
         "Taeyoung Lee",
@@ -1627,8 +1613,7 @@
       "doi": "https://doi.org/10.1145/2851581.2892369",
       "url": "https://doi.org/10.1145/2851581.2892369",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2335599684",
@@ -1649,7 +1634,7 @@
       "doi": "https://doi.org/10.1097/md.0000000000002775",
       "url": "https://doi.org/10.1097/md.0000000000002775",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare"
       ]
@@ -1658,7 +1643,7 @@
       "id": "https://openalex.org/W2297628473",
       "title": "Music Genre Classification using Multimodal Deep Learning",
       "year": 2016,
-      "venue": null,
+      "venue": "HCI Korea 2016",
       "authors": [
         "Seonhoon Kim",
         "Daesik Kim",
@@ -1667,7 +1652,7 @@
       "doi": "https://doi.org/10.17210/hcik.2016.01.389",
       "url": "https://doi.org/10.17210/hcik.2016.01.389",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -1695,7 +1680,7 @@
       "doi": "https://doi.org/10.3393/ac.2016.32.5.184",
       "url": "https://doi.org/10.3393/ac.2016.32.5.184",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare"
       ]
@@ -1716,8 +1701,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.3457430.v2",
       "url": "https://doi.org/10.6084/m9.figshare.3457430.v2",
       "openAccess": true,
-      "type": "article",
-      "areas": []
+      "type": "Text"
     },
     {
       "id": "https://openalex.org/W3127863351",
@@ -1765,14 +1749,14 @@
       "id": "https://openalex.org/W2914113727",
       "title": "Session details: Evaluating Crowdsourcing",
       "year": 2015,
-      "venue": null,
+      "venue": "Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems",
       "authors": [
         "Bongwon Suh"
       ],
       "doi": "https://doi.org/10.1145/3251708",
       "url": "https://doi.org/10.1145/3251708",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -1781,7 +1765,7 @@
       "id": "https://openalex.org/W1970011084",
       "title": "Vi-Bros",
       "year": 2015,
-      "venue": null,
+      "venue": "Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems",
       "authors": [
         "Hyunchul Lim",
         "YoonKyong Cho",
@@ -1791,14 +1775,13 @@
       "doi": "https://doi.org/10.1145/2702613.2732811",
       "url": "https://doi.org/10.1145/2702613.2732811",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1986634454",
       "title": "Design of a Smart TV Logging System Using Beacons and Smartphones",
       "year": 2015,
-      "venue": null,
+      "venue": "Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems",
       "authors": [
         "Jehwan Seo",
         "Daesik Kim",
@@ -1808,14 +1791,13 @@
       "doi": "https://doi.org/10.1145/2702613.2732858",
       "url": "https://doi.org/10.1145/2702613.2732858",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2095163463",
       "title": "An Analysis of Social Features Associated with Room Sales of Airbnb",
       "year": 2015,
-      "venue": null,
+      "venue": "Proceedings of the 18th ACM Conference Companion on Computer Supported Cooperative Work &amp; Social Computing",
       "authors": [
         "Dong Hun Lee",
         "Woochang Hyun",
@@ -1827,8 +1809,7 @@
       "doi": "https://doi.org/10.1145/2685553.2699011",
       "url": "https://doi.org/10.1145/2685553.2699011",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2271397866",
@@ -1844,8 +1825,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618824.v1",
       "url": "https://doi.org/10.6084/m9.figshare.1618824.v1",
       "openAccess": true,
-      "type": "article",
-      "areas": []
+      "type": "Dataset"
     },
     {
       "id": "https://openalex.org/W2288214912",
@@ -1881,8 +1861,7 @@
       "doi": null,
       "url": "https://openalex.org/W2289026610",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "article"
     },
     {
       "id": "https://openalex.org/W2292766951",
@@ -1899,7 +1878,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618820.v1",
       "url": "https://doi.org/10.6084/m9.figshare.1618820.v1",
       "openAccess": true,
-      "type": "article",
+      "type": "Dataset",
       "areas": [
         "accessibility"
       ]
@@ -1918,7 +1897,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618823.v2",
       "url": "https://doi.org/10.6084/m9.figshare.1618823.v2",
       "openAccess": true,
-      "type": "article",
+      "type": "Dataset",
       "areas": [
         "accessibility"
       ]
@@ -1955,14 +1934,13 @@
       "doi": "https://doi.org/10.5555/2729485.2729538",
       "url": "https://doi.org/10.5555/2729485.2729538",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "article"
     },
     {
       "id": "https://openalex.org/W2093530185",
       "title": "Gingerman challenge",
       "year": 2014,
-      "venue": null,
+      "venue": "Proceedings of the first ACM SIGCHI annual symposium on Computer-human interaction in play",
       "authors": [
         "Hajin Lim",
         "Jae Won Park",
@@ -1971,14 +1949,13 @@
       "doi": "https://doi.org/10.1145/2658537.2661308",
       "url": "https://doi.org/10.1145/2658537.2661308",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2037849933",
       "title": "Ubi-jector",
       "year": 2014,
-      "venue": null,
+      "venue": "Proceedings of the 16th international conference on Human-computer interaction with mobile devices &amp; services",
       "authors": [
         "Hajin Lim",
         "Hyunjin Ahn",
@@ -1989,14 +1966,13 @@
       "doi": "https://doi.org/10.1145/2628363.2628397",
       "url": "https://doi.org/10.1145/2628363.2628397",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2017310632",
       "title": "#nowplaying the future billboard",
       "year": 2014,
-      "venue": null,
+      "venue": "Proceedings of the first international workshop on Social media retrieval and analysis",
       "authors": [
         "Yekyung Kim",
         "Bongwon Suh",
@@ -2005,14 +1981,13 @@
       "doi": "https://doi.org/10.1145/2632188.2632206",
       "url": "https://doi.org/10.1145/2632188.2632206",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1993063877",
       "title": "Use octopus launcher like your hands",
       "year": 2014,
-      "venue": null,
+      "venue": "CHI '14 Extended Abstracts on Human Factors in Computing Systems",
       "authors": [
         "Hyunjin Ahn",
         "Yoojung Kim",
@@ -2021,14 +1996,13 @@
       "doi": "https://doi.org/10.1145/2559206.2581342",
       "url": "https://doi.org/10.1145/2559206.2581342",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2004786236",
       "title": "Now here or nowhere",
       "year": 2014,
-      "venue": null,
+      "venue": "Proceedings of the companion publication of the 17th ACM conference on Computer supported cooperative work &amp; social computing",
       "authors": [
         "Hajin Lim",
         "Bongwon Suh"
@@ -2036,8 +2010,7 @@
       "doi": "https://doi.org/10.1145/2556420.2556501",
       "url": "https://doi.org/10.1145/2556420.2556501",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2167875574",
@@ -2051,8 +2024,7 @@
       "doi": "https://doi.org/10.1007/978-3-319-02993-1_9",
       "url": "https://doi.org/10.1007/978-3-319-02993-1_9",
       "openAccess": false,
-      "type": "book-chapter",
-      "areas": []
+      "type": "book-chapter"
     },
     {
       "id": "https://openalex.org/W2000086385",
@@ -2069,8 +2041,7 @@
       "doi": "https://doi.org/10.1080/15659801.2013.815435",
       "url": "https://doi.org/10.1080/15659801.2013.815435",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "journal-article"
     },
     {
       "id": "https://openalex.org/W2163631771",
@@ -2087,7 +2058,7 @@
       "doi": "https://doi.org/10.1128/jcm.05722-11",
       "url": "https://doi.org/10.1128/jcm.05722-11",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "healthcare"
       ]
@@ -2096,7 +2067,7 @@
       "id": "https://openalex.org/W2548105042",
       "title": "Finding Credible Information Sources in Social Networks Based on Content and Social Structure",
       "year": 2011,
-      "venue": null,
+      "venue": "2011 IEEE Third Int'l Conference on Privacy, Security, Risk and Trust and 2011 IEEE Third Int'l Conference on Social Computing",
       "authors": [
         "Kevin Robert Canini",
         "Bongwon Suh",
@@ -2105,14 +2076,13 @@
       "doi": "https://doi.org/10.1109/passat/socialcom.2011.91",
       "url": "https://doi.org/10.1109/passat/socialcom.2011.91",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2151378814",
       "title": "Tweets from Justin Bieber's heart",
       "year": 2011,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Brent Hecht",
         "Lichan Hong",
@@ -2122,14 +2092,13 @@
       "doi": "https://doi.org/10.1145/1978942.1978976",
       "url": "https://doi.org/10.1145/1978942.1978976",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2100799631",
       "title": "Sensemaking with Tweeting: Exploiting Microblogging for Knowledge Workers",
       "year": 2010,
-      "venue": null,
+      "venue": "http://www.cs.unc.edu/%7Ejulia/accepted-papers/sensemaking-with-tweeting.pdf",
       "authors": [
         "Bongwon Suh",
         "Lichan Hong",
@@ -2140,7 +2109,7 @@
       "doi": null,
       "url": "https://openalex.org/W2100799631",
       "openAccess": false,
-      "type": "article",
+      "type": "text",
       "areas": [
         "data-intelligence"
       ]
@@ -2149,7 +2118,7 @@
       "id": "https://openalex.org/W2122390506",
       "title": "Eddi",
       "year": 2010,
-      "venue": null,
+      "venue": "Proceedings of the 23nd annual ACM symposium on User interface software and technology",
       "authors": [
         "Michael S. Bernstein",
         "Bongwon Suh",
@@ -2161,14 +2130,13 @@
       "doi": "https://doi.org/10.1145/1866029.1866077",
       "url": "https://doi.org/10.1145/1866029.1866077",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2026318959",
       "title": "Want to be Retweeted? Large Scale Analytics on Factors Impacting Retweet in Twitter Network",
       "year": 2010,
-      "venue": null,
+      "venue": "2010 IEEE Second International Conference on Social Computing",
       "authors": [
         "Bongwon Suh",
         "Lichan Hong",
@@ -2178,14 +2146,13 @@
       "doi": "https://doi.org/10.1109/socialcom.2010.33",
       "url": "https://doi.org/10.1109/socialcom.2010.33",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1965603248",
       "title": "Designing a cross-channel information management tool for workers in enterprise task forces",
       "year": 2010,
-      "venue": null,
+      "venue": "Proceedings of the International Conference on Advanced Visual Interfaces",
       "authors": [
         "Gregorio Convertino",
         "Sanjay Kairam",
@@ -2196,8 +2163,7 @@
       "doi": "https://doi.org/10.1145/1842993.1843013",
       "url": "https://doi.org/10.1145/1842993.1843013",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1583186179",
@@ -2212,7 +2178,7 @@
       "doi": "https://doi.org/10.1609/icwsm.v4i1.14058",
       "url": "https://doi.org/10.1609/icwsm.v4i1.14058",
       "openAccess": true,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "social-media"
       ]
@@ -2221,7 +2187,7 @@
       "id": "https://openalex.org/W2114420375",
       "title": "FeedWinnower",
       "year": 2010,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Lichan Hong",
         "Gregorio Convertino",
@@ -2232,14 +2198,13 @@
       "doi": "https://doi.org/10.1145/1753326.1753466",
       "url": "https://doi.org/10.1145/1753326.1753466",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1993500013",
       "title": "The singularity is not near",
       "year": 2009,
-      "venue": null,
+      "venue": "Proceedings of the 5th International Symposium on Wikis and Open Collaboration",
       "authors": [
         "Bongwon Suh",
         "Gregorio Convertino",
@@ -2249,14 +2214,13 @@
       "doi": "https://doi.org/10.1145/1641309.1641322",
       "url": "https://doi.org/10.1145/1641309.1641322",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1977857403",
       "title": "What's in Wikipedia?",
       "year": 2009,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Aniket Kittur",
         "Ed H.",
@@ -2265,14 +2229,13 @@
       "doi": "https://doi.org/10.1145/1518701.1518930",
       "url": "https://doi.org/10.1145/1518701.1518930",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2028358741",
       "title": "So you know you're getting the best possible information",
       "year": 2009,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Peter Pirolli",
         "Evelin Wollny",
@@ -2281,14 +2244,13 @@
       "doi": "https://doi.org/10.1145/1518701.1518929",
       "url": "https://doi.org/10.1145/1518701.1518929",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2158083740",
       "title": "Can you ever trust a wiki?",
       "year": 2008,
-      "venue": null,
+      "venue": "Proceedings of the 2008 ACM conference on Computer supported cooperative work",
       "authors": [
         "Aniket Kittur",
         "Bongwon Suh",
@@ -2297,14 +2259,13 @@
       "doi": "https://doi.org/10.1145/1460563.1460639",
       "url": "https://doi.org/10.1145/1460563.1460639",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2151401338",
       "title": "Crowdsourcing user studies with Mechanical Turk",
       "year": 2008,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Aniket Kittur",
         "Ed H.",
@@ -2313,7 +2274,7 @@
       "doi": "https://doi.org/10.1145/1357054.1357127",
       "url": "https://doi.org/10.1145/1357054.1357127",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -2322,7 +2283,7 @@
       "id": "https://openalex.org/W2006142674",
       "title": "Lifting the veil",
       "year": 2008,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Bongwon Suh",
         "Ed H.",
@@ -2332,8 +2293,7 @@
       "doi": "https://doi.org/10.1145/1357054.1357214",
       "url": "https://doi.org/10.1145/1357054.1357214",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2395972321",
@@ -2351,8 +2311,7 @@
       "doi": null,
       "url": "https://openalex.org/W2395972321",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "article"
     },
     {
       "id": "https://openalex.org/W2003055620",
@@ -2367,7 +2326,7 @@
       "doi": "https://doi.org/10.1080/10447310701702618",
       "url": "https://doi.org/10.1080/10447310701702618",
       "openAccess": false,
-      "type": "article",
+      "type": "journal-article",
       "areas": [
         "human-ai"
       ]
@@ -2376,7 +2335,7 @@
       "id": "https://openalex.org/W2132781340",
       "title": "Us vs. Them: Understanding Social Dynamics in Wikipedia with Revert Graph Visualizations",
       "year": 2007,
-      "venue": null,
+      "venue": "2007 IEEE Symposium on Visual Analytics Science and Technology",
       "authors": [
         "Bongwon Suh",
         "Ed H.",
@@ -2386,7 +2345,7 @@
       "doi": "https://doi.org/10.1109/vast.2007.4389010",
       "url": "https://doi.org/10.1109/vast.2007.4389010",
       "openAccess": false,
-      "type": "article",
+      "type": "proceedings-article",
       "areas": [
         "accessibility"
       ]
@@ -2395,7 +2354,7 @@
       "id": "https://openalex.org/W2093753056",
       "title": "He says, she says",
       "year": 2007,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Aniket Kittur",
         "Bongwon Suh",
@@ -2405,8 +2364,7 @@
       "doi": "https://doi.org/10.1145/1240624.1240698",
       "url": "https://doi.org/10.1145/1240624.1240698",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2153642398",
@@ -2420,14 +2378,13 @@
       "doi": "https://doi.org/10.1016/j.intcom.2007.02.002",
       "url": "https://doi.org/10.1016/j.intcom.2007.02.002",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "journal-article"
     },
     {
       "id": "https://openalex.org/W2133706996",
       "title": "Time Tree: Exploring Time Changing Hierarchies",
       "year": 2006,
-      "venue": null,
+      "venue": "2006 IEEE Symposium On Visual Analytics And Technology",
       "authors": [
         "Stuart Card",
         "Bongwon Suh",
@@ -2438,8 +2395,7 @@
       "doi": "https://doi.org/10.1109/vast.2006.261450",
       "url": "https://doi.org/10.1109/vast.2006.261450",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W87704740",
@@ -2453,8 +2409,7 @@
       "doi": null,
       "url": "https://openalex.org/W87704740",
       "openAccess": true,
-      "type": "dissertation",
-      "areas": []
+      "type": "Dissertation"
     },
     {
       "id": "https://openalex.org/W207443337",
@@ -2468,14 +2423,13 @@
       "doi": null,
       "url": "https://openalex.org/W207443337",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "article"
     },
     {
       "id": "https://openalex.org/W2060502770",
       "title": "Automatic thumbnail cropping and its effectiveness",
       "year": 2003,
-      "venue": null,
+      "venue": "Proceedings of the 16th annual ACM symposium on User interface software and technology",
       "authors": [
         "Bongwon Suh",
         "Haibin Ling",
@@ -2485,14 +2439,13 @@
       "doi": "https://doi.org/10.1145/964696.964707",
       "url": "https://doi.org/10.1145/964696.964707",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1994650216",
       "title": "OZONE",
       "year": 2002,
-      "venue": null,
+      "venue": "Proceedings of the Working Conference on Advanced Visual Interfaces",
       "authors": [
         "Bongwon Suh",
         "Benjamin B. Bederson"
@@ -2500,14 +2453,13 @@
       "doi": "https://doi.org/10.1145/1556262.1556284",
       "url": "https://doi.org/10.1145/1556262.1556284",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1980432272",
       "title": "Popout prism",
       "year": 2002,
-      "venue": null,
+      "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
       "authors": [
         "Bongwon Suh",
         "Allison Woodruff",
@@ -2517,8 +2469,7 @@
       "doi": "https://doi.org/10.1145/503376.503422",
       "url": "https://doi.org/10.1145/503376.503422",
       "openAccess": false,
-      "type": "article",
-      "areas": []
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W1914231478",
@@ -2532,8 +2483,7 @@
       "doi": null,
       "url": "https://openalex.org/W1914231478",
       "openAccess": true,
-      "type": "article",
-      "areas": []
+      "type": "Technical Report"
     }
   ]
 }

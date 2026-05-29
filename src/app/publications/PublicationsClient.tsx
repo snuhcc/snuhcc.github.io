@@ -18,6 +18,99 @@ type Publication = {
   areas?: string[];
 };
 
+function venueLabel(venue: string | null, year: number, type: string): string | null {
+  const yy = String(year).slice(2);
+
+  if (type === "book-chapter") return "Book Chapter";
+  if (type === "Dissertation") return "Dissertation";
+  if (type === "Technical Report") return "Technical Report";
+  if (/preprint|posted.content/i.test(type)) {
+    const src = /arXiv/i.test(venue ?? "") ? "arXiv  ·  " : "";
+    return `${src}Preprint`;
+  }
+
+  if (!venue) return null;
+  const v = venue;
+  const isEA   = /extended abstract/i.test(v);
+  const isComp = /companion/i.test(v);
+
+  // CHI
+  if (/CHI Conference|SIGCHI Conference|Human Factors in Computing/i.test(v))
+    return isEA ? `CHI '${yy}  ·  Extended Abstract` : `CHI '${yy}  ·  Full Paper`;
+
+  // CSCW / PACMHCI
+  if (/ACM on Human.Computer Interaction/i.test(v)) return `PACMHCI '${yy}  ·  Full Paper`;
+  if (/CSCW|Computer-Supported Cooperative/i.test(v))
+    return isComp ? `CSCW '${yy}  ·  Companion` : `CSCW '${yy}  ·  Full Paper`;
+
+  // UIST
+  if (/UIST|User Interface Software and Tech/i.test(v)) return `UIST '${yy}  ·  Full Paper`;
+
+  // IUI
+  if (/Intelligent User Interface/i.test(v))
+    return isComp ? `IUI '${yy}  ·  Companion` : `IUI '${yy}  ·  Full Paper`;
+
+  // ASSETS
+  if (/SIGACCESS|ASSETS/i.test(v)) return `ASSETS '${yy}  ·  Full Paper`;
+
+  // SIGIR
+  if (/SIGIR/i.test(v)) return `SIGIR '${yy}  ·  Full Paper`;
+
+  // RecSys
+  if (/Recommender Systems/i.test(v)) return `RecSys '${yy}  ·  Full Paper`;
+
+  // DIS
+  if (/Designing Interactive Systems/i.test(v)) return `DIS '${yy}  ·  Full Paper`;
+
+  // TVX / Interactive TV
+  if (/Interactive Experiences for TV|TVX/i.test(v)) return `TVX '${yy}  ·  Full Paper`;
+
+  // CIKM
+  if (/Information and Knowledge Management/i.test(v)) return `CIKM '${yy}  ·  Full Paper`;
+
+  // MobileHCI
+  if (/Human-Computer Interaction with Mobile/i.test(v)) return `MobileHCI '${yy}  ·  Full Paper`;
+
+  // AVI
+  if (/Advanced Visual Interface/i.test(v)) return `AVI '${yy}  ·  Full Paper`;
+
+  // ICWSM
+  if (/ICWSM/i.test(v)) return `ICWSM '${yy}  ·  Full Paper`;
+
+  // AAAI
+  if (/AAAI|National Conference on Artificial Intelligence/i.test(v)) return `AAAI '${yy}  ·  Full Paper`;
+
+  // IEEE BigData / Visual Analytics
+  if (/Big Data/i.test(v)) return `IEEE BigData '${yy}  ·  Full Paper`;
+  if (/Visual Analytics/i.test(v)) return `IEEE VAST '${yy}  ·  Full Paper`;
+
+  // Social Computing
+  if (/Social Computing/i.test(v)) return `SocialCom '${yy}  ·  Full Paper`;
+
+  // WikiSym
+  if (/Wikis and Open Collaboration/i.test(v)) return `WikiSym '${yy}  ·  Full Paper`;
+
+  // HCI Korea
+  if (/HCI Korea/i.test(v)) return `HCI Korea '${yy}  ·  Full Paper`;
+
+  // Journals
+  if (/Journal of Medical Internet Research/i.test(v)) return "JMIR  ·  Journal Article";
+  if (/International Journal of Human.Computer/i.test(v)) return "IJHCI  ·  Journal Article";
+  if (/Interacting with Computers/i.test(v)) return "IwC  ·  Journal Article";
+  if (/Behaviour and Information Technology/i.test(v)) return "BIT  ·  Journal Article";
+  if (/HCI Society of Korea|Journal of.*HCI/i.test(v)) return "HCI Society  ·  Journal Article";
+  if (/Journal of KIISE/i.test(v)) return "KIISE  ·  Journal Article";
+  if (/Educational Technology Research/i.test(v)) return "ETRD  ·  Journal Article";
+  if (/Cancer Research|Medicine\b|Surgery\b|Nutrition|Microbiology|Coloproctology|Ecology/i.test(v))
+    return "Journal Article";
+  if (/Lecture notes in computer science/i.test(v)) return "LNCS  ·  Full Paper";
+
+  // Generic fallback
+  const isConf = /proceedings|conference|symposium|workshop/i.test(v)
+    || type === "proceedings-article";
+  return isConf ? "Conference Paper" : "Journal Article";
+}
+
 const AREAS: Record<string, string> = {
   "human-ai": "Human-AI Interaction",
   "healthcare": "Healthcare & Wellbeing",
@@ -88,10 +181,10 @@ export default function PublicationsClient() {
       <div className="flex flex-wrap gap-2 mb-10">
         <button
           onClick={() => setArea(null)}
-          className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
+          className={`text-xs px-3 py-1.5 rounded-none border transition-colors ${
             !activeArea
               ? "bg-slate-900 text-white border-slate-900"
-              : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
+              : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 "
           }`}
         >
           All
@@ -100,10 +193,10 @@ export default function PublicationsClient() {
           <button
             key={key}
             onClick={() => setArea(activeArea === key ? null : key)}
-            className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
+            className={`text-xs px-3 py-1.5 rounded-none border transition-colors ${
               activeArea === key
-                ? "bg-[#192e57] text-white border-[#192e57]"
-                : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
+                ? "bg-[#2563eb] text-white border-[#2563eb]"
+                : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 "
             }`}
           >
             {label}
@@ -114,27 +207,32 @@ export default function PublicationsClient() {
       {activeArea && (
         <p className="text-sm text-slate-500 mb-8">
           Showing <span className="font-medium text-slate-800">{filtered.length}</span> papers in{" "}
-          <span className="font-medium text-[#192e57]">{AREAS[activeArea]}</span>
+          <span className="font-medium text-[#2563eb]">{AREAS[activeArea]}</span>
         </p>
       )}
 
       <div className="flex gap-10">
         {/* Main publications list */}
-        <div className="flex-1 min-w-0 space-y-14">
+        <div className="flex-1 min-w-0 space-y-8">
           {years.map((year) => (
             <section key={year} id={`year-${year}`}>
               <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
                 {year}
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-3">
                 {byYear[year].map((pub) => (
-                  <div key={pub.id} className="group">
+                  <div key={pub.id} className="group py-1">
+                    {venueLabel(pub.venue, pub.year, pub.type) && (
+                      <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
+                        {venueLabel(pub.venue, pub.year, pub.type)}
+                      </p>
+                    )}
                     <a
                       href={pub.doi ?? pub.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ fontFamily: "system-ui, -apple-system, sans-serif" }}
-                      className="font-medium text-slate-800 group-hover:text-[#192e57] group-hover:font-semibold transition-all leading-snug block mb-1.5"
+                      style={{ fontFamily: "var(--font-sans)" }}
+                      className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
                     >
                       {pub.title}
                     </a>
@@ -142,15 +240,15 @@ export default function PublicationsClient() {
                       {pub.authors.join(", ")}
                     </p>
                     {pub.venue && (
-                      <p className="text-sm text-slate-400 italic mb-2">{pub.venue}</p>
+                      <p className="text-xs text-slate-400 mb-2">{pub.venue}</p>
                     )}
-                    <div className="flex flex-wrap items-center gap-2 mt-2">
+                    <div className="flex flex-wrap items-center gap-2 mt-1.5">
                       {pub.doi && (
                         <a
                           href={pub.doi}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs px-2.5 py-1 rounded-full border border-slate-300 text-slate-500 hover:border-slate-500 hover:text-slate-700 hover:font-medium transition-all"
+                          className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
                         >
                           DOI
                         </a>
@@ -160,7 +258,7 @@ export default function PublicationsClient() {
                           href={pub.pdf}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs px-2.5 py-1 rounded-full border border-slate-300 text-slate-500 hover:border-slate-500 hover:text-slate-700 hover:font-medium transition-all"
+                          className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
                         >
                           PDF
                         </a>
@@ -169,10 +267,10 @@ export default function PublicationsClient() {
                         <button
                           key={a}
                           onClick={() => setArea(activeArea === a ? null : a)}
-                          className={`text-xs px-2.5 py-0.5 rounded-full border transition-colors ${
+                          className={`text-xs px-2.5 py-0.5 rounded-none border transition-colors ${
                             activeArea === a
-                              ? "border-[#3a6bc4] text-[#192e57]"
-                              : "border-slate-200 text-slate-400 hover:border-slate-400 hover:text-slate-600 hover:font-medium"
+                              ? "border-[#2563eb]/40 text-[#2563eb]"
+                              : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
                           }`}
                         >
                           {AREAS[a] ?? a}
@@ -195,8 +293,8 @@ export default function PublicationsClient() {
                 onClick={() => scrollToYear(year)}
                 className={`text-sm transition-colors ${
                   visibleYear === year
-                    ? "text-[#192e57] font-semibold"
-                    : "text-slate-400 hover:text-[#192e57] hover:font-semibold"
+                    ? "text-[#2563eb] font-semibold"
+                    : "text-slate-400 hover:text-[#2563eb] hover:font-semibold"
                 }`}
               >
                 {year}

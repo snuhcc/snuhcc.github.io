@@ -3,7 +3,9 @@
     "date": "2026-02-03",
     "title": "Interaction with Physical AI",
     "presenter": "Minjeong Shin",
-    "tags": ["Physical AI"],
+    "tags": [
+      "Physical AI"
+    ],
     "semester": "2026 Winter",
     "slides": "/seminars/2026-02-03-interaction-with-physical-ai.pdf"
   },
@@ -11,7 +13,10 @@
     "date": "2026-01-13",
     "title": "Bridging LLM Agents to Physical World",
     "presenter": "Junghwan Kim",
-    "tags": ["Physical AI", "VLM"],
+    "tags": [
+      "Physical AI",
+      "VLM"
+    ],
     "semester": "2026 Winter",
     "slides": "/seminars/2026-01-13-bridging-llm-agents-to-physical-world.pdf"
   },
@@ -19,7 +24,9 @@
     "date": "2024-07-10",
     "title": "Can Long-Context Language Models Subsume Retrieval, RAG, SQL, and More?",
     "presenter": "Kieun Park",
-    "tags": ["LLM"],
+    "tags": [
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": null
   },
@@ -27,7 +34,10 @@
     "date": "2024-07-03",
     "title": "Apple's Knowledge Navigator: Why Doesn't that Conversational Agent Exist Yet",
     "presenter": "Kitae Kim",
-    "tags": ["HAI", "HCI"],
+    "tags": [
+      "HAI",
+      "HCI"
+    ],
     "semester": "2024 SS",
     "slides": null
   },
@@ -35,7 +45,10 @@
     "date": "2024-05-22",
     "title": "CHI 2024 Highlights",
     "presenter": "Kieun Park",
-    "tags": ["HAI", "HCI"],
+    "tags": [
+      "HAI",
+      "HCI"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-05-22-chi-2024-highlights.pdf"
   },
@@ -43,7 +56,10 @@
     "date": "2024-05-08",
     "title": "Designing Conversational Agents: A Self-Determination Theory Approach",
     "presenter": "Kyusik Kim",
-    "tags": ["HAI", "HCI"],
+    "tags": [
+      "HAI",
+      "HCI"
+    ],
     "semester": "2024 SS",
     "slides": null
   },
@@ -51,7 +67,10 @@
     "date": "2024-05-08",
     "title": "Debate Chatbots to Facilitate Critical Thinking on YouTube: Social Identity and Conversational Style Make A Difference",
     "presenter": "Jeongwoo Ryu",
-    "tags": ["HCI", "LLM"],
+    "tags": [
+      "HCI",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-05-08-debate-chatbots.pdf"
   },
@@ -59,7 +78,11 @@
     "date": "2024-04-24",
     "title": "Emergence of Social Norms in LLM-Based Agent Societies (2024)",
     "presenter": "Junghwan Kim",
-    "tags": ["LLM", "Multi-Agent", "Prompt Engineering"],
+    "tags": [
+      "LLM",
+      "Multi-Agent",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-04-24-emergence-of-social-norms.pdf"
   },
@@ -67,7 +90,10 @@
     "date": "2024-04-24",
     "title": "Ferret-UI: Grounded Mobile UI Understanding with Multimodal LLMs",
     "presenter": "Hyungwoo Song",
-    "tags": ["LLM", "MLLM"],
+    "tags": [
+      "LLM",
+      "MLLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-04-24-ferret-ui.pdf"
   },
@@ -75,7 +101,11 @@
     "date": "2024-04-17",
     "title": "LMs Stand Their Ground: Investigating the Effect of Embodiment in Figurative Language Interpretation by Language Models",
     "presenter": "Seungbae Seo",
-    "tags": ["HAI", "LLM", "Reasoning"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Reasoning"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-04-17-lms-stand-their-ground.pdf"
   },
@@ -83,7 +113,10 @@
     "date": "2024-04-17",
     "title": "S3: Social-network Simulation System with Large Language Model-Empowered Agents",
     "presenter": "Dongseok Heo",
-    "tags": ["LLM", "Prompt Engineering"],
+    "tags": [
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-04-17-s3-social-network-simulation.pdf"
   },
@@ -91,7 +124,11 @@
     "date": "2024-04-03",
     "title": "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
     "presenter": "Kyusik Kim",
-    "tags": ["HAI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-04-03-sotopia.pdf"
   },
@@ -99,7 +136,10 @@
     "date": "2024-03-27",
     "title": "LLM2LLM: Boosting LLMs with Novel Iterative Data Enhancement",
     "presenter": "Jeongwoo Ryu",
-    "tags": ["Finetuning", "LLM"],
+    "tags": [
+      "Finetuning",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-27-llm2llm.pdf"
   },
@@ -107,7 +147,10 @@
     "date": "2024-03-27",
     "title": "Understanding User Experience in Large Language Model Interactions",
     "presenter": "Hyungwoo Song",
-    "tags": ["HCI", "LLM"],
+    "tags": [
+      "HCI",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-27-understanding-ux-in-llm.pdf"
   },
@@ -115,7 +158,11 @@
     "date": "2024-03-20",
     "title": "The Era of 1-bit LLMs (2024)",
     "presenter": "Junghwan Kim",
-    "tags": ["Finetuning", "LLM", "Transformer"],
+    "tags": [
+      "Finetuning",
+      "LLM",
+      "Transformer"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-20-era-of-1bit-llms.pdf"
   },
@@ -123,7 +170,11 @@
     "date": "2024-03-06",
     "title": "The Good, The Bad, and Why: Unveiling Emotions in Generative AI",
     "presenter": "Hyeonseok Jeon",
-    "tags": ["HAI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-06-good-bad-why-emotions-in-ai.pdf"
   },
@@ -131,7 +182,10 @@
     "date": "2024-03-06",
     "title": "Sora (2024) & Genie (2024) & EMO (2024)",
     "presenter": "Kieun Park",
-    "tags": ["HAI", "VLM"],
+    "tags": [
+      "HAI",
+      "VLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-06-sora-genie-emo.pdf"
   },
@@ -139,7 +193,11 @@
     "date": "2024-02-28",
     "title": "\"Should I Follow the Human, or Follow the Robot?\" — Robots in Power Can Have More Influence Than Humans on Decision-Making",
     "presenter": "Kitae Kim",
-    "tags": ["HAI", "HCI", "LLM"],
+    "tags": [
+      "HAI",
+      "HCI",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-02-28-should-i-follow-the-robot.pdf"
   },
@@ -147,79 +205,117 @@
     "date": "2024-02-28",
     "title": "Large Language Models Understand and Can Be Enhanced by Emotional Stimuli",
     "presenter": "Hyeonseok Jeon",
-    "tags": ["HAI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-02-28-llm-emotional-stimuli.pdf"
   },
   {
-    "date": "2024-02-28",
+    "date": "2023-02-28",
     "title": "Exploring Collaboration Mechanisms For LLM Agents: A Social Psychology View (2023)",
     "presenter": "Kyusik Kim",
-    "tags": ["LLM", "Prompt Engineering"],
-    "semester": "2024 SS",
+    "tags": [
+      "LLM",
+      "Prompt Engineering"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-02-28-exploring-collaboration-mechanisms.pdf"
   },
   {
     "date": "2024-02-21",
     "title": "Human-Centered Planning",
     "presenter": "Jeongwoo Ryu",
-    "tags": ["HAI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-02-21-human-centered-planning.pdf"
   },
   {
-    "date": "2024-02-21",
+    "date": "2023-02-21",
     "title": "PaTAT: Human-AI Collaborative Qualitative Coding with Explainable Interactive Rule Synthesis (2023)",
     "presenter": "Hana Oh",
-    "tags": ["HCI", "LLM"],
-    "semester": "2024 SS",
+    "tags": [
+      "HCI",
+      "LLM"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-02-21-patat.pdf"
   },
   {
-    "date": "2024-02-21",
+    "date": "2023-02-21",
     "title": "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement (2023)",
     "presenter": "Hyungwoo Song",
-    "tags": ["HAI", "LLM", "Prompt Engineering", "Reasoning"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering",
+      "Reasoning"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-02-21-phenomenal-yet-puzzling.pdf"
   },
   {
-    "date": "2024-02-14",
+    "date": "2023-02-14",
     "title": "Large Language Models are In-Context Semantic Reasoners rather than Symbolic Reasoners (2023)",
     "presenter": "Seungbae Seo",
-    "tags": ["HAI", "LLM", "Reasoning"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "LLM",
+      "Reasoning"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-02-14-in-context-semantic-reasoners.pdf"
   },
   {
-    "date": "2024-02-14",
+    "date": "2023-02-14",
     "title": "Enhance Reasoning for LLM in the Game Werewolf (2023)",
     "presenter": "Minjeong Shin",
-    "tags": ["HAI", "LLM", "Prompt Engineering", "Reasoning"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering",
+      "Reasoning"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-02-14-enhance-reasoning-werewolf.pdf"
   },
   {
     "date": "2024-02-14",
     "title": "Corrective Retrieval Augmented Generation (2024)",
     "presenter": "Kieun Park",
-    "tags": ["HAI", "LLM"],
+    "tags": [
+      "HAI",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-02-14-corrective-rag.pdf"
   },
   {
-    "date": "2024-02-07",
+    "date": "2023-02-07",
     "title": "Measuring Creepiness of Voice Assistants (2023)",
     "presenter": "Kitae Kim",
-    "tags": ["HAI", "HCI"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "HCI"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-02-07-measuring-creepiness-voice-assistants.pdf"
   },
   {
     "date": "2024-02-07",
     "title": "Hate Speech Detection",
     "presenter": "Sangrok Song",
-    "tags": ["HCI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HCI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-02-07-hate-speech-detection.pdf"
   },
@@ -227,39 +323,60 @@
     "date": "2024-02-07",
     "title": "LLaMAC (2024)",
     "presenter": "Kieun Park",
-    "tags": ["HAI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-02-07-llamac.pdf"
   },
   {
-    "date": "2024-01-31",
+    "date": "2023-01-31",
     "title": "Cognitive Reframing of Negative Thoughts (2023)",
     "presenter": "Hyungwoo Song",
-    "tags": ["HAI", "HCI", "LLM", "Prompt Engineering"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "HCI",
+      "LLM",
+      "Prompt Engineering"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-01-31-cognitive-reframing.pdf"
   },
   {
-    "date": "2024-01-31",
+    "date": "2023-01-31",
     "title": "SPP (2023) and ChoiceMates (2023)",
     "presenter": "Kyusik Kim",
-    "tags": ["HAI", "HCI", "LLM", "Prompt Engineering"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "HCI",
+      "LLM",
+      "Prompt Engineering"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-01-31-spp-and-choicemates.pdf"
   },
   {
-    "date": "2024-01-17",
+    "date": "2023-01-17",
     "title": "life2vec (2023) and Alympics (2023)",
     "presenter": "Junghwan Kim",
-    "tags": ["HAI", "LLM", "Transformer"],
-    "semester": "2024 SS",
+    "tags": [
+      "HAI",
+      "LLM",
+      "Transformer"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-01-17-life2vec-and-alympics.pdf"
   },
   {
     "date": "2024-01-17",
     "title": "Solving Math Problems with AI",
     "presenter": "Dongseok Heo",
-    "tags": ["HAI", "LLM"],
+    "tags": [
+      "HAI",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-01-17-solving-math-problems-with-ai.pdf"
   },
@@ -267,7 +384,10 @@
     "date": "2024-01-10",
     "title": "Retrieval Augmented LM: Attempts to Improve Retrieval",
     "presenter": "Dongseok Heo",
-    "tags": ["Finetuning", "LLM"],
+    "tags": [
+      "Finetuning",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-01-10-retrieval-augmented-lm.pdf"
   },
@@ -275,7 +395,11 @@
     "date": "2024-01-10",
     "title": "Ghost in the Minecraft",
     "presenter": "Seungbae Seo",
-    "tags": ["HAI", "LLM", "Prompt Engineering"],
+    "tags": [
+      "HAI",
+      "LLM",
+      "Prompt Engineering"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-01-10-ghost-in-the-minecraft.pdf"
   },
@@ -283,16 +407,24 @@
     "date": "2024-01-03",
     "title": "Large Language Models with Long-Term Memory",
     "presenter": "Jeongwoo Ryu",
-    "tags": ["HAI", "LLM"],
+    "tags": [
+      "HAI",
+      "LLM"
+    ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-01-03-llm-long-term-memory.pdf"
   },
   {
-    "date": "2024-01-03",
+    "date": "2023-01-03",
     "title": "CogAgent (2023) and CORGI (2023)",
     "presenter": "Junghwan Kim",
-    "tags": ["Finetuning", "HAI", "LLM", "VLM"],
-    "semester": "2024 SS",
+    "tags": [
+      "Finetuning",
+      "HAI",
+      "LLM",
+      "VLM"
+    ],
+    "semester": "2023 WS",
     "slides": "/seminars/2024-01-03-cogagent-and-corgi.pdf"
   }
 ]

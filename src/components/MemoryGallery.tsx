@@ -89,7 +89,7 @@ function Lightbox({
           alt={`${memory.name} photo ${current + 1}`}
           width={1200}
           height={800}
-          className="object-contain max-h-[80vh] w-full rounded-lg"
+          className="object-contain max-h-[80vh] w-full"
           unoptimized
         />
       </div>
@@ -149,7 +149,7 @@ export default function MemoryGallery({ memories }: { memories: MemoryEvent[] })
                 return (
                   <div
                     key={i}
-                    className="border border-slate-100 rounded-xl overflow-hidden hover:border-slate-200 hover:shadow-md transition-all group cursor-pointer"
+                    className="border border-slate-100 overflow-hidden hover:border-slate-200 hover:shadow-md transition-all group cursor-pointer"
                     onClick={() =>
                       coverSrc && setLightbox({ memory, index: 0 })
                     }
@@ -160,7 +160,7 @@ export default function MemoryGallery({ memories }: { memories: MemoryEvent[] })
                           src={coverSrc}
                           alt={memory.name}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="object-cover"
                           unoptimized
                         />
                       ) : (

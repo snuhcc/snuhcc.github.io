@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import membersData from "@/data/members.json";
+
+export const metadata: Metadata = {
+  title: "People",
+  description:
+    "Meet the members of HCC Lab — professors, PhD students, and master's students at Seoul National University working on HCI, AI, and social computing.",
+  openGraph: { title: "People | HCC Lab", description: "Meet the HCC Lab team at Seoul National University." },
+};
 
 type CurrentMember = {
   name: string;
@@ -20,19 +28,19 @@ type AlumniMember = {
 const titleOrder = ["Professor", "Ph.D. Student", "Master's Student"];
 
 function MemberCard({ member }: { member: CurrentMember }) {
-  const hasUrl = !!member.url;
+  const isLinkedIn = member.url?.includes("linkedin.com");
 
-  const inner = (
-    <div className="flex flex-col items-center text-center gap-3 group/card">
+  return (
+    <div className="flex flex-col items-center text-center gap-3">
       {/* Photo */}
-      <div className="w-44 h-44 rounded-full overflow-hidden bg-slate-100 shrink-0 ring-2 ring-transparent group-hover/card:ring-[#0B3D91]/30 transition-all duration-300">
+      <div className="w-44 h-44 overflow-hidden bg-slate-100 shrink-0">
         {member.photo ? (
           <Image
             src={member.photo}
             alt={member.name}
             width={176}
             height={176}
-            className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-slate-400 text-3xl font-semibold">
@@ -43,24 +51,45 @@ function MemberCard({ member }: { member: CurrentMember }) {
 
       {/* Info */}
       <div>
-        <p
-          className={`text-base font-semibold mb-0.5 transition-colors duration-200 ${
-            hasUrl
-              ? "text-slate-900 group-hover/card:text-[#0B3D91] underline underline-offset-2 decoration-slate-200 group-hover/card:decoration-[#0B3D91]/40"
-              : "text-slate-900"
-          }`}
-        >
-          {member.name}
-        </p>
-        <p className="text-xs text-slate-500">{member.bio}</p>
+        <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
+        <div className="flex items-center justify-center gap-3">
+          {member.email && (
+            <a
+              href={`mailto:${member.email}`}
+              className="text-slate-400 hover:text-[#0B3D91] transition-colors"
+              title={member.email}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+          )}
+          {member.url && (
+            <a
+              href={member.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-[#0B3D91] transition-colors"
+              title={member.url}
+            >
+              {isLinkedIn ? (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              )}
+            </a>
+          )}
+        </div>
       </div>
     </div>
-  );
-
-  return hasUrl ? (
-    <a href={member.url!} target="_blank" rel="noopener noreferrer">{inner}</a>
-  ) : (
-    <div>{inner}</div>
   );
 }
 

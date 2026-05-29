@@ -33,7 +33,14 @@ async function fetchAllWorks() {
 
 function formatWork(work) {
   const venue =
-    work.primary_location?.source?.display_name ?? null;
+    work.primary_location?.source?.display_name ??
+    work.primary_location?.raw_source_name ??
+    null;
+
+  const type =
+    work.primary_location?.raw_type ??
+    work.type ??
+    null;
 
   const authors = work.authorships
     .map((a) => a.author?.display_name)
@@ -48,7 +55,7 @@ function formatWork(work) {
     doi: work.doi ?? null,
     url: work.doi ? `https://doi.org/${work.doi.replace("https://doi.org/", "")}` : work.id,
     openAccess: work.open_access?.is_oa ?? false,
-    type: work.type,
+    type,
   };
 }
 

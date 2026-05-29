@@ -30,20 +30,24 @@ function getAreaPapers(areaKey: string): Pub[] {
 }
 
 const researchAreas = [
-  { key: "human-ai",         title: "Human-AI Interaction",       short: "HAI"    },
-  { key: "healthcare",       title: "Healthcare & Wellbeing",     short: "Health" },
-  { key: "social-media",     title: "Social & Media Computing",   short: "SMC"    },
-  { key: "accessibility",    title: "Accessible & Inclusive Design", short: "AID" },
-  { key: "data-intelligence",title: "Data Intelligence",          short: "DI"     },
+  { key: "human-ai",          title: "Human-AI Interaction",        short: "HAI"    },
+  { key: "healthcare",        title: "Healthcare & Wellbeing",      short: "Health" },
+  { key: "social-media",      title: "Social & Media Computing",    short: "SMC"    },
+  { key: "accessibility",     title: "Accessible & Inclusive Design", short: "AID" },
+  { key: "data-intelligence", title: "Data Intelligence",           short: "DI"     },
+];
+
+const videos: { id: string; title: string; date: string }[] = [
+  { id: "EUK9TmHMCk4", title: "Active Aging HAI Center Seminar", date: "Dec 1, 2025" },
+  { id: "rv_z1fRnnmY",  title: "LegisFlow: Enhancing Korean Legal Research with Temporal-Aware LLM Interfaces", date: "Oct 1, 2025" },
+  { id: "no2ATMqeN2k", title: "Human Factors in Technology", date: "Jun 7, 2021" },
 ];
 
 export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section
-        className="relative min-h-[55vh] flex items-center overflow-hidden bg-[#0B3D91]"
-      >
+      <section className="relative min-h-[55vh] flex items-center overflow-hidden bg-[#0B3D91]">
         <ShaderHero />
         <div className="absolute inset-0 bg-black/20 z-[1]" />
         <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-16">
@@ -106,37 +110,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section className="border-t border-slate-100 py-20">
+      {/* Lab on Media */}
+      <section className="border-t border-slate-200 py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">Contact</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">
-                Gwanak Campus
-              </h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                2nd floor, 18-dong<br />
-                Gwanak-ro 1, Gwanak-gu<br />
-                Seoul, Republic of Korea (08826)
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">
-                Gwanggyo Campus
-              </h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                Gwanggyo-ro 145, Yeongtong-gu<br />
-                Suwon-si, Gyeonggi-do<br />
-                Republic of Korea (16229)
-              </p>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-slate-100 text-sm text-slate-500">
-            <p>
-              <span className="font-medium text-slate-700">Prof. Bongwon Suh</span>
-              {" "}— bongwon@snu.ac.kr · 02-880-9364
-            </p>
+          <h2 className="text-2xl font-bold text-slate-900 mb-10">HCC Lab on Media</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {videos.map((v) => (
+              <a
+                key={v.id}
+                href={`https://www.youtube.com/watch?v=${v.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="relative aspect-video bg-slate-100 overflow-hidden mb-3">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
+                    alt={v.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-[#0B3D91]/0 group-hover:bg-[#0B3D91]/20 transition-colors duration-300" />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="w-12 h-12 bg-black/60 rounded-full flex items-center justify-center group-hover:bg-[#0B3D91]/80 transition-colors">
+                      <svg className="w-5 h-5 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm font-medium text-slate-800 group-hover:text-[#0B3D91] transition-colors leading-snug">
+                  {v.title}
+                </p>
+                {v.date && <p className="text-xs text-slate-400 mt-1">{v.date}</p>}
+              </a>
+            ))}
           </div>
         </div>
       </section>

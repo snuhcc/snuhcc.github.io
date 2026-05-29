@@ -82,6 +82,15 @@
       "url": "https://hyungwoosong.notion.site"
     },
     {
+      "name": "Minjeong Shin",
+      "email": "shinmj1024@snu.ac.kr",
+      "title": "Master's Student",
+      "fields": ["HCI", "UX"],
+      "photo": "/images/people/minjeong-shin.jpeg",
+      "bio": "Physical AI",
+      "url": "https://queriamin.github.io/"
+    },
+    {
       "name": "Jung Lee",
       "email": "leejungp2@snu.ac.kr",
       "title": "Master's Student",
@@ -100,15 +109,6 @@
       "url": "https://hanaisreal.github.io/"
     },
     {
-      "name": "Minjeong Shin",
-      "email": "shinmj1024@snu.ac.kr",
-      "title": "Master's Student",
-      "fields": ["HCI", "UX"],
-      "photo": "/images/people/minjeong-shin.jpeg",
-      "bio": "Physical AI",
-      "url": "https://queriamin.github.io/"
-    },
-    {
       "name": "Jueun Lee",
       "email": "audreylee@snu.ac.kr",
       "title": "Master's Student",
@@ -124,6 +124,15 @@
       "fields": ["HCI", "LLM", "Embodied AI"],
       "photo": null,
       "bio": "Embodied AI",
+      "url": null
+    },
+    {
+      "name": "Junyoung Jeon",
+      "email": null,
+      "title": "Master's Student",
+      "fields": [],
+      "photo": null,
+      "bio": "",
       "url": null
     },
     {
