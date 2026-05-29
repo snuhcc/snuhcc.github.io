@@ -200,28 +200,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7136534840",
-      "title": "\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Patient Journeys to Deriving Design Implications for North Korean Defectors' Adaptation",
-      "year": 2026,
-      "venue": "arXiv (Cornell University)",
-      "authors": [
-        "Hyungwoo Song",
-        "Jeongha Kim",
-        "Minju Kim",
-        "Duhyung Kwak",
-        "Minjeong Shin",
-        "Bongwon Suh",
-        "Hyunggu Jung"
-      ],
-      "doi": "https://doi.org/10.48550/arxiv.2603.12632",
-      "url": "https://doi.org/10.48550/arxiv.2603.12632",
-      "openAccess": true,
-      "type": "article",
-      "areas": [
-        "healthcare"
-      ]
-    },
-    {
       "id": "https://openalex.org/W7133309924",
       "title": "CodeVoyager: Integrating Interactive Visual Aids with LLMs for Code Comprehension",
       "year": 2026,
@@ -886,25 +864,6 @@
       "type": "proceedings-article",
       "areas": [
         "social-media"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W4280605301",
-      "title": "A Labeling Task Design for Supporting Algorithmic Needs: Facilitating Worker Diversity and Reducing AI Bias",
-      "year": 2022,
-      "venue": "arXiv (Cornell University)",
-      "authors": [
-        "Jaeyoun You",
-        "Daemin Park",
-        "Joo-yeong Song",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.48550/arxiv.2205.08076",
-      "url": "https://doi.org/10.48550/arxiv.2205.08076",
-      "openAccess": true,
-      "type": "text",
-      "areas": [
-        "accessibility"
       ]
     },
     {

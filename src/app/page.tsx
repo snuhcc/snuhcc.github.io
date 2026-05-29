@@ -13,11 +13,19 @@ type Pub = {
 };
 
 function shortTitle(title: string): string {
-  const colon = title.indexOf(": ");
-  if (colon > 0 && colon <= 25 && !title.startsWith('"') && !title.startsWith("'")) {
-    return title.substring(0, colon);
+  // Strip uninformative prefixes like "Abstract 5053: " or "Abstract: "
+  const stripped = title.replace(/^abstract\s*[\d]*\s*:\s*/i, "");
+
+  const colon = stripped.indexOf(": ");
+  if (
+    colon > 0 &&
+    colon <= 25 &&
+    !stripped.startsWith('"') &&
+    !stripped.startsWith("'")
+  ) {
+    return stripped.substring(0, colon);
   }
-  const clean = title.replace(/^"[^"]*":\s*/, "").replace(/^'[^']*':\s*/, "");
+  const clean = stripped.replace(/^"[^"]*":\s*/, "").replace(/^'[^']*':\s*/, "");
   const words = clean.split(/\s+/).filter((w) => w.length > 2);
   return words.slice(0, 3).join(" ");
 }
