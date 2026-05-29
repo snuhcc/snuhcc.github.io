@@ -222,28 +222,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W7138824356",
-      "title": "\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Patient Journeys to Deriving Design Implications for North Korean Defectors' Adaptation",
-      "year": 2026,
-      "venue": "arXiv (Cornell University)",
-      "authors": [
-        "Hyungwoo Song",
-        "Jeongha Kim",
-        "Minju Kim",
-        "Duhyung Kwak",
-        "Minjeong Shin",
-        "Bongwon Suh",
-        "Hyunggu Jung"
-      ],
-      "doi": null,
-      "url": "https://openalex.org/W7138824356",
-      "openAccess": true,
-      "type": "article",
-      "areas": [
-        "healthcare"
-      ]
-    },
-    {
       "id": "https://openalex.org/W7133309924",
       "title": "CodeVoyager: Integrating Interactive Visual Aids with LLMs for Code Comprehension",
       "year": 2026,
@@ -538,28 +516,6 @@
       "type": "book-chapter",
       "areas": [
         "social-media"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W4412944487",
-      "title": "DICE-BENCH: Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues",
-      "year": 2025,
-      "venue": null,
-      "authors": [
-        "Kyochul Jang",
-        "Donghyeon Lee",
-        "Kyusik Kim",
-        "Dongseok Heo",
-        "Taewhoo Lee",
-        "Woojeong Kim",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1375",
-      "url": "https://doi.org/10.18653/v1/2025.findings-acl.1375",
-      "openAccess": true,
-      "type": "article",
-      "areas": [
-        "human-ai"
       ]
     },
     {
@@ -1657,23 +1613,6 @@
       "areas": []
     },
     {
-      "id": "https://openalex.org/W2346401803",
-      "title": "Exploring the Front Touch Interface for Virtual Reality Headsets",
-      "year": 2016,
-      "venue": null,
-      "authors": [
-        "Jihyun Lee",
-        "Byung Moon Kim",
-        "Bongwon Suh",
-        "Eunyee Koh"
-      ],
-      "doi": "https://doi.org/10.1145/2851581.2892344",
-      "url": "https://doi.org/10.1145/2851581.2892344",
-      "openAccess": false,
-      "type": "article",
-      "areas": []
-    },
-    {
       "id": "https://openalex.org/W2346764847",
       "title": "Understanding Participatory Hashtag Practices on Instagram",
       "year": 2016,
@@ -1980,62 +1919,6 @@
       "url": "https://doi.org/10.6084/m9.figshare.1618823.v2",
       "openAccess": true,
       "type": "article",
-      "areas": [
-        "accessibility"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W4394136231",
-      "title": "N-polar Visualization: A Radial Layout with Multiple Interactive Anchors (PacificVis 2015)",
-      "year": 2015,
-      "venue": "Figshare",
-      "authors": [
-        "Taeil Jeon",
-        "Ji‐Hyun Lee",
-        "Wonjong Rhee",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.6084/m9.figshare.1618823",
-      "url": "https://doi.org/10.6084/m9.figshare.1618823",
-      "openAccess": true,
-      "type": "dataset",
-      "areas": [
-        "accessibility"
-      ]
-    },
-    {
-      "id": "https://openalex.org/W4394323087",
-      "title": "Mapping Visual Attributes of Logos: A Case Study of Parallel Coordinate Plots (EuroVis 2015)",
-      "year": 2015,
-      "venue": "Figshare",
-      "authors": [
-        "Taeil Jeon",
-        "Wonho Lee",
-        "Ji-Hyun Lee",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.6084/m9.figshare.1618824",
-      "url": "https://doi.org/10.6084/m9.figshare.1618824",
-      "openAccess": true,
-      "type": "dataset",
-      "areas": []
-    },
-    {
-      "id": "https://openalex.org/W4394452146",
-      "title": "Radial History Flow: Direct Visualization of Author Dynamics in Wikipedia (EuroVis 2015)",
-      "year": 2015,
-      "venue": "Figshare",
-      "authors": [
-        "Taeil Jeon",
-        "Ji‐Hyun Lee",
-        "Wonho Lee",
-        "Wonjong Rhee",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.6084/m9.figshare.1618820",
-      "url": "https://doi.org/10.6084/m9.figshare.1618820",
-      "openAccess": true,
-      "type": "dataset",
       "areas": [
         "accessibility"
       ]
@@ -2633,23 +2516,6 @@
       ],
       "doi": "https://doi.org/10.1145/503376.503422",
       "url": "https://doi.org/10.1145/503376.503422",
-      "openAccess": false,
-      "type": "article",
-      "areas": []
-    },
-    {
-      "id": "https://openalex.org/W4231784179",
-      "title": "Popout prism",
-      "year": 2002,
-      "venue": null,
-      "authors": [
-        "Bongwon Suh",
-        "Allison Woodruff",
-        "Ruth Rosenholtz",
-        "Alyssa Glass"
-      ],
-      "doi": "https://doi.org/10.1145/503421.503422",
-      "url": "https://doi.org/10.1145/503421.503422",
       "openAccess": false,
       "type": "article",
       "areas": []
