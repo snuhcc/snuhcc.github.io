@@ -3,7 +3,6 @@ import MemoryGallery from "@/components/MemoryGallery";
 const memories = [
   { name: "CHI 2026 @ Barcelona",      year: 2026, category: "Conference", folder: "2026-spain-chi",           photos: ["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg", "photo5.jpg", "photo6.jpg", "photo7.jpg"] },
   { name: "Teachers' Day",             year: 2026, category: "Lab Event",  folder: "2026-teachers-day",        photos: ["photo1.jpg", "photo2.jpg"] },
-  { name: "May Dining",                year: 2026, category: "Lab Life",   folder: "2026-may-dining",          photos: ["photo1.jpg"] },
   { name: "CHI 2025 @ Yokohama",       year: 2025, category: "Conference", folder: "2025-chi-yokohama",        photos: ["photo1.jpeg", "photo2.jpeg", "photo3.jpeg"] },
   { name: "Teachers' Day",             year: 2025, category: "Lab Event",  folder: "2025-teachers-day",        photos: ["photo1.jpeg"] },
   { name: "Year-end Party",            year: 2024, category: "Lab Event",  folder: "2024-year-end-party",      photos: ["photo1.jpeg", "photo2.jpeg"] },
@@ -12,7 +11,7 @@ const memories = [
   { name: "CHI 2024 @ Honolulu",       year: 2024, category: "Conference", folder: "2024-chi-hawaii",          photos: [] },
   { name: "HCI Korea — Session",       year: 2024, category: "Conference", folder: "2024-hci-korea-session",   photos: ["photo1.jpeg", "photo2.jpeg", "photo3.jpeg"] },
   { name: "HCI Korea",                 year: 2024, category: "Conference", folder: "2024-hci-korea",           photos: ["photo1.jpeg"] },
-  { name: "Professor's Birthday",      year: 2024, category: "Lab Event",  folder: "2024-professors-birthday", photos: ["photo1.jpeg"] },
+  { name: "Professor's Birthday",      year: 2024, category: "Lab Event",  folder: "2024-professors-birthday", photos: ["photo1.jpg"] },
   { name: "SNU HCI Group Day",         year: 2024, category: "Lab Event",  folder: "2024-snu-hci-group-day",   photos: ["photo1.png", "photo2.png"] },
   { name: "SNU–CMU Joint Workshop",    year: 2024, category: "Research",   folder: "2024-snu-cmu-workshop",    photos: ["photo1.png"] },
   { name: "Celebration",               year: 2024, category: "Lab Event",  folder: "2024-celebration",         photos: ["photo1.jpeg"] },

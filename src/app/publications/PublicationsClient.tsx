@@ -119,11 +119,79 @@ const AREAS: Record<string, string> = {
   "data-intelligence": "Data Intelligence",
 };
 
+const CUTOFF_YEAR = 2013;
+
+function PubCard({
+  pub,
+  activeArea,
+  setArea,
+}: {
+  pub: Publication;
+  activeArea: string | null;
+  setArea: (k: string | null) => void;
+}) {
+  return (
+    <div className="group py-1">
+      {venueLabel(pub.venue, pub.year, pub.type) && (
+        <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
+          {venueLabel(pub.venue, pub.year, pub.type)}
+        </p>
+      )}
+      <a
+        href={pub.doi ?? pub.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ fontFamily: "var(--font-sans)" }}
+        className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
+      >
+        {pub.title}
+      </a>
+      <p className="text-sm text-slate-500 mb-1">{pub.authors.join(", ")}</p>
+      {pub.venue && <p className="text-xs text-slate-400 mb-2">{pub.venue}</p>}
+      <div className="flex flex-wrap items-center gap-2 mt-1.5">
+        {pub.doi && (
+          <a
+            href={pub.doi}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+          >
+            DOI
+          </a>
+        )}
+        {pub.pdf && (
+          <a
+            href={pub.pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+          >
+            PDF
+          </a>
+        )}
+        {pub.areas && pub.areas.length > 0 && pub.areas.map((a) => (
+          <button
+            key={a}
+            onClick={() => setArea(activeArea === a ? null : a)}
+            className={`text-xs px-2.5 py-0.5 rounded-none border transition-colors ${
+              activeArea === a
+                ? "border-[#2563eb]/40 text-[#2563eb]"
+                : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
+            }`}
+          >
+            {AREAS[a] ?? a}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function PublicationsClient() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const activeArea = searchParams.get("area");
-  const [visibleYear, setVisibleYear] = useState<number | null>(null);
+  const [visibleYear, setVisibleYear] = useState<number | "older" | null>(null);
 
   const allPubs: Publication[] = publicationsData.publications;
   const filtered = activeArea
@@ -137,24 +205,37 @@ export default function PublicationsClient() {
   }, {});
 
   const years = Object.keys(byYear).map(Number).sort((a, b) => b - a);
+  const recentYears = years.filter((y) => y > CUTOFF_YEAR);
+  const olderPubs = years
+    .filter((y) => y <= CUTOFF_YEAR)
+    .flatMap((y) => byYear[y].map((p) => ({ ...p, _year: y })))
+    .sort((a, b) => b._year - a._year);
 
   useEffect(() => {
-    const currentYears = Object.keys(byYear).map(Number).sort((a, b) => b - a);
-    if (currentYears.length === 0) return;
+    if (recentYears.length === 0) return;
 
     const observers: IntersectionObserver[] = [];
-    currentYears.forEach((year) => {
+    recentYears.forEach((year) => {
       const el = document.getElementById(`year-${year}`);
       if (!el) return;
       const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setVisibleYear(year);
-        },
+        ([entry]) => { if (entry.isIntersecting) setVisibleYear(year); },
         { rootMargin: "-64px 0px -72% 0px", threshold: 0 }
       );
       obs.observe(el);
       observers.push(obs);
     });
+    if (olderPubs.length > 0) {
+      const el = document.getElementById("year-older");
+      if (el) {
+        const obs = new IntersectionObserver(
+          ([entry]) => { if (entry.isIntersecting) setVisibleYear("older"); },
+          { rootMargin: "-64px 0px -72% 0px", threshold: 0 }
+        );
+        obs.observe(el);
+        observers.push(obs);
+      }
+    }
     return () => observers.forEach((o) => o.disconnect());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeArea]);
@@ -166,8 +247,9 @@ export default function PublicationsClient() {
     router.push(`/publications?${params.toString()}`);
   }
 
-  function scrollToYear(year: number) {
-    const el = document.getElementById(`year-${year}`);
+  function scrollToYear(year: number | "older") {
+    const id = year === "older" ? "year-older" : `year-${year}`;
+    const el = document.getElementById(id);
     if (!el) return;
     const top = el.getBoundingClientRect().top + window.scrollY - 80;
     window.scrollTo({ top, behavior: "smooth" });
@@ -214,80 +296,37 @@ export default function PublicationsClient() {
       <div className="flex gap-10">
         {/* Main publications list */}
         <div className="flex-1 min-w-0 space-y-8">
-          {years.map((year) => (
+          {recentYears.map((year) => (
             <section key={year} id={`year-${year}`}>
               <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
                 {year}
               </h2>
               <div className="space-y-3">
                 {byYear[year].map((pub) => (
-                  <div key={pub.id} className="group py-1">
-                    {venueLabel(pub.venue, pub.year, pub.type) && (
-                      <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
-                        {venueLabel(pub.venue, pub.year, pub.type)}
-                      </p>
-                    )}
-                    <a
-                      href={pub.doi ?? pub.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ fontFamily: "var(--font-sans)" }}
-                      className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
-                    >
-                      {pub.title}
-                    </a>
-                    <p className="text-sm text-slate-500 mb-1">
-                      {pub.authors.join(", ")}
-                    </p>
-                    {pub.venue && (
-                      <p className="text-xs text-slate-400 mb-2">{pub.venue}</p>
-                    )}
-                    <div className="flex flex-wrap items-center gap-2 mt-1.5">
-                      {pub.doi && (
-                        <a
-                          href={pub.doi}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
-                        >
-                          DOI
-                        </a>
-                      )}
-                      {pub.pdf && (
-                        <a
-                          href={pub.pdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
-                        >
-                          PDF
-                        </a>
-                      )}
-                      {pub.areas && pub.areas.length > 0 && pub.areas.map((a) => (
-                        <button
-                          key={a}
-                          onClick={() => setArea(activeArea === a ? null : a)}
-                          className={`text-xs px-2.5 py-0.5 rounded-none border transition-colors ${
-                            activeArea === a
-                              ? "border-[#2563eb]/40 text-[#2563eb]"
-                              : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
-                          }`}
-                        >
-                          {AREAS[a] ?? a}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  <PubCard key={pub.id} pub={pub} activeArea={activeArea} setArea={setArea} />
                 ))}
               </div>
             </section>
           ))}
+
+          {olderPubs.length > 0 && (
+            <section id="year-older">
+              <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+                2013 &amp; Earlier
+              </h2>
+              <div className="space-y-3">
+                {olderPubs.map((pub) => (
+                  <PubCard key={pub.id} pub={pub} activeArea={activeArea} setArea={setArea} />
+                ))}
+              </div>
+            </section>
+          )}
         </div>
 
         {/* Year TOC sidebar */}
         <aside className="hidden lg:block w-16 shrink-0">
           <div className="sticky top-24 flex flex-col items-end gap-2">
-            {years.map((year) => (
+            {recentYears.map((year) => (
               <button
                 key={year}
                 onClick={() => scrollToYear(year)}
@@ -300,6 +339,18 @@ export default function PublicationsClient() {
                 {year}
               </button>
             ))}
+            {olderPubs.length > 0 && (
+              <button
+                onClick={() => scrollToYear("older")}
+                className={`text-sm transition-colors ${
+                  visibleYear === "older"
+                    ? "text-[#2563eb] font-semibold"
+                    : "text-slate-400 hover:text-[#2563eb] hover:font-semibold"
+                }`}
+              >
+                2013+
+              </button>
+            )}
           </div>
         </aside>
       </div>

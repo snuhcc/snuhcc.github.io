@@ -17,6 +17,7 @@ export default function ShaderHero() {
       style={{ position: "absolute", inset: 0, width: "100%", height: "100%", transform: "scale(1.5)", transformOrigin: "center center" }}
       pixelDensity={1}
       fov={45}
+      lazyLoad={false}
     >
       <ShaderGradient
         type="waterPlane"

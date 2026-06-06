@@ -1,0 +1,86 @@
+{
+  "news": [
+    {
+      "id": "grad-jeongwoo-phd-2026",
+      "date": "2026-05",
+      "type": "graduation",
+      "text": "Congrats Dr. Ryu! Jeongwoo Ryu successfully defended his PhD dissertation."
+    },
+    {
+      "id": "chi2026-papers",
+      "date": "2026-04",
+      "type": "paper",
+      "text": "2 papers and 5 posters accepted at CHI 2026. See you in Barcelona!",
+      "url": "https://chi2026.acm.org/"
+    },
+    {
+      "id": "iui2026-papers",
+      "date": "2026-03",
+      "type": "paper",
+      "text": "1 paper accepted at IUI 2026!",
+      "url": "https://iui.acm.org/2026/"
+    },
+    {
+      "id": "grad-ms-feb-2026",
+      "date": "2026-02",
+      "type": "graduation",
+      "text": "Hyeonseok Jeon and Yeonjoon Kim wrapped up their Master's degrees. Congrats!"
+    },
+    {
+      "id": "assets2025-papers",
+      "date": "2025-10",
+      "type": "paper",
+      "text": "1 paper accepted at ASSETS 2025!",
+      "url": "https://assets25.sigaccess.org/"
+    },
+    {
+      "id": "acl2025-papers",
+      "date": "2025-08",
+      "type": "paper",
+      "text": "1 paper accepted at Findings of ACL 2025!",
+      "url": "https://2025.aclweb.org/"
+    },
+    {
+      "id": "sigir2025-papers",
+      "date": "2025-07",
+      "type": "paper",
+      "text": "1 paper accepted at SIGIR 2025!",
+      "url": "https://sigir2025.dei.unipd.it/"
+    },
+    {
+      "id": "chi2025-papers",
+      "date": "2025-04",
+      "type": "paper",
+      "text": "2 papers and 2 posters accepted at CHI 2025!",
+      "url": "https://chi2025.acm.org/"
+    },
+    {
+      "id": "cikm2024-papers",
+      "date": "2024-10",
+      "type": "paper",
+      "text": "1 paper accepted at CIKM 2024!",
+      "url": "https://cikm2024.org/"
+    },
+    {
+      "id": "sigir2024-papers",
+      "date": "2024-07",
+      "type": "paper",
+      "text": "1 paper accepted at SIGIR 2024!",
+      "url": "https://sigir-2024.org/"
+    },
+    {
+      "id": "icwsm2024-papers",
+      "date": "2024-06",
+      "type": "paper",
+      "text": "1 paper accepted at ICWSM 2024!",
+      "url": "https://www.icwsm.org/2024/"
+    },
+    {
+      "id": "chi2024-papers",
+      "date": "2024-05",
+      "type": "paper",
+      "text": "2 papers and 1 poster accepted at CHI 2024. See you in Honolulu!",
+      "url": "https://chi2024.acm.org/"
+    }
+  ]
+}

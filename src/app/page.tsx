@@ -1,5 +1,6 @@
 import Link from "next/link";
 import publicationsData from "@/data/publications.json";
+import newsData from "@/data/news.json";
 import ShaderHero from "@/components/ShaderHero";
 
 const FIVE_YEARS_AGO = new Date().getFullYear() - 5;
@@ -45,11 +46,13 @@ const researchAreas = [
   { key: "data-intelligence", title: "Data Intelligence",           short: "DI"     },
 ];
 
-const videos: { id: string; title: string; date: string }[] = [
-  { id: "EUK9TmHMCk4", title: "Active Aging HAI Center Seminar", date: "Dec 1, 2025" },
-  { id: "rv_z1fRnnmY",  title: "LegisFlow: Enhancing Korean Legal Research with Temporal-Aware LLM Interfaces", date: "Oct 1, 2025" },
-  { id: "no2ATMqeN2k", title: "Human Factors in Technology", date: "Jun 7, 2021" },
-];
+const NEWS_TYPE_LABELS: Record<string, string> = {
+  paper:      "Paper",
+  graduation: "Graduation",
+  award:      "Award",
+  talk:       "Talk",
+  press:      "Press",
+};
 
 export default function Home() {
   return (
@@ -118,41 +121,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lab on Media */}
+      {/* News */}
       <section className="border-t border-slate-200 py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 mb-10">HCC Lab on Media</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {videos.map((v) => (
-              <a
-                key={v.id}
-                href={`https://www.youtube.com/watch?v=${v.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <div className="relative aspect-video bg-slate-100 overflow-hidden mb-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
-                    alt={v.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-[#0B3D91]/0 group-hover:bg-[#0B3D91]/20 transition-colors duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-12 h-12 bg-black/60 rounded-full flex items-center justify-center group-hover:bg-[#0B3D91]/80 transition-colors">
-                      <svg className="w-5 h-5 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-sm font-medium text-slate-800 group-hover:text-[#0B3D91] transition-colors leading-snug">
-                  {v.title}
-                </p>
-                {v.date && <p className="text-xs text-slate-400 mt-1">{v.date}</p>}
-              </a>
-            ))}
+          <div className="flex items-baseline justify-between mb-10">
+            <h2 className="text-2xl font-bold text-slate-900">News</h2>
+            <Link
+              href="/news"
+              className="text-sm text-slate-400 hover:text-[#0B3D91] transition-colors"
+            >
+              all news →
+            </Link>
+          </div>
+          <ul className="divide-y divide-slate-100">
+            {(newsData.news as { id: string; date: string; type: string; text: string; url?: string }[])
+              .sort((a, b) => b.date.localeCompare(a.date))
+              .slice(0, 3)
+              .map((item) => (
+                <li key={item.id} className="py-4 flex items-start gap-6">
+                  <span className="shrink-0 w-20 text-xs text-slate-400 pt-0.5 tabular-nums">{item.date}</span>
+                  <span className="shrink-0 text-xs font-semibold uppercase tracking-wide text-[#0B3D91] w-24">
+                    {NEWS_TYPE_LABELS[item.type] ?? item.type}
+                  </span>
+                  <span className="text-sm text-slate-700 leading-relaxed">
+                    {item.url ? (
+                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-[#0B3D91] hover:underline underline-offset-2">
+                        {item.text}
+                      </a>
+                    ) : (
+                      item.text
+                    )}
+                  </span>
+                </li>
+              ))}
+          </ul>
+          <div className="mt-6 flex justify-end">
+            <Link
+              href="/news"
+              className="w-8 h-8 flex items-center justify-center border border-slate-200 text-slate-400 hover:border-[#0B3D91] hover:text-[#0B3D91] transition-colors text-lg leading-none"
+            >
+              +
+            </Link>
           </div>
         </div>
       </section>
