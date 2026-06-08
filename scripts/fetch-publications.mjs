@@ -1,4 +1,4 @@
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -70,9 +70,18 @@ async function main() {
   const __dirname = dirname(fileURLToPath(import.meta.url));
   const outPath = join(__dirname, "../src/data/publications.json");
 
+  // Preserve manually-curated fields (e.g. "areas") that OpenAlex doesn't provide,
+  // so re-syncing doesn't clobber existing categorization.
+  const existing = JSON.parse(readFileSync(outPath, "utf-8"));
+  const existingById = new Map(existing.publications.map((p) => [p.id, p]));
+  const merged = formatted.map((pub) => {
+    const prev = existingById.get(pub.id);
+    return prev?.areas ? { ...pub, areas: prev.areas } : pub;
+  });
+
   writeFileSync(
     outPath,
-    JSON.stringify({ updatedAt: new Date().toISOString(), publications: formatted }, null, 2)
+    JSON.stringify({ updatedAt: new Date().toISOString(), publications: merged }, null, 2)
   );
 
   console.log(`Saved to ${outPath}`);

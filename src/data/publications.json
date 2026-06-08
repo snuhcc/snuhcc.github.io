@@ -18,7 +18,10 @@
       "doi": "https://doi.org/10.1145/3772318.3790752",
       "url": "https://doi.org/10.1145/3772318.3790752",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W7153991775",
@@ -37,7 +40,10 @@
       "doi": "https://doi.org/10.1145/3772318.3791932",
       "url": "https://doi.org/10.1145/3772318.3791932",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W7153709259",
@@ -53,7 +59,10 @@
       "doi": "https://doi.org/10.1145/3772363.3798512",
       "url": "https://doi.org/10.1145/3772363.3798512",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W7153788075",
@@ -70,7 +79,10 @@
       "doi": "https://doi.org/10.1145/3772363.3798788",
       "url": "https://doi.org/10.1145/3772363.3798788",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W7153845321",
@@ -87,7 +99,11 @@
       "doi": "https://doi.org/10.1145/3772363.3798494",
       "url": "https://doi.org/10.1145/3772363.3798494",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W7153874688",
@@ -104,7 +120,10 @@
       "doi": "https://doi.org/10.1145/3772363.3798873",
       "url": "https://doi.org/10.1145/3772363.3798873",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W7153894086",
@@ -121,7 +140,12 @@
       "doi": "https://doi.org/10.1145/3772363.3798470",
       "url": "https://doi.org/10.1145/3772363.3798470",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "healthcare",
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W7151806853",
@@ -144,7 +168,11 @@
       "doi": "https://doi.org/10.2196/preprints.96501",
       "url": "https://doi.org/10.2196/preprints.96501",
       "openAccess": true,
-      "type": "posted-content"
+      "type": "posted-content",
+      "areas": [
+        "human-ai",
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W7148750382",
@@ -164,7 +192,12 @@
       "doi": "https://doi.org/10.1158/1538-7445.am2026-5053",
       "url": "https://doi.org/10.1158/1538-7445.am2026-5053",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare",
+        "accessibility",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W7136534840",
@@ -219,7 +252,11 @@
       "doi": "https://doi.org/10.1145/3742413.3789057",
       "url": "https://doi.org/10.1145/3742413.3789057",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4415444971",
@@ -236,7 +273,11 @@
       "doi": "https://doi.org/10.1145/3663547.3759732",
       "url": "https://doi.org/10.1145/3663547.3759732",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media",
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4412377098",
@@ -254,7 +295,11 @@
       "doi": "https://doi.org/10.1145/3726302.3730175",
       "url": "https://doi.org/10.1145/3726302.3730175",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4417175677",
@@ -273,7 +318,10 @@
       "doi": "https://doi.org/10.48550/arxiv.2506.22853",
       "url": "https://doi.org/10.48550/arxiv.2506.22853",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W4415311623",
@@ -290,7 +338,11 @@
       "doi": "https://doi.org/10.48550/arxiv.2506.14199",
       "url": "https://doi.org/10.48550/arxiv.2506.14199",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "human-ai",
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4409883750",
@@ -307,7 +359,11 @@
       "doi": "https://doi.org/10.1145/3706598.3714178",
       "url": "https://doi.org/10.1145/3706598.3714178",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4409767187",
@@ -325,7 +381,11 @@
       "doi": "https://doi.org/10.1145/3706598.3713641",
       "url": "https://doi.org/10.1145/3706598.3713641",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4409720435",
@@ -342,7 +402,10 @@
       "doi": "https://doi.org/10.1145/3706599.3719797",
       "url": "https://doi.org/10.1145/3706599.3719797",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W4409720233",
@@ -359,7 +422,11 @@
       "doi": "https://doi.org/10.1145/3706599.3719728",
       "url": "https://doi.org/10.1145/3706599.3719728",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4409690687",
@@ -377,7 +444,12 @@
       "doi": "https://doi.org/10.1158/1538-7445.am2025-1037",
       "url": "https://doi.org/10.1158/1538-7445.am2025-1037",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare",
+        "accessibility",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4408550677",
@@ -396,7 +468,10 @@
       "doi": "https://doi.org/10.1145/3708557.3716366",
       "url": "https://doi.org/10.1145/3708557.3716366",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4412944506",
@@ -412,7 +487,11 @@
       "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1338",
       "url": "https://doi.org/10.18653/v1/2025.findings-acl.1338",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4409175691",
@@ -429,7 +508,10 @@
       "doi": "https://doi.org/10.4162/nrp.2025.19.2.241",
       "url": "https://doi.org/10.4162/nrp.2025.19.2.241",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W4412608522",
@@ -447,7 +529,10 @@
       "doi": "https://doi.org/10.1007/978-981-96-8904-0_33",
       "url": "https://doi.org/10.1007/978-981-96-8904-0_33",
       "openAccess": false,
-      "type": "book-chapter"
+      "type": "book-chapter",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4412944487",
@@ -481,7 +566,10 @@
       "doi": "https://doi.org/10.1145/3627673.3679956",
       "url": "https://doi.org/10.1145/3627673.3679956",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4400525719",
@@ -496,7 +584,11 @@
       "doi": "https://doi.org/10.1145/3626772.3657969",
       "url": "https://doi.org/10.1145/3626772.3657969",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4399205917",
@@ -510,7 +602,12 @@
       "doi": "https://doi.org/10.1609/icwsm.v18i1.31421",
       "url": "https://doi.org/10.1609/icwsm.v18i1.31421",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "human-ai",
+        "social-media",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4396833095",
@@ -526,7 +623,10 @@
       "doi": "https://doi.org/10.1145/3613904.3642305",
       "url": "https://doi.org/10.1145/3613904.3642305",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W4396827361",
@@ -543,7 +643,10 @@
       "doi": "https://doi.org/10.1145/3613905.3651102",
       "url": "https://doi.org/10.1145/3613905.3651102",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W4396833153",
@@ -559,7 +662,10 @@
       "doi": "https://doi.org/10.1145/3613904.3642021",
       "url": "https://doi.org/10.1145/3613904.3642021",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4402029501",
@@ -573,7 +679,10 @@
       "doi": "https://doi.org/10.1007/978-981-97-5572-1_31",
       "url": "https://doi.org/10.1007/978-981-97-5572-1_31",
       "openAccess": false,
-      "type": "book-chapter"
+      "type": "book-chapter",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4402029669",
@@ -587,7 +696,10 @@
       "doi": "https://doi.org/10.1007/978-981-97-5572-1_32",
       "url": "https://doi.org/10.1007/978-981-97-5572-1_32",
       "openAccess": false,
-      "type": "book-chapter"
+      "type": "book-chapter",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4389033397",
@@ -602,7 +714,10 @@
       "doi": "https://doi.org/10.5626/jok.2023.50.11.985",
       "url": "https://doi.org/10.5626/jok.2023.50.11.985",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4388787303",
@@ -616,7 +731,11 @@
       "doi": "https://doi.org/10.48550/arxiv.2311.09230",
       "url": "https://doi.org/10.48550/arxiv.2311.09230",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "human-ai",
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4387328753",
@@ -631,7 +750,10 @@
       "doi": "https://doi.org/10.1145/3610091",
       "url": "https://doi.org/10.1145/3610091",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4386879462",
@@ -648,7 +770,10 @@
       "doi": "https://doi.org/10.5850/jksct.2023.47.4.646",
       "url": "https://doi.org/10.5850/jksct.2023.47.4.646",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W4362706905",
@@ -664,7 +789,10 @@
       "doi": "https://doi.org/10.48550/arxiv.2304.03148",
       "url": "https://doi.org/10.48550/arxiv.2304.03148",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W4362706957",
@@ -680,7 +808,10 @@
       "doi": "https://doi.org/10.48550/arxiv.2304.03132",
       "url": "https://doi.org/10.48550/arxiv.2304.03132",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4378438608",
@@ -695,7 +826,10 @@
       "doi": "https://doi.org/10.1007/978-3-031-33377-4_10",
       "url": "https://doi.org/10.1007/978-3-031-33377-4_10",
       "openAccess": false,
-      "type": "book-chapter"
+      "type": "book-chapter",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4380905283",
@@ -710,7 +844,10 @@
       "doi": "https://doi.org/10.1007/978-3-031-33377-4_43",
       "url": "https://doi.org/10.1007/978-3-031-33377-4_43",
       "openAccess": true,
-      "type": "book-chapter"
+      "type": "book-chapter",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W4318147789",
@@ -726,7 +863,10 @@
       "doi": "https://doi.org/10.1109/bigdata55660.2022.10020415",
       "url": "https://doi.org/10.1109/bigdata55660.2022.10020415",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4310862075",
@@ -742,7 +882,10 @@
       "doi": "https://doi.org/10.9728/dcs.2022.23.11.2269",
       "url": "https://doi.org/10.9728/dcs.2022.23.11.2269",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4308374195",
@@ -757,7 +900,10 @@
       "doi": "https://doi.org/10.1145/3500868.3559451",
       "url": "https://doi.org/10.1145/3500868.3559451",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4296604436",
@@ -772,7 +918,10 @@
       "doi": "https://doi.org/10.1145/3523227.3546757",
       "url": "https://doi.org/10.1145/3523227.3546757",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4280605301",
@@ -802,7 +951,10 @@
       "doi": "https://doi.org/10.48550/arxiv.2203.14037",
       "url": "https://doi.org/10.48550/arxiv.2203.14037",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W3206084162",
@@ -820,7 +972,11 @@
       "doi": "https://doi.org/10.1145/3476085",
       "url": "https://doi.org/10.1145/3476085",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "human-ai",
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W3196925381",
@@ -837,7 +993,11 @@
       "doi": "https://doi.org/10.48550/arxiv.2109.01729",
       "url": "https://doi.org/10.48550/arxiv.2109.01729",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "human-ai",
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W3174098556",
@@ -855,7 +1015,11 @@
       "doi": "https://doi.org/10.1145/3461778.3462143",
       "url": "https://doi.org/10.1145/3461778.3462143",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W3161769503",
@@ -871,7 +1035,10 @@
       "doi": "https://doi.org/10.1145/3411763.3451826",
       "url": "https://doi.org/10.1145/3411763.3451826",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W3161607221",
@@ -887,7 +1054,10 @@
       "doi": "https://doi.org/10.1145/3411763.3451702",
       "url": "https://doi.org/10.1145/3411763.3451702",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W3135201484",
@@ -904,7 +1074,11 @@
       "doi": "https://doi.org/10.2196/22099",
       "url": "https://doi.org/10.2196/22099",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare",
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W3126000645",
@@ -930,7 +1104,10 @@
       "doi": "https://doi.org/10.1016/j.surg.2020.12.033",
       "url": "https://doi.org/10.1016/j.surg.2020.12.033",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W3172778952",
@@ -944,7 +1121,10 @@
       "doi": "https://doi.org/10.1007/978-3-030-67318-5_26",
       "url": "https://doi.org/10.1007/978-3-030-67318-5_26",
       "openAccess": false,
-      "type": "book-chapter"
+      "type": "book-chapter",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W3095099377",
@@ -959,7 +1139,10 @@
       "doi": "https://doi.org/10.1145/3406865.3418308",
       "url": "https://doi.org/10.1145/3406865.3418308",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W4240435753",
@@ -976,7 +1159,11 @@
       "doi": "https://doi.org/10.2196/preprints.22099",
       "url": "https://doi.org/10.2196/preprints.22099",
       "openAccess": true,
-      "type": "posted-content"
+      "type": "posted-content",
+      "areas": [
+        "healthcare",
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W3040360103",
@@ -996,7 +1183,10 @@
       "doi": "https://doi.org/10.1145/3357236.3395430",
       "url": "https://doi.org/10.1145/3357236.3395430",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W3041314972",
@@ -1011,7 +1201,10 @@
       "doi": "https://doi.org/10.17210/jhsk.2020.06.15.2.17",
       "url": "https://doi.org/10.17210/jhsk.2020.06.15.2.17",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W3030120704",
@@ -1028,7 +1221,10 @@
       "doi": "https://doi.org/10.1145/3313831.3376785",
       "url": "https://doi.org/10.1145/3313831.3376785",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W3030174958",
@@ -1049,7 +1245,10 @@
       "doi": "https://doi.org/10.1145/3313831.3376811",
       "url": "https://doi.org/10.1145/3313831.3376811",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W3006332686",
@@ -1068,7 +1267,10 @@
       "doi": "https://doi.org/10.1007/s11423-020-09743-y",
       "url": "https://doi.org/10.1007/s11423-020-09743-y",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2973193146",
@@ -1082,7 +1284,10 @@
       "doi": "https://doi.org/10.48550/arxiv.1911.00936",
       "url": "https://doi.org/10.48550/arxiv.1911.00936",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W3099475050",
@@ -1096,7 +1301,10 @@
       "doi": null,
       "url": "https://openalex.org/W3099475050",
       "openAccess": true,
-      "type": "preprint"
+      "type": "preprint",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W3002551113",
@@ -1129,7 +1337,10 @@
       "doi": "https://doi.org/10.1145/3298689.3347015",
       "url": "https://doi.org/10.1145/3298689.3347015",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W2943783006",
@@ -1182,7 +1393,11 @@
       "doi": "https://doi.org/10.2196/12231",
       "url": "https://doi.org/10.2196/12231",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "human-ai",
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W2896540724",
@@ -1217,7 +1432,10 @@
       "doi": "https://doi.org/10.20879/ct.2018.14.3.005",
       "url": "https://doi.org/10.20879/ct.2018.14.3.005",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W4210295276",
@@ -1237,7 +1455,10 @@
       "doi": "https://doi.org/10.2196/preprints.12231",
       "url": "https://doi.org/10.2196/preprints.12231",
       "openAccess": true,
-      "type": "posted-content"
+      "type": "posted-content",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W3192929449",
@@ -1461,7 +1682,10 @@
       "doi": "https://doi.org/10.1097/md.0000000000002775",
       "url": "https://doi.org/10.1097/md.0000000000002775",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W2297628473",
@@ -1476,7 +1700,10 @@
       "doi": "https://doi.org/10.17210/hcik.2016.01.389",
       "url": "https://doi.org/10.17210/hcik.2016.01.389",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2555421852",
@@ -1501,7 +1728,10 @@
       "doi": "https://doi.org/10.3393/ac.2016.32.5.184",
       "url": "https://doi.org/10.3393/ac.2016.32.5.184",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W2562757859",
@@ -1539,7 +1769,10 @@
       "doi": null,
       "url": "https://openalex.org/W3127863351",
       "openAccess": false,
-      "type": "article"
+      "type": "article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2397425342",
@@ -1555,7 +1788,10 @@
       "doi": "https://doi.org/10.1109/iv.2015.76",
       "url": "https://doi.org/10.1109/iv.2015.76",
       "openAccess": false,
-      "type": "article"
+      "type": "article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2914113727",
@@ -1568,7 +1804,10 @@
       "doi": "https://doi.org/10.1145/3251708",
       "url": "https://doi.org/10.1145/3251708",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W1970011084",
@@ -1651,7 +1890,10 @@
       "doi": null,
       "url": "https://openalex.org/W2288214912",
       "openAccess": false,
-      "type": "article"
+      "type": "article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2289026610",
@@ -1684,7 +1926,10 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618820.v1",
       "url": "https://doi.org/10.6084/m9.figshare.1618820.v1",
       "openAccess": true,
-      "type": "Dataset"
+      "type": "Dataset",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2293060943",
@@ -1700,7 +1945,10 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618823.v2",
       "url": "https://doi.org/10.6084/m9.figshare.1618823.v2",
       "openAccess": true,
-      "type": "Dataset"
+      "type": "Dataset",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W4394136231",
@@ -1765,7 +2013,10 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618823.v1",
       "url": "https://doi.org/10.6084/m9.figshare.1618823.v1",
       "openAccess": true,
-      "type": "dataset"
+      "type": "dataset",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2266627096",
@@ -1904,7 +2155,10 @@
       "doi": "https://doi.org/10.1128/jcm.05722-11",
       "url": "https://doi.org/10.1128/jcm.05722-11",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "healthcare"
+      ]
     },
     {
       "id": "https://openalex.org/W2548105042",
@@ -1952,7 +2206,10 @@
       "doi": null,
       "url": "https://openalex.org/W2100799631",
       "openAccess": false,
-      "type": "text"
+      "type": "text",
+      "areas": [
+        "data-intelligence"
+      ]
     },
     {
       "id": "https://openalex.org/W2122390506",
@@ -2018,7 +2275,10 @@
       "doi": "https://doi.org/10.1609/icwsm.v4i1.14058",
       "url": "https://doi.org/10.1609/icwsm.v4i1.14058",
       "openAccess": true,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "social-media"
+      ]
     },
     {
       "id": "https://openalex.org/W2114420375",
@@ -2111,7 +2371,10 @@
       "doi": "https://doi.org/10.1145/1357054.1357127",
       "url": "https://doi.org/10.1145/1357054.1357127",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2006142674",
@@ -2160,7 +2423,10 @@
       "doi": "https://doi.org/10.1080/10447310701702618",
       "url": "https://doi.org/10.1080/10447310701702618",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "areas": [
+        "human-ai"
+      ]
     },
     {
       "id": "https://openalex.org/W2132781340",
@@ -2176,7 +2442,10 @@
       "doi": "https://doi.org/10.1109/vast.2007.4389010",
       "url": "https://doi.org/10.1109/vast.2007.4389010",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
     },
     {
       "id": "https://openalex.org/W2093753056",
