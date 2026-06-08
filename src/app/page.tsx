@@ -1,49 +1,43 @@
 import Link from "next/link";
-import publicationsData from "@/data/publications.json";
 import newsData from "@/data/news.json";
 import ShaderHero from "@/components/ShaderHero";
 
-const FIVE_YEARS_AGO = new Date().getFullYear() - 5;
-
-type Pub = {
-  id: string;
-  title: string;
-  year: number;
-  doi?: string;
-  areas?: string[];
-};
-
-function shortTitle(title: string): string {
-  // Strip uninformative prefixes like "Abstract 5053: " or "Abstract: "
-  const stripped = title.replace(/^abstract\s*[\d]*\s*:\s*/i, "");
-
-  const colon = stripped.indexOf(": ");
-  if (
-    colon > 0 &&
-    colon <= 25 &&
-    !stripped.startsWith('"') &&
-    !stripped.startsWith("'")
-  ) {
-    return stripped.substring(0, colon);
-  }
-  const clean = stripped.replace(/^"[^"]*":\s*/, "").replace(/^'[^']*':\s*/, "");
-  const words = clean.split(/\s+/).filter((w) => w.length > 2);
-  return words.slice(0, 3).join(" ");
-}
-
-function getAreaPapers(areaKey: string): Pub[] {
-  return (publicationsData.publications as Pub[])
-    .filter((p) => p.year >= FIVE_YEARS_AGO && p.areas?.[0] === areaKey)
-    .sort((a, b) => b.year - a.year)
-    .slice(0, 8);
-}
-
 const researchAreas = [
-  { key: "human-ai",          title: "Human-AI Interaction",        short: "HAI"    },
-  { key: "healthcare",        title: "Healthcare & Wellbeing",      short: "Health" },
-  { key: "social-media",      title: "Social & Media Computing",    short: "SMC"    },
-  { key: "accessibility",     title: "Accessible & Inclusive Design", short: "AID" },
-  { key: "data-intelligence", title: "Data Intelligence",           short: "DI"     },
+  {
+    key: "human-ai",
+    title: "Human-AI Interaction",
+    short: "HAI",
+    description:
+      "We study how people understand, trust, and collaborate with AI systems, and design conversational agents and generative tools that are transparent, useful, and aligned with human needs.",
+  },
+  {
+    key: "healthcare",
+    title: "Healthcare & Wellbeing",
+    short: "Health",
+    description:
+      "We build technologies that support physical and mental health, from patient-facing tools to clinician workflows, with a focus on improving wellbeing across diverse populations.",
+  },
+  {
+    key: "social-media",
+    title: "Social & Media Computing",
+    short: "SMC",
+    description:
+      "We study how people communicate, share information, and form communities on social platforms, and design systems that foster healthier online interactions.",
+  },
+  {
+    key: "accessibility",
+    title: "Accessible & Inclusive Design",
+    short: "AID",
+    description:
+      "We create technologies that work for people of all abilities and backgrounds, removing barriers and expanding who can participate in digital experiences.",
+  },
+  {
+    key: "data-intelligence",
+    title: "Data Intelligence",
+    short: "DI",
+    description:
+      "We develop methods to collect, analyze, and visualize large-scale data, surfacing insights that help people and organizations make better decisions.",
+  },
 ];
 
 const NEWS_TYPE_LABELS: Record<string, string> = {
@@ -82,41 +76,17 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-slate-900 mb-12">Research Areas</h2>
           <div className="divide-y divide-slate-100">
-            {researchAreas.map((area) => {
-              const papers = getAreaPapers(area.key);
-              return (
-                <div key={area.key} className="group py-2 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-4 md:gap-12">
-                  <Link
-                    href={`/publications?area=${area.key}`}
-                    className="text-base font-semibold text-slate-900 hover:text-[#0B3D91] transition-colors self-start"
-                  >
-                    {area.title}
-                  </Link>
-                  <p className="text-sm leading-loose text-slate-600">
-                    {papers.map((p, pi) => {
-                      const name = shortTitle(p.title);
-                      return (
-                        <span key={p.id}>
-                          {pi > 0 && <span className="mx-1.5 text-slate-300">·</span>}
-                          {p.doi ? (
-                            <a
-                              href={p.doi}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:text-[#0B3D91] hover:underline underline-offset-2 transition-colors"
-                            >
-                              {name}
-                            </a>
-                          ) : (
-                            <span>{name}</span>
-                          )}
-                        </span>
-                      );
-                    })}
-                  </p>
-                </div>
-              );
-            })}
+            {researchAreas.map((area) => (
+              <div key={area.key} className="group py-2 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-4 md:gap-12">
+                <Link
+                  href={`/publications?area=${area.key}`}
+                  className="text-base font-semibold text-slate-900 hover:text-[#0B3D91] transition-colors self-start"
+                >
+                  {area.title}
+                </Link>
+                <p className="text-sm leading-loose text-slate-600">{area.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
