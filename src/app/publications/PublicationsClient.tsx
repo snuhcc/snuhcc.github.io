@@ -147,7 +147,7 @@ function PubCard({
         {pub.title}
       </a>
       <p className="text-sm text-slate-500 mb-1">{pub.authors.join(", ")}</p>
-      {pub.venue && <p className="text-xs text-slate-400 mb-2">{pub.venue}</p>}
+      {pub.venue && <p className="text-xs text-slate-500 mb-2">{pub.venue}</p>}
       <div className="flex flex-wrap items-center gap-2 mt-1.5">
         {pub.doi && (
           <a

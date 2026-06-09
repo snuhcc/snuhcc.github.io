@@ -27,7 +27,7 @@ export default function NewsPage() {
       <ul className="divide-y divide-slate-100">
         {items.map((item) => (
           <li key={item.id} className="py-5 flex items-start gap-6">
-            <span className="shrink-0 w-20 text-xs text-slate-400 pt-0.5 tabular-nums">
+            <span className="shrink-0 w-20 text-xs text-slate-500 pt-0.5 tabular-nums">
               {item.date}
             </span>
             <span className="shrink-0 text-xs font-semibold uppercase tracking-wide text-[#0B3D91] w-24">

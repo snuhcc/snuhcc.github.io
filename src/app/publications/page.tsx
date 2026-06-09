@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function PublicationsPage() {
   return (
-    <Suspense fallback={<div className="max-w-6xl mx-auto px-6 py-16 text-slate-400">Loading…</div>}>
+    <Suspense fallback={<div className="max-w-6xl mx-auto px-6 py-16 text-slate-500">Loading…</div>}>
       <PublicationsClient />
     </Suspense>
   );

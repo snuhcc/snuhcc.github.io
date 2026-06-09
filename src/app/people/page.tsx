@@ -109,7 +109,7 @@ function AlumniCard({ member }: { member: AlumniMember }) {
         <span className="text-sm font-medium text-slate-700">{member.name}</span>
       )}
       {member.current && (
-        <span className="text-xs text-slate-400">{member.current}</span>
+        <span className="text-xs text-slate-500">{member.current}</span>
       )}
     </div>
   );
@@ -146,7 +146,7 @@ export default function PeoplePage() {
 
       {/* Alumni */}
       <section>
-        <h2 className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-10 pb-3 border-b border-slate-100">
+        <h2 className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-10 pb-3 border-b border-slate-100">
           Alumni
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-6">

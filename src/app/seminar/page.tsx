@@ -110,7 +110,7 @@ export default function SeminarPage() {
                 .map((s, i) => (
                   <div key={i} className="py-3 flex gap-5 group">
                     <div className="shrink-0 w-14 pt-0.5">
-                      <p className="text-xs text-slate-400 tabular-nums">
+                      <p className="text-xs text-slate-500 tabular-nums">
                         {new Date(s.date).toLocaleDateString("en-US", {
                           month: "short",
                           day: "numeric",

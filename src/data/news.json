@@ -1,12 +1,6 @@
 {
   "news": [
     {
-      "id": "grad-jeongwoo-phd-2026",
-      "date": "2026-05",
-      "type": "graduation",
-      "text": "Congrats Dr. Ryu! Jeongwoo Ryu successfully defended his PhD dissertation."
-    },
-    {
       "id": "chi2026-papers",
       "date": "2026-04",
       "type": "paper",

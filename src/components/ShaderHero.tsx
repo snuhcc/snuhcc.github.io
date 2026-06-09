@@ -14,7 +14,7 @@ const ShaderGradient = dynamic(
 export default function ShaderHero() {
   return (
     <ShaderGradientCanvas
-      style={{ position: "absolute", inset: 0, width: "100%", height: "100%", transform: "scale(1.5)", transformOrigin: "center center" }}
+      style={{ position: "absolute", inset: 0, width: "100%", height: "100%", transform: "scale(1.1)", transformOrigin: "center center" }}
       pixelDensity={1}
       fov={45}
       lazyLoad={false}
@@ -28,20 +28,20 @@ export default function ShaderHero() {
         uSpeed={0.15}
         uStrength={1.3}
         uDensity={1.5}
-        uFrequency={0}
-        uAmplitude={0}
+        uFrequency={1.2}
+        uAmplitude={1.5}
         cAzimuthAngle={180}
         cDistance={2.8}
-        cPolarAngle={80}
+        cPolarAngle={90}
         cameraZoom={9.1}
         grain="on"
         lightType="3d"
         envPreset="city"
         brightness={1}
         reflection={0.1}
-        rotationX={50}
+        rotationX={0}
         rotationY={0}
-        rotationZ={-60}
+        rotationZ={0}
       />
     </ShaderGradientCanvas>
   );

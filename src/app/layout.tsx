@@ -92,16 +92,16 @@ export default function RootLayout({
                 height={50}
                 className="h-10 w-auto object-contain mb-4 brightness-0 invert"
               />
-              <p className="text-sm text-white/70">Human Centered Computing Lab</p>
-              <p className="text-sm text-white/50">Graduate School of Convergence Science and Technology, Seoul National University</p>
+              <p className="text-sm text-white/80">Human Centered Computing Lab</p>
+              <p className="text-sm text-white/70">Graduate School of Convergence Science and Technology, Seoul National University</p>
             </div>
             {/* Right: address */}
-            <div className="text-sm text-white/50 sm:text-right leading-relaxed shrink-0">
+            <div className="text-sm text-white/70 sm:text-right leading-relaxed shrink-0">
               <p>2nd floor, 18-dong, Gwanak-ro 1, Gwanak-gu</p>
               <p>Seoul, Republic of Korea (08826)</p>
               <p className="mt-3">Gwanggyo-ro 145, Yeongtong-gu</p>
               <p>Suwon-si, Gyeonggi-do (16229)</p>
-              <p className="mt-4 text-xs text-white/30">
+              <p className="mt-4 text-xs text-white/60">
                 © {new Date().getFullYear()} HCC Lab, Seoul National University
               </p>
             </div>

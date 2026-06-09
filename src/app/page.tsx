@@ -54,13 +54,13 @@ export default function Home() {
       {/* Hero */}
       <section className="relative min-h-[55vh] flex items-center overflow-hidden bg-[#0B3D91]">
         <ShaderHero />
-        <div className="absolute inset-0 bg-black/20 z-[1]" />
+        <div className="absolute inset-0 bg-black/30 z-[1]" />
         <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-16">
           <h1 className="text-5xl text-white leading-tight font-normal" style={{ fontFamily: "var(--font-mono)" }}>
-            <span className="block">Human centered</span>
+            <span className="block">Human Centered</span>
             <span className="block mt-1">Computing Lab</span>
           </h1>
-          <p className="text-lg text-white/70 max-w-xl leading-relaxed mt-6">
+          <p className="text-lg text-white/90 max-w-xl leading-relaxed mt-6">
             We are an interdisciplinary research group working at the intersection of{" "}
             <span className="text-white font-medium">HCI</span>,{" "}
             <span className="text-white font-medium">Big Data</span>, and{" "}
@@ -109,7 +109,7 @@ export default function Home() {
               .slice(0, 3)
               .map((item) => (
                 <li key={item.id} className="py-4 flex items-start gap-6">
-                  <span className="shrink-0 w-20 text-xs text-slate-400 pt-0.5 tabular-nums">{item.date}</span>
+                  <span className="shrink-0 w-20 text-xs text-slate-500 pt-0.5 tabular-nums">{item.date}</span>
                   <span className="shrink-0 text-xs font-semibold uppercase tracking-wide text-[#0B3D91] w-24">
                     {NEWS_TYPE_LABELS[item.type] ?? item.type}
                   </span>
