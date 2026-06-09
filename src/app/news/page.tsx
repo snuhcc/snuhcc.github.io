@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import newsData from "@/data/news.json";
+
+export const metadata: Metadata = {
+  title: "News",
+  description:
+    "Latest news from HCC Lab — paper acceptances, awards, talks, and lab events at Seoul National University.",
+  openGraph: {
+    title: "News | HCC Lab",
+    description:
+      "Latest news from HCC Lab — paper acceptances, awards, talks, and lab events at Seoul National University.",
+  },
+};
 
 type NewsItem = {
   id: string;

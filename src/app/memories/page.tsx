@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import MemoryGallery from "@/components/MemoryGallery";
+
+export const metadata: Metadata = {
+  title: "Memories",
+  description:
+    "Photo gallery of HCC Lab events, conferences, and lab life at Seoul National University.",
+  openGraph: {
+    title: "Memories | HCC Lab",
+    description:
+      "Photo gallery of HCC Lab events, conferences, and lab life at Seoul National University.",
+  },
+};
 
 const memories = [
   { name: "CHI 2026 @ Barcelona",      year: 2026, category: "Conference", folder: "2026-spain-chi",           photos: ["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg", "photo5.jpg", "photo6.jpg", "photo7.jpg"] },

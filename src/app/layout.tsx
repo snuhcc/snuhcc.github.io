@@ -20,25 +20,39 @@ export const metadata: Metadata = {
     template: "%s | HCC Lab",
   },
   description:
-    "Human Centered Computing Lab at Seoul National University. Research in HCI, Social Computing, Human-AI Interaction, and Big Data Analytics.",
+    "Human Centered Computing Lab at Seoul National University, led by Prof. Bongwon Suh. Research in HCI, Human-AI Interaction, Social Computing, Accessibility, and Big Data Analytics.",
+  keywords: [
+    "Human Centered Computing Lab",
+    "HCC Lab",
+    "HCI",
+    "Human-Computer Interaction",
+    "Human-AI Interaction",
+    "Social Computing",
+    "Accessibility",
+    "Big Data",
+    "Seoul National University",
+    "SNU",
+    "Bongwon Suh",
+  ],
+  robots: { index: true, follow: true },
   icons: {
     icon: "/images/assets/lab_logo.png",
     apple: "/images/assets/lab_logo.png",
   },
   openGraph: {
     type: "website",
-    siteName: "HCC Lab",
+    siteName: "HCC Lab — Seoul National University",
     title: "HCC Lab — Seoul National University",
     description:
-      "Human Centered Computing Lab at Seoul National University. Research in HCI, Social Computing, Human-AI Interaction, and Big Data Analytics.",
+      "Human Centered Computing Lab at Seoul National University, led by Prof. Bongwon Suh. Research in HCI, Human-AI Interaction, Social Computing, Accessibility, and Big Data Analytics.",
     url: BASE_URL,
-    images: [{ url: "/images/assets/lab_logo.png", width: 500, height: 500, alt: "HCC Lab" }],
+    images: [{ url: "/images/assets/lab_logo.png", width: 500, height: 500, alt: "HCC Lab — Seoul National University" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "HCC Lab — Seoul National University",
     description:
-      "Human Centered Computing Lab at Seoul National University. Research in HCI, Social Computing, Human-AI Interaction, and Big Data Analytics.",
+      "Human Centered Computing Lab at Seoul National University, led by Prof. Bongwon Suh. Research in HCI, Human-AI Interaction, Social Computing, Accessibility, and Big Data Analytics.",
     images: ["/images/assets/lab_logo.png"],
   },
 };
@@ -56,26 +70,47 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ResearchOrganization",
-              name: "Human Centered Computing Lab",
-              alternateName: "HCC Lab",
-              url: BASE_URL,
-              logo: `${BASE_URL}/images/assets/lab_logo.png`,
-              description:
-                "Human Centered Computing Lab at Seoul National University. Research in HCI, Social Computing, Human-AI Interaction, and Big Data Analytics.",
-              parentOrganization: {
-                "@type": "CollegeOrUniversity",
-                name: "Seoul National University",
-                url: "https://www.snu.ac.kr",
-              },
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "2nd floor, 18-dong, Gwanak-ro 1, Gwanak-gu",
-                addressLocality: "Seoul",
-                addressCountry: "KR",
-                postalCode: "08826",
-              },
-              email: "bongwon@snu.ac.kr",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": `${BASE_URL}/#organization`,
+                  name: "Human Centered Computing Lab",
+                  alternateName: "HCC Lab",
+                  url: BASE_URL,
+                  logo: `${BASE_URL}/images/assets/lab_logo.png`,
+                  description:
+                    "Human Centered Computing Lab at Seoul National University, led by Prof. Bongwon Suh. Research in HCI, Human-AI Interaction, Social Computing, Accessibility, and Big Data Analytics.",
+                  parentOrganization: {
+                    "@type": "CollegeOrUniversity",
+                    name: "Seoul National University",
+                    alternateName: "SNU",
+                    url: "https://www.snu.ac.kr",
+                  },
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "2nd floor, 18-dong, Gwanak-ro 1, Gwanak-gu",
+                    addressLocality: "Seoul",
+                    addressCountry: "KR",
+                    postalCode: "08826",
+                  },
+                  email: "bongwon@snu.ac.kr",
+                  member: {
+                    "@type": "Person",
+                    "@id": `${BASE_URL}/#bongwon-suh`,
+                    name: "Bongwon Suh",
+                    jobTitle: "Associate Professor",
+                    affiliation: {
+                      "@type": "CollegeOrUniversity",
+                      name: "Seoul National University",
+                    },
+                    url: `${BASE_URL}/people`,
+                    sameAs: [
+                      "https://scholar.google.com/citations?user=RgqCjCkAAAAJ",
+                      "https://dblp.org/pid/s/BongwonSuh.html",
+                    ],
+                  },
+                },
+              ],
             }),
           }}
         />

@@ -61,12 +61,12 @@ export default function Home() {
             <span className="block mt-1">Computing Lab</span>
           </h1>
           <p className="text-lg text-white/90 max-w-xl leading-relaxed mt-6">
-            We are an interdisciplinary research group working at the intersection of{" "}
+            Led by <span className="text-white font-medium">Prof. Bongwon Suh</span> at{" "}
+            <span className="text-white font-medium">Seoul National University</span>, we are an
+            interdisciplinary research group at the intersection of{" "}
             <span className="text-white font-medium">HCI</span>,{" "}
             <span className="text-white font-medium">Big Data</span>, and{" "}
             <span className="text-white font-medium">Artificial Intelligence</span>.
-            Our goal is to help people communicate and interact without limits through
-            human-centered software and hardware tools.
           </p>
         </div>
       </section>
