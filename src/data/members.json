@@ -14,9 +14,9 @@
       "email": "hoon95@snu.ac.kr",
       "title": "Ph.D. Student",
       "fields": ["HCI", "LLM", "NLP"],
-      "photo": "/images/people/jaehoon-choi.jpg",
+      "photo": "/images/people/jaehoon-choi.jpeg",
       "bio": "Conversational AI",
-      "url": null
+      "url": "https://halfhoon.github.io/"
     },
     {
       "name": "Kieun Park",
@@ -34,7 +34,7 @@
       "fields": ["HAI", "HCI", "LLM", "NLP", "UX"],
       "photo": "/images/people/jeongwoo-ryu.jpeg",
       "bio": "AI Deliberation",
-      "url": null
+      "url": "https://jeongwoo-ryu.net/"
     },
     {
       "name": "Gibeom Park",
@@ -52,16 +52,16 @@
       "fields": ["HAI", "HCI", "LLM", "Medical AI", "NLP"],
       "photo": "/images/people/dongseok-heo.jpeg",
       "bio": "Clinical LLM Agents",
-      "url": null
+      "url": "https://bit.ly/dongseok"
     },
     {
       "name": "Kitae Kim",
       "email": "joseph423@snu.ac.kr",
       "title": "Ph.D. Student",
       "fields": ["HAI", "HCI", "LLM", "Embodied AI"],
-      "photo": "/images/people/kitae-kim.jpg",
+      "photo": "/images/people/kitae-kim.jpeg",
       "bio": "Embodied AI",
-      "url": null
+      "url": "https://githae1337.github.io/"
     },
     {
       "name": "Junghwan Kim",
@@ -86,7 +86,7 @@
       "email": "shinmj1024@snu.ac.kr",
       "title": "Master's Student",
       "fields": ["HCI", "UX"],
-      "photo": "/images/people/minjeong-shin.jpeg",
+      "photo": "/images/people/minjeong-shin.jpg",
       "bio": "Physical AI",
       "url": "https://queriamin.github.io/"
     },
@@ -97,52 +97,52 @@
       "fields": ["HAI", "HCI", "LLM", "UX"],
       "photo": "/images/people/jung-lee.png",
       "bio": "AI-Assisted Work",
-      "url": null
+      "url": "https://leejungp2.github.io/"
     },
     {
       "name": "Hana Oh",
       "email": "hana2001@snu.ac.kr",
       "title": "Master's Student",
       "fields": ["HAI", "HCI", "NLP", "Agentic AI"],
-      "photo": "/images/people/hana-oh.jpeg",
+      "photo": "/images/people/hana-oh.jpg",
       "bio": "Healthcare AI",
       "url": "https://hanaisreal.github.io/"
     },
     {
-      "name": "Jueun Lee",
+      "name": "Jueon Lee",
       "email": "audreylee@snu.ac.kr",
       "title": "Master's Student",
       "fields": ["Responsible AI", "Algorithmic Fairness"],
-      "photo": null,
+      "photo": "/images/people/jueon-lee.jpeg",
       "bio": "Responsible AI",
-      "url": null
+      "url": "https://audreylee23.github.io"
     },
     {
       "name": "Minchae Kim",
       "email": "minchae@snu.ac.kr",
       "title": "Master's Student",
       "fields": ["HCI", "LLM", "Embodied AI"],
-      "photo": null,
+      "photo": "/images/people/minchae-kim.jpg",
       "bio": "Embodied AI",
-      "url": null
+      "url": "https://www.linkedin.com/in/minchae-kim-1b43672ab/"
     },
     {
       "name": "Junyoung Jeon",
-      "email": null,
+      "email": "junn103.jeon@snu.ac.kr",
       "title": "Master's Student",
       "fields": [],
-      "photo": null,
+      "photo": "/images/people/junyoung-jeon.jpeg",
       "bio": "",
-      "url": null
+      "url": "https://www.linkedin.com/in/junyoung-jeon-74a27a186"
     },
     {
-      "name": "Jihye Yoo",
-      "email": null,
+      "name": "Yu Jihea",
+      "email": "jihyeyu33@snu.ac.kr",
       "title": "Master's Student",
       "fields": [],
-      "photo": null,
+      "photo": "/images/people/yu-jihea.jpg",
       "bio": "",
-      "url": null
+      "url": "https://jihea-yu.github.io/"
     }
   ],
   "alumni": [
@@ -182,6 +182,6 @@
     { "name": "Changhoon Oh",    "current": "Yonsei University",     "url": null },
     { "name": "Seonghyeon Lee",  "current": null,                    "url": null },
     { "name": "Jaeyoun You",     "current": null,                    "url": "https://jaeyyou.com" },
-    { "name": "Kyusik Kim",      "current": null,                    "url": "https://honey-jersey-b77.notion.site/Kyusik-Kim-0b1702c13d6d4602920b53a3c3fc90ab" }
+    { "name": "Kyusik Kim",      "current": null,                    "url": "https://kyu823.github.io/" }
   ]
 }
