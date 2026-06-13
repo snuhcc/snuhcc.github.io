@@ -93,6 +93,53 @@ function MemberCard({ member }: { member: CurrentMember }) {
   );
 }
 
+function ProfessorCard({ member }: { member: CurrentMember }) {
+  const isScholar = member.url?.includes("scholar.google.com");
+
+  return (
+    <div className="flex items-center gap-5">
+      {/* Photo */}
+      <div className="w-44 h-44 overflow-hidden bg-slate-100 shrink-0">
+        {member.photo ? (
+          <Image
+            src={member.photo}
+            alt={member.name}
+            width={176}
+            height={176}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-slate-400 text-3xl font-semibold">
+            {member.name.charAt(0)}
+          </div>
+        )}
+      </div>
+
+      {/* Info */}
+      <div>
+        <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
+        <div className="flex flex-col gap-1 text-sm text-slate-500">
+          {member.email && (
+            <a href={`mailto:${member.email}`} className="hover:text-[#0B3D91] transition-colors">
+              {member.email}
+            </a>
+          )}
+          {member.url && (
+            <a
+              href={member.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#0B3D91] transition-colors"
+            >
+              {isScholar ? "Google Scholar" : member.url.replace(/^https?:\/\//, "")}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function AlumniCard({ member }: { member: AlumniMember }) {
   return (
     <div className="flex flex-col items-center text-center gap-1">
@@ -135,11 +182,19 @@ export default function PeoplePage() {
             <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
               {title}
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-10">
-              {members.map((member) => (
-                <MemberCard key={member.name} member={member} />
-              ))}
-            </div>
+            {title === "Professor" ? (
+              <div className="space-y-6">
+                {members.map((member) => (
+                  <ProfessorCard key={member.name} member={member} />
+                ))}
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-10">
+                {members.map((member) => (
+                  <MemberCard key={member.name} member={member} />
+                ))}
+              </div>
+            )}
           </section>
         )
       )}

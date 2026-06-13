@@ -10,24 +10,6 @@
       "url": "https://scholar.google.com/citations?user=-nlhtEkAAAAJ"
     },
     {
-      "name": "Jaehoon Choi",
-      "email": "hoon95@snu.ac.kr",
-      "title": "Ph.D. Student",
-      "fields": ["HCI", "LLM", "NLP"],
-      "photo": "/images/people/jaehoon-choi.jpeg",
-      "bio": "Conversational AI",
-      "url": "https://halfhoon.github.io/"
-    },
-    {
-      "name": "Kieun Park",
-      "email": "kieun.park@snu.ac.kr",
-      "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "NLP"],
-      "photo": "/images/people/kieun-park.jpeg",
-      "bio": "LLM Evaluation",
-      "url": null
-    },
-    {
       "name": "Jeongwoo Ryu",
       "email": "jeongwoo@snu.ac.kr",
       "title": "Ph.D. Student",
@@ -35,33 +17,6 @@
       "photo": "/images/people/jeongwoo-ryu.jpeg",
       "bio": "AI Deliberation",
       "url": "https://jeongwoo-ryu.net/"
-    },
-    {
-      "name": "Gibeom Park",
-      "email": "skymind@snu.ac.kr",
-      "title": "Ph.D. Student",
-      "fields": ["Medical AI", "Time Series", "XAI"],
-      "photo": null,
-      "bio": "Medical AI",
-      "url": null
-    },
-    {
-      "name": "Dongseok Heo",
-      "email": "ty8900@snu.ac.kr",
-      "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "Medical AI", "NLP"],
-      "photo": "/images/people/dongseok-heo.jpeg",
-      "bio": "Clinical LLM Agents",
-      "url": "https://bit.ly/dongseok"
-    },
-    {
-      "name": "Kitae Kim",
-      "email": "joseph423@snu.ac.kr",
-      "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "Embodied AI"],
-      "photo": "/images/people/kitae-kim.jpeg",
-      "bio": "Embodied AI",
-      "url": "https://githae1337.github.io/"
     },
     {
       "name": "Junghwan Kim",
@@ -73,6 +28,15 @@
       "url": "https://linkedin.com/in/jhbale11"
     },
     {
+      "name": "Kieun Park",
+      "email": "kieun.park@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "NLP"],
+      "photo": "/images/people/kieun-park.jpeg",
+      "bio": "LLM Evaluation",
+      "url": null
+    },
+    {
       "name": "Hyungwoo Song",
       "email": "rotto95@snu.ac.kr",
       "title": "Ph.D. Student",
@@ -80,6 +44,42 @@
       "photo": "/images/people/hyungwoo-song.jpg",
       "bio": "Multimodal AI",
       "url": "https://hyungwoosong.notion.site"
+    },
+    {
+      "name": "Dongseok Heo",
+      "email": "ty8900@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "Medical AI", "NLP"],
+      "photo": "/images/people/dongseok-heo.jpeg",
+      "bio": "Clinical LLM Agents",
+      "url": "https://bit.ly/dongseok"
+    },
+    {
+      "name": "Jaehoon Choi",
+      "email": "hoon95@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HCI", "LLM", "NLP"],
+      "photo": "/images/people/jaehoon-choi.jpeg",
+      "bio": "Conversational AI",
+      "url": "https://halfhoon.github.io/"
+    },
+    {
+      "name": "Kitae Kim",
+      "email": "joseph423@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["HAI", "HCI", "LLM", "Embodied AI"],
+      "photo": "/images/people/kitae-kim.jpeg",
+      "bio": "Embodied AI",
+      "url": "https://githae1337.github.io/"
+    },
+    {
+      "name": "Gibeom Park",
+      "email": "skymind@snu.ac.kr",
+      "title": "Ph.D. Student",
+      "fields": ["Medical AI", "Time Series", "XAI"],
+      "photo": null,
+      "bio": "Medical AI",
+      "url": null
     },
     {
       "name": "Minjeong Shin",
