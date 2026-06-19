@@ -1,0 +1,227 @@
+{
+  "updatedAt": "2026-06-19T02:32:00.230Z",
+  "subjectAreas": [
+    {
+      "name": "Human–computer interaction",
+      "count": 42
+    },
+    {
+      "name": "Artificial intelligence",
+      "count": 36
+    },
+    {
+      "name": "World Wide Web",
+      "count": 30
+    },
+    {
+      "name": "Multimedia",
+      "count": 22
+    },
+    {
+      "name": "Data science",
+      "count": 20
+    },
+    {
+      "name": "Internet privacy",
+      "count": 17
+    },
+    {
+      "name": "Information retrieval",
+      "count": 17
+    },
+    {
+      "name": "Knowledge management",
+      "count": 10
+    },
+    {
+      "name": "Machine learning",
+      "count": 9
+    },
+    {
+      "name": "Data mining",
+      "count": 6
+    },
+    {
+      "name": "Advertising",
+      "count": 5
+    },
+    {
+      "name": "Applied psychology",
+      "count": 5
+    },
+    {
+      "name": "Natural language processing",
+      "count": 5
+    },
+    {
+      "name": "Computer vision",
+      "count": 5
+    },
+    {
+      "name": "Public relations",
+      "count": 4
+    },
+    {
+      "name": "Social psychology",
+      "count": 4
+    },
+    {
+      "name": "Mathematics education",
+      "count": 3
+    },
+    {
+      "name": "Speech recognition",
+      "count": 3
+    },
+    {
+      "name": "Computer security",
+      "count": 3
+    },
+    {
+      "name": "Cognitive psychology",
+      "count": 2
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Visualization",
+      "count": 16
+    },
+    {
+      "name": "Social media",
+      "count": 12
+    },
+    {
+      "name": "Chatbot",
+      "count": 8
+    },
+    {
+      "name": "Artificial neural network",
+      "count": 8
+    },
+    {
+      "name": "User interface",
+      "count": 8
+    },
+    {
+      "name": "Graph",
+      "count": 6
+    },
+    {
+      "name": "Smartwatch",
+      "count": 6
+    },
+    {
+      "name": "Health care",
+      "count": 5
+    },
+    {
+      "name": "Recommender system",
+      "count": 5
+    },
+    {
+      "name": "Data visualization",
+      "count": 5
+    },
+    {
+      "name": "Cluster analysis",
+      "count": 4
+    },
+    {
+      "name": "Empirical research",
+      "count": 4
+    },
+    {
+      "name": "Narrative",
+      "count": 4
+    },
+    {
+      "name": "Perception",
+      "count": 4
+    },
+    {
+      "name": "Virtual reality",
+      "count": 4
+    },
+    {
+      "name": "Deep learning",
+      "count": 4
+    },
+    {
+      "name": "Credibility",
+      "count": 4
+    },
+    {
+      "name": "Active listening",
+      "count": 3
+    },
+    {
+      "name": "Cancer",
+      "count": 3
+    },
+    {
+      "name": "Generative grammar",
+      "count": 3
+    },
+    {
+      "name": "Gesture",
+      "count": 3
+    },
+    {
+      "name": "Ontology",
+      "count": 3
+    },
+    {
+      "name": "Information visualization",
+      "count": 3
+    },
+    {
+      "name": "Crowdsourcing",
+      "count": 3
+    },
+    {
+      "name": "Usability",
+      "count": 3
+    },
+    {
+      "name": "Autoencoder",
+      "count": 3
+    },
+    {
+      "name": "Collaborative filtering",
+      "count": 3
+    },
+    {
+      "name": "The Internet",
+      "count": 3
+    },
+    {
+      "name": "Mobile device",
+      "count": 3
+    },
+    {
+      "name": "Analytics",
+      "count": 3
+    },
+    {
+      "name": "Microblogging",
+      "count": 3
+    },
+    {
+      "name": "Sensemaking",
+      "count": 3
+    },
+    {
+      "name": "Encyclopedia",
+      "count": 3
+    },
+    {
+      "name": "Metadata",
+      "count": 3
+    },
+    {
+      "name": "Annotation",
+      "count": 3
+    }
+  ]
+}

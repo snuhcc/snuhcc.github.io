@@ -26,6 +26,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/publications.json
+          git add src/data/publications.json src/data/keywords.json
           git diff --cached --quiet || git commit -m "sync: update publications from OpenAlex"
           git push

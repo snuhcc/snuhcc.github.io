@@ -1,44 +1,10 @@
 import Link from "next/link";
 import newsData from "@/data/news.json";
+import publicationsData from "@/data/publications.json";
+import keywordsData from "@/data/keywords.json";
 import ShaderHero from "@/components/ShaderHero";
-
-const researchAreas = [
-  {
-    key: "human-ai",
-    title: "Human-AI Interaction",
-    short: "HAI",
-    description:
-      "We study how people understand, trust, and collaborate with AI systems, and design conversational agents and generative tools that are transparent, useful, and aligned with human needs.",
-  },
-  {
-    key: "healthcare",
-    title: "Healthcare & Wellbeing",
-    short: "Health",
-    description:
-      "We build technologies that support physical and mental health, from patient-facing tools to clinician workflows, with a focus on improving wellbeing across diverse populations.",
-  },
-  {
-    key: "social-media",
-    title: "Social & Media Computing",
-    short: "SMC",
-    description:
-      "We study how people communicate, share information, and form communities on social platforms, and design systems that foster healthier online interactions.",
-  },
-  {
-    key: "accessibility",
-    title: "Accessible & Inclusive Design",
-    short: "AID",
-    description:
-      "We create technologies that work for people of all abilities and backgrounds, removing barriers and expanding who can participate in digital experiences.",
-  },
-  {
-    key: "data-intelligence",
-    title: "Data Intelligence",
-    short: "DI",
-    description:
-      "We develop methods to collect, analyze, and visualize large-scale data, surfacing insights that help people and organizations make better decisions.",
-  },
-];
+import WordCloud from "@/components/WordCloud";
+import YearChart from "@/components/YearChart";
 
 const NEWS_TYPE_LABELS: Record<string, string> = {
   paper:      "Paper",
@@ -71,22 +37,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Research Areas */}
+      {/* Research Snapshot */}
       <section className="border-t border-slate-100 py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 mb-12">Research Areas</h2>
-          <div className="divide-y divide-slate-100">
-            {researchAreas.map((area) => (
-              <div key={area.key} className="group py-2 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-4 md:gap-12">
-                <Link
-                  href={`/publications?area=${area.key}`}
-                  className="text-base font-semibold text-slate-900 hover:text-[#0B3D91] transition-colors self-start"
-                >
-                  {area.title}
-                </Link>
-                <p className="text-sm leading-loose text-slate-600">{area.description}</p>
-              </div>
-            ))}
+          <div className="flex items-baseline justify-between mb-12">
+            <h2 className="text-2xl font-bold text-slate-900">Research Snapshot</h2>
+            <Link
+              href="/publications"
+              className="text-sm text-slate-400 hover:text-[#0B3D91] transition-colors"
+            >
+              all publications →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
+                Subject Areas
+              </h3>
+              <WordCloud items={keywordsData.subjectAreas} />
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
+                Published Items by Year
+              </h3>
+              <YearChart years={publicationsData.publications.map((p) => p.year)} />
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
+                Keywords
+              </h3>
+              <WordCloud items={keywordsData.keywords} />
+            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T06:38:06.356Z",
+  "updatedAt": "2026-06-19T02:32:00.228Z",
   "publications": [
     {
       "id": "https://openalex.org/W7153979846",
@@ -388,26 +388,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W4409720435",
-      "title": "\"I feel you, but...\": Exploring the Boundaries of Pragmatic Markers in Real-time Voice-based Conversational Agents",
-      "year": 2025,
-      "venue": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
-      "authors": [
-        "Minjeong Shin",
-        "Jaehoon Choi",
-        "Hyungwoo Song",
-        "Junghwan Kim",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.1145/3706599.3719797",
-      "url": "https://doi.org/10.1145/3706599.3719797",
-      "openAccess": false,
-      "type": "proceedings-article",
-      "areas": [
-        "human-ai"
-      ]
-    },
-    {
       "id": "https://openalex.org/W4409720233",
       "title": "\"Ask Sir Oliver Ingham\": LLM-based Social Simulations for History Education",
       "year": 2025,
@@ -426,6 +406,26 @@
       "areas": [
         "human-ai",
         "accessibility"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4409720435",
+      "title": "\"I feel you, but...\": Exploring the Boundaries of Pragmatic Markers in Real-time Voice-based Conversational Agents",
+      "year": 2025,
+      "venue": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+      "authors": [
+        "Minjeong Shin",
+        "Jaehoon Choi",
+        "Hyungwoo Song",
+        "Junghwan Kim",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3706599.3719797",
+      "url": "https://doi.org/10.1145/3706599.3719797",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
       ]
     },
     {
@@ -1022,25 +1022,6 @@
       ]
     },
     {
-      "id": "https://openalex.org/W3161769503",
-      "title": "VisLab: Crowdsourcing Visualization Experiments in the Wild",
-      "year": 2021,
-      "venue": "Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems",
-      "authors": [
-        "Jinhan Choi",
-        "Changhoon Oh",
-        "Bongwon Suh",
-        "Nam Wook Kim"
-      ],
-      "doi": "https://doi.org/10.1145/3411763.3451826",
-      "url": "https://doi.org/10.1145/3411763.3451826",
-      "openAccess": false,
-      "type": "proceedings-article",
-      "areas": [
-        "accessibility"
-      ]
-    },
-    {
       "id": "https://openalex.org/W3161607221",
       "title": "Toward a Unified Framework for Visualization Design Guidelines",
       "year": 2021,
@@ -1053,6 +1034,25 @@
       ],
       "doi": "https://doi.org/10.1145/3411763.3451702",
       "url": "https://doi.org/10.1145/3411763.3451702",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "accessibility"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3161769503",
+      "title": "VisLab: Crowdsourcing Visualization Experiments in the Wild",
+      "year": 2021,
+      "venue": "Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems",
+      "authors": [
+        "Jinhan Choi",
+        "Changhoon Oh",
+        "Bongwon Suh",
+        "Nam Wook Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3411763.3451826",
+      "url": "https://doi.org/10.1145/3411763.3451826",
       "openAccess": false,
       "type": "proceedings-article",
       "areas": [

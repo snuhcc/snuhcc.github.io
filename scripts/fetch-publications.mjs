@@ -12,7 +12,7 @@ async function fetchAllWorks() {
   while (cursor) {
     const url =
       `${BASE_URL}/works?filter=author.id:${AUTHOR_ID}` +
-      `&select=id,title,publication_year,primary_location,authorships,open_access,doi,type` +
+      `&select=id,title,publication_year,primary_location,authorships,open_access,doi,type,concepts` +
       `&sort=publication_year:desc&per-page=100&cursor=${cursor}`;
 
     const res = await fetch(url, {
@@ -59,6 +59,49 @@ function formatWork(work) {
   };
 }
 
+const CONCEPT_SCORE_THRESHOLD = 0.3;
+const CONCEPT_MIN_PAPER_COUNT = 2;
+
+// OpenAlex disambiguates generic English nouns into unrelated Wikidata senses
+// (e.g. "Set (abstract data type)", "Key (lock)", "Work (physics)") — these all
+// carry a parenthetical suffix, so dropping such names filters out that noise.
+//
+// A few mis-tags slip through without a parenthetical suffix, e.g. a paper
+// about visual "logos" gets tagged with the "Logos Bible Software" concept.
+// Extend this set as new false positives turn up.
+const CONCEPT_DENYLIST = new Set(["Logos Bible Software"]);
+
+function isNoisyConceptName(name) {
+  return / \(/.test(name) || CONCEPT_DENYLIST.has(name);
+}
+
+// Level 0 concepts are too coarse to be useful (~85% of papers tag "Computer science").
+// Level 1 reads as "Subject Areas", level 2+ as specific "Keywords".
+function aggregateConcepts(works) {
+  const subjectAreas = new Map();
+  const keywords = new Map();
+
+  for (const work of works) {
+    for (const c of work.concepts ?? []) {
+      if (c.score < CONCEPT_SCORE_THRESHOLD || c.level === 0 || isNoisyConceptName(c.display_name)) continue;
+      const bucket = c.level === 1 ? subjectAreas : keywords;
+      bucket.set(c.display_name, (bucket.get(c.display_name) ?? 0) + 1);
+    }
+  }
+
+  const toRankedList = (bucket, limit) =>
+    [...bucket.entries()]
+      .filter(([, count]) => count >= CONCEPT_MIN_PAPER_COUNT)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit)
+      .map(([name, count]) => ({ name, count }));
+
+  return {
+    subjectAreas: toRankedList(subjectAreas, 20),
+    keywords: toRankedList(keywords, 35),
+  };
+}
+
 async function main() {
   console.log("Fetching publications for Bongwon Suh from OpenAlex...");
 
@@ -85,6 +128,16 @@ async function main() {
   );
 
   console.log(`Saved to ${outPath}`);
+
+  const keywordsOutPath = join(__dirname, "../src/data/keywords.json");
+  const { subjectAreas, keywords } = aggregateConcepts(works);
+
+  writeFileSync(
+    keywordsOutPath,
+    JSON.stringify({ updatedAt: new Date().toISOString(), subjectAreas, keywords }, null, 2)
+  );
+
+  console.log(`Saved to ${keywordsOutPath}`);
 }
 
 main().catch((e) => {
