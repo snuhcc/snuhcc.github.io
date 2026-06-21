@@ -149,7 +149,7 @@ function MemoryCard({
             src={coverSrc}
             alt={memory.name}
             fill
-            className="object-cover"
+            className="object-cover blur-md scale-105 group-hover:blur-none group-hover:scale-100 transition-all duration-500"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-slate-100">
