@@ -77,7 +77,7 @@
       "email": "skymind@snu.ac.kr",
       "title": "Ph.D. Student",
       "fields": ["Medical AI", "Time Series", "XAI"],
-      "photo": null,
+      "photo": "/images/people/gibeom-park.jpg",
       "bio": "Medical AI",
       "url": null
     },
@@ -124,7 +124,7 @@
       "fields": ["HCI", "LLM", "Embodied AI"],
       "photo": "/images/people/minchae-kim.jpg",
       "bio": "Embodied AI",
-      "url": "https://www.linkedin.com/in/minchae-kim-1b43672ab/"
+      "url": "https://minchaekim02.github.io/"
     },
     {
       "name": "Junyoung Jeon",
