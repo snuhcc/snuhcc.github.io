@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-06-19T02:32:00.228Z",
+  "updatedAt": "2026-07-01T06:19:45.077Z",
   "publications": [
+    {
+      "id": "https://openalex.org/W7166344745",
+      "title": "From Exploration to Creation: How Teachers Orchestrate AI-Supported Learning in History Classrooms",
+      "year": 2026,
+      "venue": "Lecture notes in computer science",
+      "authors": [
+        "Hyungwoo Song",
+        "Kieun Park",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-032-29760-0_48",
+      "url": "https://doi.org/10.1007/978-3-032-29760-0_48",
+      "openAccess": false,
+      "type": "book-chapter"
+    },
     {
       "id": "https://openalex.org/W7153979846",
       "title": "\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Healthcare Journeys to Deriving Design Implications for North Korean Defectors' Adaptation",

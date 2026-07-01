@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T02:32:00.230Z",
+  "updatedAt": "2026-07-01T06:19:45.080Z",
   "subjectAreas": [
     {
       "name": "Human–computer interaction",
@@ -58,16 +58,16 @@
       "count": 5
     },
     {
+      "name": "Mathematics education",
+      "count": 4
+    },
+    {
       "name": "Public relations",
       "count": 4
     },
     {
       "name": "Social psychology",
       "count": 4
-    },
-    {
-      "name": "Mathematics education",
-      "count": 3
     },
     {
       "name": "Speech recognition",
@@ -78,7 +78,7 @@
       "count": 3
     },
     {
-      "name": "Cognitive psychology",
+      "name": "Pedagogy",
       "count": 2
     }
   ],
