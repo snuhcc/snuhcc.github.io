@@ -53,10 +53,19 @@ async function pruneEmptyDirectories(startDir) {
   let currentDir = startDir;
 
   while (currentDir.startsWith(rootDir) && currentDir !== rootDir) {
-    const entries = await readdir(currentDir);
+    let entries;
+    try {
+      entries = await readdir(currentDir);
+    } catch (error) {
+      if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
+        currentDir = path.dirname(currentDir);
+        continue;
+      }
+      throw error;
+    }
     if (entries.length > 0) return;
 
-    await rm(currentDir, { recursive: false, force: true });
+    await rm(currentDir, { recursive: true, force: true });
     currentDir = path.dirname(currentDir);
   }
 }
