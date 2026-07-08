@@ -130,11 +130,14 @@ function PubCard({
   activeArea: string | null;
   setArea: (k: string | null) => void;
 }) {
+  const publicationYear = String(pub.year);
+  const venue = venueLabel(pub.venue, pub.year, pub.type);
+
   return (
     <div className="group py-1">
-      {venueLabel(pub.venue, pub.year, pub.type) && (
+      {venue && (
         <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
-          {venueLabel(pub.venue, pub.year, pub.type)}
+          {venue}
         </p>
       )}
       <a
@@ -143,6 +146,12 @@ function PubCard({
         rel="noopener noreferrer"
         style={{ fontFamily: "var(--font-sans)" }}
         className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
+        data-analytics-event="publication_open"
+        data-analytics-label={pub.title}
+        data-analytics-publication-id={pub.id}
+        data-analytics-publication-year={publicationYear}
+        data-analytics-publication-type={pub.type}
+        data-analytics-venue-label={venue ?? ""}
       >
         {pub.title}
       </a>
@@ -155,6 +164,11 @@ function PubCard({
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+            data-analytics-event="publication_asset_click"
+            data-analytics-label={`${pub.title} DOI`}
+            data-analytics-publication-id={pub.id}
+            data-analytics-publication-year={publicationYear}
+            data-analytics-asset-type="doi"
           >
             DOI
           </a>
@@ -165,6 +179,11 @@ function PubCard({
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+            data-analytics-event="publication_asset_click"
+            data-analytics-label={`${pub.title} PDF`}
+            data-analytics-publication-id={pub.id}
+            data-analytics-publication-year={publicationYear}
+            data-analytics-asset-type="pdf"
           >
             PDF
           </a>
@@ -178,6 +197,13 @@ function PubCard({
                 ? "border-[#2563eb]/40 text-[#2563eb]"
                 : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
             }`}
+            data-analytics-event="publication_area_chip_click"
+            data-analytics-label={AREAS[a] ?? a}
+            data-analytics-publication-id={pub.id}
+            data-analytics-publication-year={publicationYear}
+            data-analytics-filter-name="area"
+            data-analytics-filter-value={a}
+            data-analytics-filter-state={activeArea === a ? "active" : "inactive"}
           >
             {AREAS[a] ?? a}
           </button>
@@ -256,11 +282,18 @@ export default function PublicationsClient() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
+    <div
+      className="max-w-6xl mx-auto px-6 py-16"
+      data-analytics-section="publications_overview"
+      data-analytics-page="publications"
+    >
       <h1 className="text-3xl font-bold text-slate-900 mb-2">Publications</h1>
 
       {/* Area filter chips */}
-      <div className="flex flex-wrap gap-2 mb-10">
+      <div
+        className="flex flex-wrap gap-2 mb-10"
+        data-analytics-section="publications_filters"
+      >
         <button
           onClick={() => setArea(null)}
           className={`text-xs px-3 py-1.5 rounded-none border transition-colors ${
@@ -268,6 +301,11 @@ export default function PublicationsClient() {
               ? "bg-slate-900 text-white border-slate-900"
               : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 "
           }`}
+          data-analytics-event="publication_filter_click"
+          data-analytics-label="All"
+          data-analytics-filter-name="area"
+          data-analytics-filter-value="all"
+          data-analytics-filter-state={!activeArea ? "active" : "inactive"}
         >
           All
         </button>
@@ -280,6 +318,11 @@ export default function PublicationsClient() {
                 ? "bg-[#2563eb] text-white border-[#2563eb]"
                 : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 "
             }`}
+            data-analytics-event="publication_filter_click"
+            data-analytics-label={label}
+            data-analytics-filter-name="area"
+            data-analytics-filter-value={key}
+            data-analytics-filter-state={activeArea === key ? "active" : "inactive"}
           >
             {label}
           </button>
@@ -295,7 +338,10 @@ export default function PublicationsClient() {
 
       <div className="flex gap-10">
         {/* Main publications list */}
-        <div className="flex-1 min-w-0 space-y-8">
+        <div
+          className="flex-1 min-w-0 space-y-8"
+          data-analytics-section="publications_list"
+        >
           {recentYears.map((year) => (
             <section key={year} id={`year-${year}`}>
               <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
@@ -325,7 +371,10 @@ export default function PublicationsClient() {
 
         {/* Year TOC sidebar */}
         <aside className="hidden lg:block w-16 shrink-0">
-          <div className="sticky top-24 flex flex-col items-end gap-2">
+          <div
+            className="sticky top-24 flex flex-col items-end gap-2"
+            data-analytics-section="publications_year_nav"
+          >
             {recentYears.map((year) => (
               <button
                 key={year}
@@ -335,6 +384,9 @@ export default function PublicationsClient() {
                     ? "text-[#2563eb] font-semibold"
                     : "text-slate-400 hover:text-[#2563eb] hover:font-semibold"
                 }`}
+                data-analytics-event="publication_year_jump_click"
+                data-analytics-label={String(year)}
+                data-analytics-year={String(year)}
               >
                 {year}
               </button>
@@ -347,6 +399,9 @@ export default function PublicationsClient() {
                     ? "text-[#2563eb] font-semibold"
                     : "text-slate-400 hover:text-[#2563eb] hover:font-semibold"
                 }`}
+                data-analytics-event="publication_year_jump_click"
+                data-analytics-label="2013+"
+                data-analytics-year="2013_and_earlier"
               >
                 2013+
               </button>

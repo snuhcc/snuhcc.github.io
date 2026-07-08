@@ -41,11 +41,18 @@ export default function SeminarPage() {
   const groupedKeys = Object.keys(grouped).sort((a, b) => b.localeCompare(a));
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-16">
+    <div
+      className="max-w-5xl mx-auto px-6 py-16"
+      data-analytics-section="seminar_overview"
+      data-analytics-page="seminar"
+    >
       <h1 className="text-3xl font-bold text-slate-900 mb-8">Lab Seminar</h1>
 
       {/* Filters */}
-      <div className="flex flex-col gap-3 mb-10">
+      <div
+        className="flex flex-col gap-3 mb-10"
+        data-analytics-section="seminar_filters"
+      >
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedYear(null)}
@@ -54,6 +61,11 @@ export default function SeminarPage() {
                 ? "bg-slate-900 text-white border-slate-900"
                 : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
             }`}
+            data-analytics-event="seminar_filter_click"
+            data-analytics-label="All years"
+            data-analytics-filter-name="year"
+            data-analytics-filter-value="all"
+            data-analytics-filter-state={!selectedYear ? "active" : "inactive"}
           >
             All years
           </button>
@@ -66,6 +78,11 @@ export default function SeminarPage() {
                   ? "bg-slate-900 text-white border-slate-900"
                   : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
               }`}
+              data-analytics-event="seminar_filter_click"
+              data-analytics-label={year}
+              data-analytics-filter-name="year"
+              data-analytics-filter-value={year}
+              data-analytics-filter-state={selectedYear === year ? "active" : "inactive"}
             >
               {year}
             </button>
@@ -79,6 +96,11 @@ export default function SeminarPage() {
                 ? "bg-[#192e57] text-white border-[#192e57]"
                 : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
             }`}
+            data-analytics-event="seminar_filter_click"
+            data-analytics-label="All topics"
+            data-analytics-filter-name="topic"
+            data-analytics-filter-value="all"
+            data-analytics-filter-state={!selectedTag ? "active" : "inactive"}
           >
             All topics
           </button>
@@ -91,6 +113,11 @@ export default function SeminarPage() {
                   ? "bg-[#192e57] text-white border-[#192e57]"
                   : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
               }`}
+              data-analytics-event="seminar_filter_click"
+              data-analytics-label={tag}
+              data-analytics-filter-name="topic"
+              data-analytics-filter-value={tag}
+              data-analytics-filter-state={selectedTag === tag ? "active" : "inactive"}
             >
               {tag}
             </button>
@@ -98,7 +125,7 @@ export default function SeminarPage() {
         </div>
       </div>
 
-      <div className="space-y-12">
+      <div className="space-y-12" data-analytics-section="seminar_list">
         {groupedKeys.map((year) => (
           <section key={year}>
             <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
@@ -135,6 +162,13 @@ export default function SeminarPage() {
                                 ? "border-[#2563eb] text-[#2563eb]"
                                 : "border-slate-200 text-slate-400 hover:border-slate-400 hover:text-slate-600"
                             }`}
+                            data-analytics-event="seminar_tag_click"
+                            data-analytics-label={tag}
+                            data-analytics-seminar-title={s.title}
+                            data-analytics-seminar-date={s.date}
+                            data-analytics-filter-name="topic"
+                            data-analytics-filter-value={tag}
+                            data-analytics-filter-state={selectedTag === tag ? "active" : "inactive"}
                           >
                             {tag}
                           </button>
@@ -145,6 +179,11 @@ export default function SeminarPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-xs px-2.5 py-0.5 border border-slate-300 text-slate-500 hover:border-slate-500 hover:text-slate-700 transition-colors"
+                            data-analytics-event="seminar_slides_click"
+                            data-analytics-label={s.title}
+                            data-analytics-seminar-title={s.title}
+                            data-analytics-seminar-date={s.date}
+                            data-analytics-presenter={s.presenter}
                           >
                             PDF
                           </a>

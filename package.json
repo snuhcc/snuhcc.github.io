@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:branch-site": "next build && node scripts/sync-export-to-root.mjs",
     "start": "next start",
     "lint": "eslint"
   },

@@ -34,7 +34,11 @@ export default function NewsPage() {
   );
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
+    <div
+      className="max-w-4xl mx-auto px-6 py-16"
+      data-analytics-section="news_archive"
+      data-analytics-page="news"
+    >
       <h1 className="text-3xl font-bold text-slate-900 mb-12">News</h1>
       <ul className="divide-y divide-slate-100">
         {items.map((item) => (
@@ -52,6 +56,11 @@ export default function NewsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#0B3D91] hover:underline underline-offset-2"
+                  data-analytics-event="news_item_click"
+                  data-analytics-label={item.text}
+                  data-analytics-news-id={item.id}
+                  data-analytics-news-type={item.type}
+                  data-analytics-news-date={item.date}
                 >
                   {item.text}
                 </a>

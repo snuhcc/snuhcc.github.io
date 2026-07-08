@@ -43,7 +43,11 @@ const memories = [
 
 export default function MemoriesPage() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
+    <div
+      className="max-w-6xl mx-auto px-6 py-16"
+      data-analytics-section="memories_overview"
+      data-analytics-page="memories"
+    >
       <h1 className="text-3xl font-bold text-slate-900 mb-2">Memories</h1>
 
       <div className="flex items-end justify-center gap-4 mb-12">
