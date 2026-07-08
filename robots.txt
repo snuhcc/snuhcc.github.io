@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://snuhcc.github.io/hcclab.github.io/sitemap.xml
