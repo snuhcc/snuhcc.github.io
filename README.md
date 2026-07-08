@@ -23,7 +23,7 @@ Source code for the **Human Centered Computing Lab (HCC Lab)** homepage at Seoul
 
 Publications are automatically fetched from [OpenAlex](https://openalex.org) (Prof. Bongwon Suh, `A5027548665`) and saved to `src/data/publications.json`.
 
-The sync runs every Monday at 2AM UTC via GitHub Actions. To trigger manually:
+The sync runs on the 1st of each month at 2AM UTC via GitHub Actions. To trigger manually:
 
 > **Actions** → **Sync Publications** → **Run workflow**
 
@@ -43,7 +43,7 @@ Pushing to `master` automatically builds and deploys via GitHub Actions.
 
 > **Settings → Pages → Source** must be set to **GitHub Actions**.
 
-As a fallback, this repository also syncs the static export back into the branch source so the site can still be served if GitHub Pages is accidentally switched to branch-based publishing.
+This repository does **not** commit generated export files back into the branch. GitHub Pages should deploy from the Actions artifact only.
 
 ## Google Analytics
 

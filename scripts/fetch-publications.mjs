@@ -61,6 +61,104 @@ function formatWork(work) {
 
 const CONCEPT_SCORE_THRESHOLD = 0.3;
 const CONCEPT_MIN_PAPER_COUNT = 2;
+const GENERATED_NEWS_SOURCE = "publications";
+
+const PAPER_NEWS_RULES = [
+  {
+    key: "acl",
+    label: (year) => `ACL ${year}`,
+    url: (year) => `https://${year}.aclweb.org/`,
+    buckets: [
+      {
+        pattern:
+          /^Proceedings of the \d+(st|nd|rd|th) Annual Meeting of the Association for Computational Linguistics/i,
+        bucket: "paper",
+      },
+      {
+        pattern: /^Findings of the Association for Computational Linguistics: ACL /i,
+        bucket: "paper",
+      },
+    ],
+  },
+  {
+    key: "chi",
+    label: (year) => `CHI ${year}`,
+    url: (year) => `https://chi${year}.acm.org/`,
+    buckets: [
+      {
+        pattern:
+          /^Proceedings of the (\d{4} )?CHI Conference on Human Factors in Computing Systems$/i,
+        bucket: "paper",
+      },
+      {
+        pattern:
+          /^Proceedings of the Extended Abstracts of the (\d{4} )?CHI Conference on Human Factors in Computing Systems$/i,
+        bucket: "poster",
+      },
+      {
+        pattern: /^Extended Abstracts of the CHI Conference on Human Factors in Computing Systems$/i,
+        bucket: "poster",
+      },
+    ],
+  },
+  {
+    key: "iui",
+    label: (year) => `IUI ${year}`,
+    url: (year) => `https://iui.acm.org/${year}/`,
+    buckets: [
+      {
+        pattern: /International Conference on Intelligent User Interfaces/i,
+        bucket: "paper",
+      },
+      {
+        pattern: /Companion Proceedings of the .*International Conference on Intelligent User Interfaces/i,
+        bucket: "poster",
+      },
+    ],
+  },
+  {
+    key: "assets",
+    label: (year) => `ASSETS ${year}`,
+    url: (year) => `https://assets${String(year).slice(-2)}.sigaccess.org/`,
+    buckets: [
+      {
+        pattern: /SIGACCESS Conference on Computers and Accessibility/i,
+        bucket: "paper",
+      },
+    ],
+  },
+  {
+    key: "sigir",
+    label: (year) => `SIGIR ${year}`,
+    buckets: [
+      {
+        pattern: /International ACM SIGIR Conference on Research and Development in Information Retrieval/i,
+        bucket: "paper",
+      },
+    ],
+  },
+  {
+    key: "cikm",
+    label: (year) => `CIKM ${year}`,
+    buckets: [
+      {
+        pattern: /ACM International Conference on Information and Knowledge Management/i,
+        bucket: "paper",
+      },
+    ],
+  },
+  {
+    key: "icwsm",
+    label: (year) => `ICWSM ${year}`,
+    url: (year) => `https://www.icwsm.org/${year}/`,
+    buckets: [
+      {
+        pattern: /International AAAI Conference on Web and Social Media/i,
+        bucket: "paper",
+      },
+    ],
+  },
+];
 
 // OpenAlex disambiguates generic English nouns into unrelated Wikidata senses
 // (e.g. "Set (abstract data type)", "Key (lock)", "Work (physics)") — these all
@@ -73,6 +171,113 @@ const CONCEPT_DENYLIST = new Set(["Logos Bible Software"]);
 
 function isNoisyConceptName(name) {
   return / \(/.test(name) || CONCEPT_DENYLIST.has(name);
+}
+
+function matchPaperNewsRule(publication) {
+  const venue = publication.venue ?? "";
+
+  for (const rule of PAPER_NEWS_RULES) {
+    for (const matcher of rule.buckets) {
+      if (matcher.pattern.test(venue)) {
+        return { rule, bucket: matcher.bucket };
+      }
+    }
+  }
+
+  return null;
+}
+
+function pluralize(count, singular, plural = `${singular}s`) {
+  return count === 1 ? singular : plural;
+}
+
+function buildGeneratedPaperNews(publications, existingNews, syncMonth) {
+  const groups = new Map();
+  const currentYear = new Date().getUTCFullYear();
+
+  for (const publication of publications) {
+    if (publication.type !== "proceedings-article") continue;
+
+    const match = matchPaperNewsRule(publication);
+    if (!match) continue;
+
+    const year = publication.year;
+    if (!year) continue;
+
+    const groupKey = `${match.rule.key}-${year}`;
+    const nextGroup =
+      groups.get(groupKey) ?? {
+        rule: match.rule,
+        year,
+        paper: 0,
+        poster: 0,
+      };
+
+    nextGroup[match.bucket] += 1;
+    groups.set(groupKey, nextGroup);
+  }
+
+  const manualIds = new Set(
+    existingNews
+      .filter((item) => item.source !== GENERATED_NEWS_SOURCE)
+      .map((item) => item.id)
+  );
+  const existingGeneratedById = new Map(
+    existingNews
+      .filter((item) => item.source === GENERATED_NEWS_SOURCE)
+      .map((item) => [item.id, item])
+  );
+
+  return [...groups.values()]
+    .sort((a, b) => b.year - a.year || a.rule.key.localeCompare(b.rule.key))
+    .flatMap((group) => {
+      const id = `${group.rule.key}${group.year}-papers`;
+      if (manualIds.has(id)) return [];
+
+      const label = group.rule.label(group.year);
+      const parts = [];
+      if (group.paper > 0) {
+        parts.push(`${group.paper} ${pluralize(group.paper, "paper")}`);
+      }
+      if (group.poster > 0) {
+        parts.push(`${group.poster} ${pluralize(group.poster, "poster")}`);
+      }
+      if (parts.length === 0) return [];
+
+      const text = `Congrats! ${parts.join(" and ")} accepted at ${label}!`;
+      const previous = existingGeneratedById.get(id);
+      if (!previous && group.year < currentYear) return [];
+
+      return [
+        {
+          id,
+          date:
+            previous && previous.text === text && previous.url === group.rule.url?.(group.year)
+              ? previous.date
+              : syncMonth,
+          type: "paper",
+          text,
+          ...(group.rule.url ? { url: group.rule.url(group.year) } : {}),
+          source: GENERATED_NEWS_SOURCE,
+        },
+      ];
+    });
+}
+
+function syncNewsFromPublications(publications, newsPath) {
+  const existingNewsData = JSON.parse(readFileSync(newsPath, "utf-8"));
+  const existingNews = existingNewsData.news ?? [];
+  const syncMonth = new Date().toISOString().slice(0, 7);
+
+  const manualNews = existingNews.filter((item) => item.source !== GENERATED_NEWS_SOURCE);
+  const generatedPaperNews = buildGeneratedPaperNews(publications, existingNews, syncMonth);
+  const mergedNews = [...manualNews, ...generatedPaperNews].sort((a, b) => {
+    const dateOrder = b.date.localeCompare(a.date);
+    return dateOrder !== 0 ? dateOrder : a.id.localeCompare(b.id);
+  });
+
+  writeFileSync(newsPath, JSON.stringify({ news: mergedNews }, null, 2));
+  console.log(`Saved to ${newsPath}`);
 }
 
 // Level 0 concepts are too coarse to be useful (~85% of papers tag "Computer science").
@@ -138,6 +343,9 @@ async function main() {
   );
 
   console.log(`Saved to ${keywordsOutPath}`);
+
+  const newsOutPath = join(__dirname, "../src/data/news.json");
+  syncNewsFromPublications(merged, newsOutPath);
 }
 
 main().catch((e) => {

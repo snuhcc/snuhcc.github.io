@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T06:19:45.077Z",
+  "updatedAt": "2026-07-08T05:12:16.681Z",
   "publications": [
     {
       "id": "https://openalex.org/W7166344745",
@@ -231,7 +231,7 @@
       "doi": "https://doi.org/10.48550/arxiv.2603.12632",
       "url": "https://doi.org/10.48550/arxiv.2603.12632",
       "openAccess": true,
-      "type": "article"
+      "type": "Preprint"
     },
     {
       "id": "https://openalex.org/W7138824356",
@@ -272,6 +272,40 @@
         "human-ai",
         "accessibility"
       ]
+    },
+    {
+      "id": "https://openalex.org/W7166882901",
+      "title": "Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates",
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "authors": [
+        "Kyusik Kim",
+        "Jaehoon Choi",
+        "Hyunwoo Yoo",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
+      "url": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
+      "openAccess": true,
+      "type": "proceedings-article"
+    },
+    {
+      "id": "https://openalex.org/W7166889578",
+      "title": "Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation",
+      "year": 2026,
+      "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "authors": [
+        "Jeongwoo Ryu",
+        "Soomin Kim",
+        "Jinsu Eun",
+        "Kyusik Kim",
+        "Changhoon Oh",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2026.acl-long.2046",
+      "url": "https://doi.org/10.18653/v1/2026.acl-long.2046",
+      "openAccess": false,
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W4415444971",
@@ -320,7 +354,7 @@
       "id": "https://openalex.org/W4417175677",
       "title": "DICE-BENCH: Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues",
       "year": 2025,
-      "venue": "ArXiv.org",
+      "venue": "arXiv (Cornell University)",
       "authors": [
         "Kyochul Jang",
         "Donghyeon Lee",
@@ -342,7 +376,7 @@
       "id": "https://openalex.org/W4415311623",
       "title": "MAS-LitEval : Multi-Agent System for Literary Translation Quality Assessment",
       "year": 2025,
-      "venue": "ArXiv.org",
+      "venue": "arXiv (Cornell University)",
       "authors": [
         "Junghwan Kim",
         "K. Y. Park",
@@ -1752,7 +1786,7 @@
       "id": "https://openalex.org/W2562757859",
       "title": "Work in Progress 5: A System Designed to Collect Users’ TV-Watching Data Using a Smart TV, Smartphones, and Smart Watches",
       "year": 2016,
-      "venue": "Figshare",
+      "venue": "INDIGO (University of Illinois at Chicago)",
       "authors": [
         "Jehwan Seo",
         "Hyunchul Lim",
@@ -1878,7 +1912,7 @@
       "id": "https://openalex.org/W2271397866",
       "title": "Mapping Visual Attributes of Logos: A Case Study of Parallel Coordinate Plots (EuroVis 2015)",
       "year": 2015,
-      "venue": "Figshare",
+      "venue": "INDIGO (University of Illinois at Chicago)",
       "authors": [
         "Taeil Jeon",
         "Wonho Lee",
@@ -1950,7 +1984,7 @@
       "id": "https://openalex.org/W2293060943",
       "title": "N-polar Visualization: A Radial Layout with Multiple Interactive Anchors (PacificVis 2015)",
       "year": 2015,
-      "venue": "Figshare",
+      "venue": "INDIGO (University of Illinois at Chicago)",
       "authors": [
         "Taeil Jeon",
         "Ji–Hyun Lee",
@@ -1979,7 +2013,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618823",
       "url": "https://doi.org/10.6084/m9.figshare.1618823",
       "openAccess": true,
-      "type": "dataset"
+      "type": "Dataset"
     },
     {
       "id": "https://openalex.org/W4394323087",
@@ -1995,7 +2029,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618824",
       "url": "https://doi.org/10.6084/m9.figshare.1618824",
       "openAccess": true,
-      "type": "dataset"
+      "type": "Dataset"
     },
     {
       "id": "https://openalex.org/W4394452146",
@@ -2012,7 +2046,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618820",
       "url": "https://doi.org/10.6084/m9.figshare.1618820",
       "openAccess": true,
-      "type": "dataset"
+      "type": "Dataset"
     },
     {
       "id": "https://openalex.org/W4394528743",
@@ -2028,7 +2062,7 @@
       "doi": "https://doi.org/10.6084/m9.figshare.1618823.v1",
       "url": "https://doi.org/10.6084/m9.figshare.1618823.v1",
       "openAccess": true,
-      "type": "dataset",
+      "type": "Dataset",
       "areas": [
         "accessibility"
       ]
@@ -2513,7 +2547,7 @@
       "id": "https://openalex.org/W87704740",
       "title": "Image management using pattern recognition systems",
       "year": 2005,
-      "venue": "Digital Repository at the University of Maryland (University of Maryland College Park)",
+      "venue": "University Libraries (University of Maryland)",
       "authors": [
         "Bongwon Suh",
         "Benjamin B. Bederson"
@@ -2603,7 +2637,7 @@
       "id": "https://openalex.org/W1914231478",
       "title": "CounterPoint: OZONE: A Zoomable Interface for Navigating Ontology",
       "year": 2001,
-      "venue": "Digital Repository at the University of Maryland (University of Maryland College Park)",
+      "venue": "University Libraries (University of Maryland)",
       "authors": [
         "Bongwon Suh",
         "Benjamin B. Bederson"

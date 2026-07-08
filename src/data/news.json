@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "id": "acl2026-papers",
+      "date": "2026-07",
+      "type": "paper",
+      "text": "Congrats! 2 papers accepted at ACL 2026!",
+      "url": "https://2026.aclweb.org/",
+      "source": "publications"
+    },
+    {
       "id": "its2026-best-paper-award",
       "date": "2026-06",
       "type": "award",
@@ -37,7 +45,7 @@
       "id": "acl2025-papers",
       "date": "2025-08",
       "type": "paper",
-      "text": "1 paper accepted at Findings of ACL 2025!",
+      "text": "2 papers accepted at Findings of ACL 2025!",
       "url": "https://2025.aclweb.org/"
     },
     {
