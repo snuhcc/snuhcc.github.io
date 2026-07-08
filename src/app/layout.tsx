@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Space_Mono, Lora } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
@@ -11,7 +14,7 @@ const spaceMono = Space_Mono({
 });
 const lora = Lora({ subsets: ["latin"], variable: "--font-sans" });
 
-const BASE_URL = "https://snuhcc.github.io/hcclab.github.io";
+const BASE_URL = "https://snuhcc.github.io";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -115,6 +118,10 @@ export default function RootLayout({
           }}
         />
         <Navbar />
+        <GoogleAnalytics />
+        <Suspense fallback={null}>
+          <AnalyticsTracker />
+        </Suspense>
         <main className="flex-1 pt-16">{children}</main>
         <footer className="bg-[#192e57] mt-16">
           <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between gap-10">

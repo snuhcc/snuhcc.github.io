@@ -18,7 +18,11 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative min-h-[55vh] flex items-center overflow-hidden bg-[#0B3D91]">
+      <section
+        className="relative min-h-[55vh] flex items-center overflow-hidden bg-[#0B3D91]"
+        data-analytics-section="home_hero"
+        data-analytics-page="home"
+      >
         <ShaderHero />
         <div className="absolute inset-0 bg-black/30 z-[1]" />
         <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-16">
@@ -38,12 +42,19 @@ export default function Home() {
       </section>
 
       {/* Research Snapshot */}
-      <section className="border-t border-slate-100 py-20">
+      <section
+        className="border-t border-slate-100 py-20"
+        data-analytics-section="home_research_snapshot"
+        data-analytics-page="home"
+      >
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-baseline justify-between mb-12">
             <h2 className="text-2xl font-bold text-slate-900">Research Snapshot</h2>
             <Link
               href="/publications"
+              data-analytics-event="home_section_link_click"
+              data-analytics-label="All publications"
+              data-analytics-destination="/publications"
               className="text-sm text-slate-400 hover:text-[#0B3D91] transition-colors"
             >
               all publications →
@@ -73,12 +84,19 @@ export default function Home() {
       </section>
 
       {/* News */}
-      <section className="border-t border-slate-200 py-20">
+      <section
+        className="border-t border-slate-200 py-20"
+        data-analytics-section="home_news"
+        data-analytics-page="home"
+      >
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-baseline justify-between mb-10">
             <h2 className="text-2xl font-bold text-slate-900">News</h2>
             <Link
               href="/news"
+              data-analytics-event="home_section_link_click"
+              data-analytics-label="All news"
+              data-analytics-destination="/news"
               className="text-sm text-slate-400 hover:text-[#0B3D91] transition-colors"
             >
               all news →
@@ -96,7 +114,17 @@ export default function Home() {
                   </span>
                   <span className="text-sm text-slate-700 leading-relaxed">
                     {item.url ? (
-                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-[#0B3D91] hover:underline underline-offset-2">
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[#0B3D91] hover:underline underline-offset-2"
+                        data-analytics-event="news_item_click"
+                        data-analytics-label={item.text}
+                        data-analytics-news-id={item.id}
+                        data-analytics-news-type={item.type}
+                        data-analytics-news-date={item.date}
+                      >
                         {item.text}
                       </a>
                     ) : (
@@ -109,6 +137,9 @@ export default function Home() {
           <div className="mt-6 flex justify-end">
             <Link
               href="/news"
+              data-analytics-event="home_section_link_click"
+              data-analytics-label="News archive plus"
+              data-analytics-destination="/news"
               className="w-8 h-8 flex items-center justify-center border border-slate-200 text-slate-400 hover:border-[#0B3D91] hover:text-[#0B3D91] transition-colors text-lg leading-none"
             >
               +

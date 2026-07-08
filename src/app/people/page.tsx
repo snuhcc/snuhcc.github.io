@@ -27,6 +27,10 @@ type AlumniMember = {
 
 const titleOrder = ["Professor", "Ph.D. Student", "Master's Student"];
 
+function sectionKey(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+}
+
 function MemberCard({ member }: { member: CurrentMember }) {
   const isLinkedIn = member.url?.includes("linkedin.com");
 
@@ -58,6 +62,11 @@ function MemberCard({ member }: { member: CurrentMember }) {
               href={`mailto:${member.email}`}
               className="text-slate-400 hover:text-[#0B3D91] transition-colors"
               title={member.email}
+              data-analytics-event="member_contact_click"
+              data-analytics-label={member.name}
+              data-analytics-member-name={member.name}
+              data-analytics-member-title={member.title}
+              data-analytics-contact-type="email"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -72,6 +81,11 @@ function MemberCard({ member }: { member: CurrentMember }) {
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-[#0B3D91] transition-colors"
               title={member.url}
+              data-analytics-event="member_profile_click"
+              data-analytics-label={member.name}
+              data-analytics-member-name={member.name}
+              data-analytics-member-title={member.title}
+              data-analytics-profile-type={isLinkedIn ? "linkedin" : "website"}
             >
               {isLinkedIn ? (
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -120,7 +134,15 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
         <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
         <div className="flex flex-col gap-1 text-sm text-slate-500">
           {member.email && (
-            <a href={`mailto:${member.email}`} className="hover:text-[#0B3D91] transition-colors">
+            <a
+              href={`mailto:${member.email}`}
+              className="hover:text-[#0B3D91] transition-colors"
+              data-analytics-event="member_contact_click"
+              data-analytics-label={member.name}
+              data-analytics-member-name={member.name}
+              data-analytics-member-title={member.title}
+              data-analytics-contact-type="email"
+            >
               {member.email}
             </a>
           )}
@@ -130,6 +152,11 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#0B3D91] transition-colors"
+              data-analytics-event="member_profile_click"
+              data-analytics-label={member.name}
+              data-analytics-member-name={member.name}
+              data-analytics-member-title={member.title}
+              data-analytics-profile-type={isScholar ? "google_scholar" : "website"}
             >
               {isScholar ? "Google Scholar" : member.url.replace(/^https?:\/\//, "")}
             </a>
@@ -149,6 +176,11 @@ function AlumniCard({ member }: { member: AlumniMember }) {
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
+          data-analytics-event="member_profile_click"
+          data-analytics-label={member.name}
+          data-analytics-member-name={member.name}
+          data-analytics-member-title="Alumni"
+          data-analytics-profile-type="alumni_profile"
         >
           {member.name}
         </a>
@@ -169,7 +201,11 @@ export default function PeoplePage() {
   }));
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
+    <div
+      className="max-w-6xl mx-auto px-6 py-16"
+      data-analytics-section="people_overview"
+      data-analytics-page="people"
+    >
       <h1 className="text-3xl font-bold text-slate-900 mb-2">People</h1>
       <p className="text-slate-500 mb-16">
         Graduate School of Convergence Science and Technology, Seoul National University
@@ -178,7 +214,12 @@ export default function PeoplePage() {
       {/* Current members */}
       {grouped.map(({ title, members }) =>
         members.length === 0 ? null : (
-          <section key={title} className="mb-16">
+          <section
+            key={title}
+            className="mb-16"
+            data-analytics-section={`people_${sectionKey(title)}`}
+            data-analytics-member-group={title}
+          >
             <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
               {title}
             </h2>
@@ -200,7 +241,10 @@ export default function PeoplePage() {
       )}
 
       {/* Alumni */}
-      <section>
+      <section
+        data-analytics-section="people_alumni"
+        data-analytics-member-group="Alumni"
+      >
         <h2 className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-10 pb-3 border-b border-slate-100">
           Alumni
         </h2>

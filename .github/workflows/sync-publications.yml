@@ -18,14 +18,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Fetch publications from OpenAlex
         run: node scripts/fetch-publications.mjs
+
+      - name: Build branch-based static export
+        run: npm run build:branch-site
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/publications.json src/data/keywords.json
-          git diff --cached --quiet || git commit -m "sync: update publications from OpenAlex"
+          git add -A .
+          git diff --cached --quiet || git commit -m "sync: update publications and static export"
           git push

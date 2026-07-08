@@ -31,6 +31,7 @@ The sync runs every Monday at 2AM UTC via GitHub Actions. To trigger manually:
 
 ```bash
 npm install
+cp .env.example .env.local
 npm run dev
 ```
 
@@ -41,6 +42,32 @@ Open `http://localhost:3000`.
 Pushing to `master` automatically builds and deploys via GitHub Actions.
 
 > **Settings → Pages → Source** must be set to **GitHub Actions**.
+
+As a fallback, this repository also syncs the static export back into the branch source so the site can still be served if GitHub Pages is accidentally switched to branch-based publishing.
+
+## Google Analytics
+
+This site supports **GA4** via `NEXT_PUBLIC_GA_MEASUREMENT_ID`.
+
+Local setup:
+
+```bash
+cp .env.example .env.local
+```
+
+Then set your measurement ID:
+
+```bash
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+GitHub Pages setup:
+
+1. Open **GitHub → Settings → Secrets and variables → Actions → Variables**
+2. Add a repository variable named `NEXT_PUBLIC_GA_MEASUREMENT_ID`
+3. Set its value to your GA4 measurement ID
+
+Tracked interactions include page views, section views, navigation clicks, member profile/contact clicks, publication/news link clicks, seminar filter interactions, and memory gallery interactions.
 
 ## Contributing
 

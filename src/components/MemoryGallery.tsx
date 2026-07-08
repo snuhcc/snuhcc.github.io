@@ -57,6 +57,9 @@ function Lightbox({
     <div
       className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
       onClick={onClose}
+      data-analytics-section="memory_lightbox"
+      data-analytics-memory-name={memory.name}
+      data-analytics-memory-year={String(memory.year)}
     >
       {/* Close */}
       <button
@@ -81,6 +84,10 @@ function Lightbox({
         <button
           className="absolute left-4 text-white/70 hover:text-white text-4xl z-10 px-4 py-8"
           onClick={(e) => { e.stopPropagation(); prev(); }}
+          data-analytics-event="memory_lightbox_nav_click"
+          data-analytics-label="previous"
+          data-analytics-memory-name={memory.name}
+          data-analytics-memory-year={String(memory.year)}
         >
           ‹
         </button>
@@ -105,6 +112,10 @@ function Lightbox({
         <button
           className="absolute right-4 text-white/70 hover:text-white text-4xl z-10 px-4 py-8"
           onClick={(e) => { e.stopPropagation(); next(); }}
+          data-analytics-event="memory_lightbox_nav_click"
+          data-analytics-label="next"
+          data-analytics-memory-name={memory.name}
+          data-analytics-memory-year={String(memory.year)}
         >
           ›
         </button>
@@ -120,6 +131,11 @@ function Lightbox({
               className={`w-2 h-2 rounded-full transition-all ${
                 i === current ? "bg-white scale-125" : "bg-white/40 hover:bg-white/70"
               }`}
+              data-analytics-event="memory_lightbox_thumbnail_click"
+              data-analytics-label={`${memory.name} ${i + 1}`}
+              data-analytics-memory-name={memory.name}
+              data-analytics-memory-year={String(memory.year)}
+              data-analytics-photo-index={String(i + 1)}
             />
           ))}
         </div>
@@ -142,6 +158,12 @@ function MemoryCard({
     <div
       className="border border-slate-100 overflow-hidden hover:border-slate-200 hover:shadow-md transition-all group cursor-pointer"
       onClick={() => coverSrc && onClick()}
+      data-analytics-event={coverSrc ? "memory_open" : undefined}
+      data-analytics-label={memory.name}
+      data-analytics-memory-name={memory.name}
+      data-analytics-memory-year={String(memory.year)}
+      data-analytics-memory-category={memory.category}
+      data-analytics-photo-count={String(memory.photos.length)}
     >
       <div className="h-48 bg-slate-50 overflow-hidden relative">
         {coverSrc ? (
@@ -193,7 +215,11 @@ export default function MemoryGallery({ memories }: { memories: MemoryEvent[] })
       <div className="space-y-14">
 
         {years.map((year) => (
-          <section key={year}>
+          <section
+            key={year}
+            data-analytics-section={`memories_${year}`}
+            data-analytics-year={String(year)}
+          >
             <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
               {year}
             </h2>
