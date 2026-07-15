@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-07-08T05:12:16.681Z",
+  "updatedAt": "2026-07-15T02:43:47.895Z",
   "publications": [
+    {
+      "id": "https://openalex.org/W7167931870",
+      "title": "Who Is Shopping With You? How Persona Design Shapes Cognitive and Social Engagement in AI Shopping Agents",
+      "year": 2026,
+      "venue": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "authors": [
+        "Hyungwoo Song",
+        "Kyusik Kim",
+        "Hyeonseok Jeon",
+        "Minjeong Shin",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3805712.3809984",
+      "url": "https://doi.org/10.1145/3805712.3809984",
+      "openAccess": true,
+      "type": "proceedings-article"
+    },
     {
       "id": "https://openalex.org/W7166344745",
       "title": "From Exploration to Creation: How Teachers Orchestrate AI-Supported Learning in History Classrooms",

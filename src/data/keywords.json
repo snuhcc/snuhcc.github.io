@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-07-08T05:12:16.685Z",
+  "updatedAt": "2026-07-15T02:43:47.897Z",
   "subjectAreas": [
     {
       "name": "Human–computer interaction",
-      "count": 42
+      "count": 43
     },
     {
       "name": "Artificial intelligence",
@@ -38,15 +38,15 @@
       "count": 9
     },
     {
+      "name": "Social psychology",
+      "count": 6
+    },
+    {
       "name": "Data mining",
       "count": 6
     },
     {
       "name": "Advertising",
-      "count": 5
-    },
-    {
-      "name": "Social psychology",
       "count": 5
     },
     {
@@ -70,16 +70,16 @@
       "count": 4
     },
     {
+      "name": "Cognitive psychology",
+      "count": 3
+    },
+    {
       "name": "Speech recognition",
       "count": 3
     },
     {
       "name": "Computer security",
       "count": 3
-    },
-    {
-      "name": "Pedagogy",
-      "count": 2
     }
   ],
   "keywords": [
@@ -89,7 +89,7 @@
     },
     {
       "name": "Social media",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Chatbot",
@@ -150,6 +150,14 @@
     {
       "name": "Credibility",
       "count": 4
+    },
+    {
+      "name": "Structuring",
+      "count": 3
+    },
+    {
+      "name": "Cognition",
+      "count": 3
     },
     {
       "name": "Active listening",
@@ -213,14 +221,6 @@
     },
     {
       "name": "Encyclopedia",
-      "count": 3
-    },
-    {
-      "name": "Metadata",
-      "count": 3
-    },
-    {
-      "name": "Annotation",
       "count": 3
     }
   ]

@@ -43,8 +43,14 @@ function venueLabel(venue: string | null, year: number, type: string): string | 
   if (/CSCW|Computer-Supported Cooperative/i.test(v))
     return isComp ? `CSCW '${yy}  ·  Companion` : `CSCW '${yy}  ·  Full Paper`;
 
+  // ACL
+  if (/^Findings of the Association for Computational Linguistics: ACL /i.test(v))
+    return `ACL '${yy}  ·  Findings`;
+  if (/Association for Computational Linguistics/i.test(v))
+    return /Long Papers/i.test(v) ? `ACL '${yy}  ·  Long Paper` : `ACL '${yy}  ·  Full Paper`;
+
   // UIST
-  if (/UIST|User Interface Software and Tech/i.test(v)) return `UIST '${yy}  ·  Full Paper`;
+  if (/\bUIST\b|User Interface Software and Technology/i.test(v)) return `UIST '${yy}  ·  Full Paper`;
 
   // IUI
   if (/Intelligent User Interface/i.test(v))
