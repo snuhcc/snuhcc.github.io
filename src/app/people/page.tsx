@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import membersData from "@/data/members.json";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ type CurrentMember = {
   fields: string[];
   photo: string | null;
   bio: string;
+  profilePath?: string | null;
   url: string | null;
 };
 
@@ -131,7 +133,21 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
 
       {/* Info */}
       <div>
-        <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
+        {member.profilePath ? (
+          <Link
+            href={member.profilePath}
+            className="inline-flex text-base font-semibold text-slate-900 mb-2 hover:text-[#0B3D91] transition-colors"
+            data-analytics-event="member_internal_profile_click"
+            data-analytics-label={member.name}
+            data-analytics-member-name={member.name}
+            data-analytics-member-title={member.title}
+            data-analytics-profile-type="internal_profile"
+          >
+            {member.name}
+          </Link>
+        ) : (
+          <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
+        )}
         <div className="flex flex-col gap-1 text-sm text-slate-500">
           {member.email && (
             <a

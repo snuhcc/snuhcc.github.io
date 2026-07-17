@@ -246,15 +246,13 @@ function buildGeneratedPaperNews(publications, existingNews, syncMonth) {
 
       const text = `Congrats! ${parts.join(" and ")} accepted at ${label}!`;
       const previous = existingGeneratedById.get(id);
+      if (previous) return [];
       if (!previous && group.year < currentYear) return [];
 
       return [
         {
           id,
-          date:
-            previous && previous.text === text && previous.url === group.rule.url?.(group.year)
-              ? previous.date
-              : syncMonth,
+          date: syncMonth,
           type: "paper",
           text,
           ...(group.rule.url ? { url: group.rule.url(group.year) } : {}),
@@ -269,9 +267,8 @@ function syncNewsFromPublications(publications, newsPath) {
   const existingNews = existingNewsData.news ?? [];
   const syncMonth = new Date().toISOString().slice(0, 7);
 
-  const manualNews = existingNews.filter((item) => item.source !== GENERATED_NEWS_SOURCE);
   const generatedPaperNews = buildGeneratedPaperNews(publications, existingNews, syncMonth);
-  const mergedNews = [...manualNews, ...generatedPaperNews].sort((a, b) => {
+  const mergedNews = [...existingNews, ...generatedPaperNews].sort((a, b) => {
     const dateOrder = b.date.localeCompare(a.date);
     return dateOrder !== 0 ? dateOrder : a.id.localeCompare(b.id);
   });
@@ -318,14 +315,14 @@ async function main() {
   const __dirname = dirname(fileURLToPath(import.meta.url));
   const outPath = join(__dirname, "../src/data/publications.json");
 
-  // Preserve manually-curated fields (e.g. "areas") that OpenAlex doesn't provide,
-  // so re-syncing doesn't clobber existing categorization.
+  // Append-only sync:
+  // keep existing publication entries exactly as they are, and only add
+  // genuinely new OpenAlex records that are not already in the local dataset.
   const existing = JSON.parse(readFileSync(outPath, "utf-8"));
   const existingById = new Map(existing.publications.map((p) => [p.id, p]));
-  const merged = formatted.map((pub) => {
-    const prev = existingById.get(pub.id);
-    return prev?.areas ? { ...pub, areas: prev.areas } : pub;
-  });
+  const newPublications = formatted.filter((pub) => !existingById.has(pub.id));
+  const merged = [...existing.publications, ...newPublications]
+    .sort((a, b) => b.year - a.year);
 
   writeFileSync(
     outPath,
@@ -333,6 +330,7 @@ async function main() {
   );
 
   console.log(`Saved to ${outPath}`);
+  console.log(`Added ${newPublications.length} new publication(s). Existing entries were left unchanged.`);
 
   const keywordsOutPath = join(__dirname, "../src/data/keywords.json");
   const { subjectAreas, keywords } = aggregateConcepts(works);

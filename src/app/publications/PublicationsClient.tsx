@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import publicationsData from "@/data/publications.json";
@@ -12,6 +13,8 @@ type Publication = {
   authors: string[];
   doi: string | null;
   pdf?: string | null;
+  teaserImage?: string | null;
+  teaserAlt?: string | null;
   url: string;
   openAccess: boolean;
   type: string;
@@ -140,80 +143,106 @@ function PubCard({
   const venue = venueLabel(pub.venue, pub.year, pub.type);
 
   return (
-    <div className="group py-1">
-      {venue && (
-        <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
-          {venue}
-        </p>
-      )}
-      <a
-        href={pub.doi ?? pub.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ fontFamily: "var(--font-sans)" }}
-        className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
-        data-analytics-event="publication_open"
-        data-analytics-label={pub.title}
-        data-analytics-publication-id={pub.id}
-        data-analytics-publication-year={publicationYear}
-        data-analytics-publication-type={pub.type}
-        data-analytics-venue-label={venue ?? ""}
-      >
-        {pub.title}
-      </a>
-      <p className="text-sm text-slate-500 mb-1">{pub.authors.join(", ")}</p>
-      {pub.venue && <p className="text-xs text-slate-500 mb-2">{pub.venue}</p>}
-      <div className="flex flex-wrap items-center gap-2 mt-1.5">
-        {pub.doi && (
-          <a
-            href={pub.doi}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
-            data-analytics-event="publication_asset_click"
-            data-analytics-label={`${pub.title} DOI`}
-            data-analytics-publication-id={pub.id}
-            data-analytics-publication-year={publicationYear}
-            data-analytics-asset-type="doi"
-          >
-            DOI
-          </a>
+    <div className={`group py-2 ${pub.teaserImage ? "grid grid-cols-[112px_minmax(0,1fr)] gap-4" : ""}`}>
+      {pub.teaserImage ? (
+        <a
+          href={pub.doi ?? pub.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+          data-analytics-event="publication_open"
+          data-analytics-label={pub.title}
+          data-analytics-publication-id={pub.id}
+          data-analytics-publication-year={publicationYear}
+          data-analytics-publication-type={pub.type}
+          data-analytics-venue-label={venue ?? ""}
+        >
+          <div className="relative aspect-[4/3] overflow-hidden border border-slate-200 bg-slate-50">
+            <Image
+              src={pub.teaserImage}
+              alt={pub.teaserAlt ?? `${pub.title} teaser image`}
+              fill
+              sizes="112px"
+              className="object-cover"
+            />
+          </div>
+        </a>
+      ) : null}
+      <div className="min-w-0">
+        {venue && (
+          <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
+            {venue}
+          </p>
         )}
-        {pub.pdf && (
-          <a
-            href={pub.pdf}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
-            data-analytics-event="publication_asset_click"
-            data-analytics-label={`${pub.title} PDF`}
-            data-analytics-publication-id={pub.id}
-            data-analytics-publication-year={publicationYear}
-            data-analytics-asset-type="pdf"
-          >
-            PDF
-          </a>
-        )}
-        {pub.areas && pub.areas.length > 0 && pub.areas.map((a) => (
-          <button
-            key={a}
-            onClick={() => setArea(activeArea === a ? null : a)}
-            className={`text-xs px-2.5 py-0.5 rounded-none border transition-colors ${
-              activeArea === a
-                ? "border-[#2563eb]/40 text-[#2563eb]"
-                : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
-            }`}
-            data-analytics-event="publication_area_chip_click"
-            data-analytics-label={AREAS[a] ?? a}
-            data-analytics-publication-id={pub.id}
-            data-analytics-publication-year={publicationYear}
-            data-analytics-filter-name="area"
-            data-analytics-filter-value={a}
-            data-analytics-filter-state={activeArea === a ? "active" : "inactive"}
-          >
-            {AREAS[a] ?? a}
-          </button>
-        ))}
+        <a
+          href={pub.doi ?? pub.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontFamily: "var(--font-sans)" }}
+          className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
+          data-analytics-event="publication_open"
+          data-analytics-label={pub.title}
+          data-analytics-publication-id={pub.id}
+          data-analytics-publication-year={publicationYear}
+          data-analytics-publication-type={pub.type}
+          data-analytics-venue-label={venue ?? ""}
+        >
+          {pub.title}
+        </a>
+        <p className="text-sm text-slate-500 mb-1">{pub.authors.join(", ")}</p>
+        {pub.venue && <p className="text-xs text-slate-500 mb-2">{pub.venue}</p>}
+        <div className="flex flex-wrap items-center gap-2 mt-1.5">
+          {pub.doi && (
+            <a
+              href={pub.doi}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+              data-analytics-event="publication_asset_click"
+              data-analytics-label={`${pub.title} DOI`}
+              data-analytics-publication-id={pub.id}
+              data-analytics-publication-year={publicationYear}
+              data-analytics-asset-type="doi"
+            >
+              DOI
+            </a>
+          )}
+          {pub.pdf && (
+            <a
+              href={pub.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+              data-analytics-event="publication_asset_click"
+              data-analytics-label={`${pub.title} PDF`}
+              data-analytics-publication-id={pub.id}
+              data-analytics-publication-year={publicationYear}
+              data-analytics-asset-type="pdf"
+            >
+              PDF
+            </a>
+          )}
+          {pub.areas && pub.areas.length > 0 && pub.areas.map((a) => (
+            <button
+              key={a}
+              onClick={() => setArea(activeArea === a ? null : a)}
+              className={`text-xs px-2.5 py-0.5 rounded-none border transition-colors ${
+                activeArea === a
+                  ? "border-[#2563eb]/40 text-[#2563eb]"
+                  : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
+              }`}
+              data-analytics-event="publication_area_chip_click"
+              data-analytics-label={AREAS[a] ?? a}
+              data-analytics-publication-id={pub.id}
+              data-analytics-publication-year={publicationYear}
+              data-analytics-filter-name="area"
+              data-analytics-filter-value={a}
+              data-analytics-filter-state={activeArea === a ? "active" : "inactive"}
+            >
+              {AREAS[a] ?? a}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

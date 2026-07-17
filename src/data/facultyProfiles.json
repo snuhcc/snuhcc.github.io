@@ -1,0 +1,55 @@
+{
+  "bongwon": {
+    "slug": "bongwon",
+    "name": "Bongwon Suh",
+    "title": "Professor",
+    "photo": "/images/people/bongwon-suh.png",
+    "email": "bongwon@snu.ac.kr",
+    "phone": "+82-2-880-9364",
+    "affiliation": "Seoul National University",
+    "department": "Department of Intelligence and Information",
+    "school": "Graduate School of Convergence Science and Technology",
+    "lab": "Human Centered Computing (HCC) Lab",
+    "office": "Room 209, Building 942, 1 Gwanak-ro, Gwanak-gu, Seoul, Republic of Korea, 08826",
+    "summary": "Bongwon Suh is a professor at Seoul National University whose research focuses on human-computer interaction, social computing, and data analytics.",
+    "researchAreas": [
+      "Human-Computer Interaction",
+      "Social Computing",
+      "Data Analytics"
+    ],
+    "education": [
+      {
+        "degree": "B.S.",
+        "field": "Computational Statistics",
+        "institution": "Seoul National University",
+        "year": "1993"
+      },
+      {
+        "degree": "M.S.",
+        "field": "Computational Statistics",
+        "institution": "Seoul National University",
+        "year": "1995"
+      },
+      {
+        "degree": "Ph.D.",
+        "field": "Computer Science",
+        "institution": "University of Maryland, College Park",
+        "year": "2005"
+      }
+    ],
+    "links": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=-nlhtEkAAAAJ"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0001-5610-9265"
+      },
+      {
+        "label": "SNU Research Profile",
+        "url": "https://snu.elsevierpure.com/en/persons/bongwon-suh/"
+      }
+    ]
+  }
+}

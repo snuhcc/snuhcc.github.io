@@ -14,23 +14,26 @@ const NEWS_TYPE_LABELS: Record<string, string> = {
   press:      "Press",
 };
 
+const HOME_SUBJECT_AREA_LIMIT = 12;
+const HOME_KEYWORD_LIMIT = 25;
+
 export default function Home() {
   return (
     <div>
       {/* Hero */}
       <section
-        className="relative min-h-[55vh] flex items-center overflow-hidden bg-[#0B3D91]"
+        className="relative min-h-[40vh] md:min-h-[44vh] flex items-center overflow-hidden bg-[#0B3D91]"
         data-analytics-section="home_hero"
         data-analytics-page="home"
       >
         <ShaderHero />
         <div className="absolute inset-0 bg-black/30 z-[1]" />
-        <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-16">
-          <h1 className="text-5xl text-white leading-tight font-normal" style={{ fontFamily: "var(--font-mono)" }}>
+        <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-12 md:py-14">
+          <h1 className="text-4xl md:text-[2.9rem] text-white leading-tight font-normal" style={{ fontFamily: "var(--font-mono)" }}>
             <span className="block">Human Centered</span>
             <span className="block mt-1">Computing Lab</span>
           </h1>
-          <p className="text-lg text-white/90 max-w-xl leading-relaxed mt-6">
+          <p className="text-base md:text-lg text-white/90 max-w-xl leading-relaxed mt-5">
             Led by <span className="text-white font-medium">Prof. Bongwon Suh</span> at{" "}
             <span className="text-white font-medium">Seoul National University</span>, we are an
             interdisciplinary research group at the intersection of{" "}
@@ -65,7 +68,7 @@ export default function Home() {
               <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
                 Subject Areas
               </h3>
-              <WordCloud items={keywordsData.subjectAreas} />
+              <WordCloud items={keywordsData.subjectAreas.slice(0, HOME_SUBJECT_AREA_LIMIT)} />
             </div>
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
@@ -77,7 +80,7 @@ export default function Home() {
               <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
                 Keywords
               </h3>
-              <WordCloud items={keywordsData.keywords} />
+              <WordCloud items={keywordsData.keywords.slice(0, HOME_KEYWORD_LIMIT)} />
             </div>
           </div>
         </div>

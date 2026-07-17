@@ -134,12 +134,11 @@
   },
   {
     "date": "2024-03-27",
-    "title": "LLM2LLM: Boosting LLMs with Novel Iterative Data Enhancement",
-    "presenter": "Jeongwoo Ryu",
-    "tags": [
-      "Finetuning",
-      "LLM"
-    ],
+      "title": "LLM2LLM: Boosting LLMs with Novel Iterative Data Enhancement",
+      "presenter": "Jeongwoo Ryu",
+      "tags": [
+        "LLM"
+      ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-27-llm2llm.pdf"
   },
@@ -156,13 +155,12 @@
   },
   {
     "date": "2024-03-20",
-    "title": "The Era of 1-bit LLMs (2024)",
-    "presenter": "Junghwan Kim",
-    "tags": [
-      "Finetuning",
-      "LLM",
-      "Transformer"
-    ],
+      "title": "The Era of 1-bit LLMs (2024)",
+      "presenter": "Junghwan Kim",
+      "tags": [
+        "LLM",
+        "Transformer"
+      ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-03-20-era-of-1bit-llms.pdf"
   },
@@ -382,12 +380,11 @@
   },
   {
     "date": "2024-01-10",
-    "title": "Retrieval Augmented LM: Attempts to Improve Retrieval",
-    "presenter": "Dongseok Heo",
-    "tags": [
-      "Finetuning",
-      "LLM"
-    ],
+      "title": "Retrieval Augmented LM: Attempts to Improve Retrieval",
+      "presenter": "Dongseok Heo",
+      "tags": [
+        "LLM"
+      ],
     "semester": "2024 SS",
     "slides": "/seminars/2024-01-10-retrieval-augmented-lm.pdf"
   },
@@ -416,13 +413,12 @@
   },
   {
     "date": "2023-01-03",
-    "title": "CogAgent (2023) and CORGI (2023)",
-    "presenter": "Junghwan Kim",
-    "tags": [
-      "Finetuning",
-      "HAI",
-      "LLM",
-      "VLM"
+      "title": "CogAgent (2023) and CORGI (2023)",
+      "presenter": "Junghwan Kim",
+      "tags": [
+        "HAI",
+        "LLM",
+        "VLM"
     ],
     "semester": "2023 WS",
     "slides": "/seminars/2024-01-03-cogagent-and-corgi.pdf"

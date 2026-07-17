@@ -14,7 +14,31 @@ type Seminar = {
 
 const seminars: Seminar[] = seminarsData;
 
-const allTags = Array.from(new Set(seminars.flatMap((s) => s.tags))).sort();
+const TAG_ORDER = [
+  "LLM",
+  "VLM",
+  "MLLM",
+  "Multi-Agent",
+  "Prompt Engineering",
+  "Reasoning",
+  "Transformer",
+  "HAI",
+  "HCI",
+  "Physical AI",
+];
+
+function tagRank(tag: string) {
+  const index = TAG_ORDER.indexOf(tag);
+  return index === -1 ? TAG_ORDER.length : index;
+}
+
+function sortTags(tags: string[]) {
+  return [...tags].sort((a, b) => tagRank(a) - tagRank(b) || a.localeCompare(b));
+}
+
+const allTags = Array.from(new Set(seminars.flatMap((s) => s.tags))).sort(
+  (a, b) => tagRank(a) - tagRank(b) || a.localeCompare(b)
+);
 const allGroupYears = Array.from(new Set(seminars.map((s) => s.date.slice(0, 4)))).sort(
   (a, b) => b.localeCompare(a)
 );
@@ -153,7 +177,7 @@ export default function SeminarPage() {
                       </p>
                       <p className="text-sm text-slate-500 mb-1.5">{s.presenter}</p>
                       <div className="flex flex-wrap items-center gap-1.5">
-                        {s.tags.map((tag) => (
+                        {sortTags(s.tags).map((tag) => (
                           <button
                             key={tag}
                             onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
