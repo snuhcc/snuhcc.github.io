@@ -23,7 +23,7 @@ const memories = [
   { name: "End-of-Year Party",            year: 2024, category: "Lab Event",  folder: "2024-year-end-party",      photos: ["photo1.jpeg", "photo2.jpeg"] },
   { name: "Seminar",                   year: 2024, category: "Seminar",    folder: "2024-seminar",             photos: ["photo1.jpeg", "photo2.jpeg"] },
   { name: "Congrats, Graduates!",         year: 2024, category: "Lab Event",  folder: "2024-spring-graduation",   photos: ["photo1.jpeg"] },
-  { name: "CHI 2024 @ Honolulu",       year: 2024, category: "Conference", folder: "2024-chi-hawaii",          photos: [] },
+  { name: "CHI 2024 @ Honolulu",       year: 2024, category: "Conference", folder: "2024-chi-hawaii",          photos: ["photo1.jpg", "photo2.jpg", "photo3.jpg"] },
   { name: "HCIK 2024 @ Gangwon",                 year: 2024, category: "Conference", folder: "2024-hci-korea",           photos: ["photo1.jpeg", "photo2.jpeg", "photo3.jpeg", "photo4.jpeg"] },
   { name: "Happy Birthday, Professor!",      year: 2024, category: "Lab Event",  folder: "2024-professors-birthday", photos: ["photo1.jpg"] },
   { name: "Celebration Time",               year: 2024, category: "Lab Event",  folder: "2024-celebration",         photos: ["photo1.jpeg"] },
