@@ -37,7 +37,7 @@ function MemberCard({ member }: { member: CurrentMember }) {
   const isLinkedIn = member.url?.includes("linkedin.com");
 
   return (
-    <div className="flex flex-col items-center text-center gap-3">
+    <div className="flex flex-col items-start text-left gap-3">
       {/* Photo */}
       <div className="w-44 h-44 overflow-hidden bg-slate-100 shrink-0">
         {member.photo ? (
@@ -56,24 +56,24 @@ function MemberCard({ member }: { member: CurrentMember }) {
       </div>
 
       {/* Info */}
-      <div>
+      <div className="min-w-0 w-full">
         <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex flex-col items-start gap-1 text-xs text-slate-500">
           {member.email && (
             <a
               href={`mailto:${member.email}`}
-              className="text-slate-400 hover:text-[#0B3D91] transition-colors"
-              title={member.email}
+              className="inline-flex items-center gap-1.5 break-all hover:text-[#0B3D91] hover:underline underline-offset-2 transition-colors"
               data-analytics-event="member_contact_click"
               data-analytics-label={member.name}
               data-analytics-member-name={member.name}
               data-analytics-member-title={member.title}
               data-analytics-contact-type="email"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
+              {member.email}
             </a>
           )}
           {member.url && (
@@ -81,8 +81,7 @@ function MemberCard({ member }: { member: CurrentMember }) {
               href={member.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-[#0B3D91] transition-colors"
-              title={member.url}
+              className="inline-flex items-center gap-1.5 break-all hover:text-[#0B3D91] hover:underline underline-offset-2 transition-colors"
               data-analytics-event="member_profile_click"
               data-analytics-label={member.name}
               data-analytics-member-name={member.name}
@@ -90,17 +89,18 @@ function MemberCard({ member }: { member: CurrentMember }) {
               data-analytics-profile-type={isLinkedIn ? "linkedin" : "website"}
             >
               {isLinkedIn ? (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" className="shrink-0">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                   <rect x="2" y="9" width="4" height="12" />
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               ) : (
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
                   <circle cx="12" cy="12" r="10" />
                   <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                 </svg>
               )}
+              {isLinkedIn ? "LinkedIn" : member.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
             </a>
           )}
         </div>
