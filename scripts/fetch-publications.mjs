@@ -316,7 +316,9 @@ async function main() {
   const existing = JSON.parse(readFileSync(outPath, "utf-8"));
   const existingById = new Map(existing.publications.map((p) => [p.id, p]));
   const newPublications = formatted.filter((pub) => !existingById.has(pub.id));
-  const merged = [...existing.publications, ...newPublications]
+  // Place newly discovered work first within each year so the publication
+  // page surfaces the most recently added records at the top.
+  const merged = [...newPublications, ...existing.publications]
     .sort((a, b) => b.year - a.year);
 
   writeFileSync(

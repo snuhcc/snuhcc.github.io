@@ -2,6 +2,40 @@
   "updatedAt": "2026-08-05T00:29:23.274Z",
   "publications": [
     {
+      "id": "https://openalex.org/W7166882901",
+      "title": "Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates",
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "authors": [
+        "Kyusik Kim",
+        "Jaehoon Choi",
+        "Hyunwoo Yoo",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
+      "url": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
+      "openAccess": true,
+      "type": "proceedings-article"
+    },
+    {
+      "id": "https://openalex.org/W7166889578",
+      "title": "Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation",
+      "year": 2026,
+      "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "authors": [
+        "Jeongwoo Ryu",
+        "Soomin Kim",
+        "Jinsu Eun",
+        "Kyusik Kim",
+        "Changhoon Oh",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2026.acl-long.2046",
+      "url": "https://doi.org/10.18653/v1/2026.acl-long.2046",
+      "openAccess": false,
+      "type": "proceedings-article"
+    },
+    {
       "id": "https://openalex.org/W7167931870",
       "title": "Who Is Shopping With You? How Persona Design Shapes Cognitive and Social Engagement in AI Shopping Agents",
       "year": 2026,
@@ -289,40 +323,6 @@
         "human-ai",
         "accessibility"
       ]
-    },
-    {
-      "id": "https://openalex.org/W7166882901",
-      "title": "Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates",
-      "year": 2026,
-      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
-      "authors": [
-        "Kyusik Kim",
-        "Jaehoon Choi",
-        "Hyunwoo Yoo",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
-      "url": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
-      "openAccess": true,
-      "type": "proceedings-article"
-    },
-    {
-      "id": "https://openalex.org/W7166889578",
-      "title": "Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation",
-      "year": 2026,
-      "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-      "authors": [
-        "Jeongwoo Ryu",
-        "Soomin Kim",
-        "Jinsu Eun",
-        "Kyusik Kim",
-        "Changhoon Oh",
-        "Bongwon Suh"
-      ],
-      "doi": "https://doi.org/10.18653/v1/2026.acl-long.2046",
-      "url": "https://doi.org/10.18653/v1/2026.acl-long.2046",
-      "openAccess": false,
-      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W4415444971",
