@@ -39,7 +39,7 @@ export default function YearChart({ years }: { years: number[] }) {
         {bars.map((b, i) => (
           <div key={b.year} className="flex-1 text-center">
             {(i % LABEL_INTERVAL === 0 || i === bars.length - 1) && (
-              <span className="text-[10px] text-slate-400">{b.year}</span>
+              <span className="text-[10px] text-slate-600">{b.year}</span>
             )}
           </div>
         ))}

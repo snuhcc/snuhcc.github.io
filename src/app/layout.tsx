@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Space_Mono, Lora } from "next/font/google";
+import { Inter, Space_Mono } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
+import ShaderHero from "@/components/ShaderHero";
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-mono",
 });
-const lora = Lora({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const BASE_URL = "https://snuhcc.github.io";
 
@@ -66,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceMono.variable} ${lora.variable} h-full antialiased`}>
+    <html lang="en" className={`${spaceMono.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col text-slate-900">
         <script
           type="application/ld+json"
@@ -122,9 +123,11 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <AnalyticsTracker />
         </Suspense>
-        <main className="flex-1 pt-16">{children}</main>
-        <footer className="bg-[#192e57] mt-16">
-          <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between gap-10">
+        <main className="flex-1 pt-12">{children}</main>
+        <footer className="relative overflow-hidden bg-[#192e57] mt-16">
+          <ShaderHero shiftLeft />
+          <div className="absolute inset-0 z-[1] bg-black/30" />
+          <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between gap-10">
             {/* Left: logo + lab name */}
             <div>
               <Image
@@ -134,16 +137,16 @@ export default function RootLayout({
                 height={50}
                 className="h-10 w-auto object-contain mb-4 brightness-0 invert"
               />
-              <p className="text-sm text-white/80">Human Centered Computing Lab</p>
-              <p className="text-sm text-white/70">Graduate School of Convergence Science and Technology, Seoul National University</p>
+              <p className="text-sm text-white">Human Centered Computing Lab</p>
+              <p className="text-sm text-white">Graduate School of Convergence Science and Technology, Seoul National University</p>
             </div>
             {/* Right: address */}
-            <div className="text-sm text-white/70 sm:text-right leading-relaxed shrink-0">
+            <div className="text-sm text-white sm:text-right leading-relaxed shrink-0">
               <p>2nd floor, 18-dong, Gwanak-ro 1, Gwanak-gu</p>
               <p>Seoul, Republic of Korea (08826)</p>
               <p className="mt-3">Gwanggyo-ro 145, Yeongtong-gu</p>
               <p>Suwon-si, Gyeonggi-do (16229)</p>
-              <p className="mt-4 text-xs text-white/60">
+              <p className="mt-4 text-xs text-white">
                 © {new Date().getFullYear()} HCC Lab, Seoul National University
               </p>
             </div>

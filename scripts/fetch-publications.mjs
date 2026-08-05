@@ -67,7 +67,6 @@ const PAPER_NEWS_RULES = [
   {
     key: "acl",
     label: (year) => `ACL ${year}`,
-    url: (year) => `https://${year}.aclweb.org/`,
     buckets: [
       {
         pattern:
@@ -83,7 +82,6 @@ const PAPER_NEWS_RULES = [
   {
     key: "chi",
     label: (year) => `CHI ${year}`,
-    url: (year) => `https://chi${year}.acm.org/`,
     buckets: [
       {
         pattern:
@@ -104,7 +102,6 @@ const PAPER_NEWS_RULES = [
   {
     key: "iui",
     label: (year) => `IUI ${year}`,
-    url: (year) => `https://iui.acm.org/${year}/`,
     buckets: [
       {
         pattern: /International Conference on Intelligent User Interfaces/i,
@@ -119,7 +116,6 @@ const PAPER_NEWS_RULES = [
   {
     key: "assets",
     label: (year) => `ASSETS ${year}`,
-    url: (year) => `https://assets${String(year).slice(-2)}.sigaccess.org/`,
     buckets: [
       {
         pattern: /SIGACCESS Conference on Computers and Accessibility/i,
@@ -150,7 +146,6 @@ const PAPER_NEWS_RULES = [
   {
     key: "icwsm",
     label: (year) => `ICWSM ${year}`,
-    url: (year) => `https://www.icwsm.org/${year}/`,
     buckets: [
       {
         pattern: /International AAAI Conference on Web and Social Media/i,
@@ -196,8 +191,6 @@ function buildGeneratedPaperNews(publications, existingNews, syncMonth) {
   const currentYear = new Date().getUTCFullYear();
 
   for (const publication of publications) {
-    if (publication.type !== "proceedings-article") continue;
-
     const match = matchPaperNewsRule(publication);
     if (!match) continue;
 
@@ -211,9 +204,11 @@ function buildGeneratedPaperNews(publications, existingNews, syncMonth) {
         year,
         paper: 0,
         poster: 0,
+        papers: [],
       };
 
     nextGroup[match.bucket] += 1;
+    nextGroup.papers.push({ title: publication.title, url: publication.url });
     groups.set(groupKey, nextGroup);
   }
 
@@ -255,7 +250,7 @@ function buildGeneratedPaperNews(publications, existingNews, syncMonth) {
           date: syncMonth,
           type: "paper",
           text,
-          ...(group.rule.url ? { url: group.rule.url(group.year) } : {}),
+          papers: group.papers,
           source: GENERATED_NEWS_SOURCE,
         },
       ];

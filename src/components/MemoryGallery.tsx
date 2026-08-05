@@ -220,7 +220,7 @@ export default function MemoryGallery({ memories }: { memories: MemoryEvent[] })
             data-analytics-section={`memories_${year}`}
             data-analytics-year={String(year)}
           >
-            <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+            <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
               {year}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

@@ -379,7 +379,7 @@ export default function PublicationsClient() {
         >
           {recentYears.map((year) => (
             <section key={year} id={`year-${year}`}>
-              <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+              <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
                 {year}
               </h2>
               <div className="space-y-3">
@@ -392,7 +392,7 @@ export default function PublicationsClient() {
 
           {olderPubs.length > 0 && (
             <section id="year-older">
-              <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+              <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
                 2013 &amp; Earlier
               </h2>
               <div className="space-y-3">

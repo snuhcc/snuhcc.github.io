@@ -86,7 +86,7 @@ export default function BongwonPage() {
 
       <div className="grid gap-12 lg:grid-cols-[minmax(0,1.2fr)_320px] mt-16">
         <section>
-          <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+          <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
             Overview
           </h2>
           <dl className="grid gap-5 sm:grid-cols-2">
@@ -112,7 +112,7 @@ export default function BongwonPage() {
             </div>
           </dl>
 
-          <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mt-12 mb-5 border-b-2 border-slate-200">
+          <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mt-12 mb-5 border-b-2 border-slate-200">
             Education
           </h2>
           <div className="space-y-4">

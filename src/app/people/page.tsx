@@ -236,7 +236,7 @@ export default function PeoplePage() {
             data-analytics-section={`people_${sectionKey(title)}`}
             data-analytics-member-group={title}
           >
-            <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+            <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
               {title}
             </h2>
             {title === "Professor" ? (

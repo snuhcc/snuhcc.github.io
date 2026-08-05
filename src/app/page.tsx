@@ -5,14 +5,8 @@ import keywordsData from "@/data/keywords.json";
 import ShaderHero from "@/components/ShaderHero";
 import WordCloud from "@/components/WordCloud";
 import YearChart from "@/components/YearChart";
-
-const NEWS_TYPE_LABELS: Record<string, string> = {
-  paper:      "Paper",
-  graduation: "Graduation",
-  award:      "Award",
-  talk:       "Talk",
-  press:      "Press",
-};
+import NewsItemText from "@/components/NewsItemText";
+import { type NewsItem, withPaperLinks } from "@/lib/news";
 
 const HOME_SUBJECT_AREA_LIMIT = 12;
 const HOME_KEYWORD_LIMIT = 25;
@@ -46,38 +40,38 @@ export default function Home() {
 
       {/* Research Snapshot */}
       <section
-        className="border-t border-slate-100 py-20"
+        className="border-t border-slate-100 py-12"
         data-analytics-section="home_research_snapshot"
         data-analytics-page="home"
       >
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-baseline justify-between mb-12">
+          <div className="flex items-baseline justify-between mb-8">
             <h2 className="text-2xl font-bold text-slate-900">Research Snapshot</h2>
             <Link
               href="/publications"
               data-analytics-event="home_section_link_click"
               data-analytics-label="All publications"
               data-analytics-destination="/publications"
-              className="text-sm text-slate-400 hover:text-[#0B3D91] transition-colors"
+              className="text-sm text-slate-600 hover:text-[#0B3D91] transition-colors"
             >
               all publications →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
                 Subject Areas
               </h3>
               <WordCloud items={keywordsData.subjectAreas.slice(0, HOME_SUBJECT_AREA_LIMIT)} />
             </div>
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
                 Published Items by Year
               </h3>
               <YearChart years={publicationsData.publications.map((p) => p.year)} />
             </div>
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-6">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
                 Keywords
               </h3>
               <WordCloud items={keywordsData.keywords.slice(0, HOME_KEYWORD_LIMIT)} />
@@ -106,34 +100,13 @@ export default function Home() {
             </Link>
           </div>
           <ul className="divide-y divide-slate-100">
-            {(newsData.news as { id: string; date: string; type: string; text: string; url?: string }[])
+            {withPaperLinks(newsData.news as NewsItem[])
               .sort((a, b) => b.date.localeCompare(a.date))
               .slice(0, 3)
               .map((item) => (
-                <li key={item.id} className="py-4 flex items-start gap-6">
+                <li key={item.id} className="py-4 flex items-start gap-5">
                   <span className="shrink-0 w-20 text-xs text-slate-500 pt-0.5 tabular-nums">{item.date}</span>
-                  <span className="shrink-0 text-xs font-semibold uppercase tracking-wide text-[#0B3D91] w-24">
-                    {NEWS_TYPE_LABELS[item.type] ?? item.type}
-                  </span>
-                  <span className="text-sm text-slate-700 leading-relaxed">
-                    {item.url ? (
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-[#0B3D91] hover:underline underline-offset-2"
-                        data-analytics-event="news_item_click"
-                        data-analytics-label={item.text}
-                        data-analytics-news-id={item.id}
-                        data-analytics-news-type={item.type}
-                        data-analytics-news-date={item.date}
-                      >
-                        {item.text}
-                      </a>
-                    ) : (
-                      item.text
-                    )}
-                  </span>
+                  <NewsItemText item={item} />
                 </li>
               ))}
           </ul>

@@ -11,10 +11,17 @@ const ShaderGradient = dynamic(
   { ssr: false }
 );
 
-export default function ShaderHero() {
+export default function ShaderHero({ shiftLeft = false }: { shiftLeft?: boolean }) {
   return (
     <ShaderGradientCanvas
-      style={{ position: "absolute", inset: 0, width: "100%", height: "100%", transform: "scale(1.1)", transformOrigin: "center center" }}
+      style={{
+        position: "absolute",
+        inset: 0,
+        width: "100%",
+        height: "100%",
+        transform: shiftLeft ? "scale(1.2) translateX(-8%)" : "scale(1.1)",
+        transformOrigin: "center center",
+      }}
       pixelDensity={1}
       fov={45}
       lazyLoad={false}

@@ -27,6 +27,8 @@ const TAG_ORDER = [
   "Physical AI",
 ];
 
+const HIDDEN_TAGS = new Set(["Prompt Engineering"]);
+
 function tagRank(tag: string) {
   const index = TAG_ORDER.indexOf(tag);
   return index === -1 ? TAG_ORDER.length : index;
@@ -36,7 +38,7 @@ function sortTags(tags: string[]) {
   return [...tags].sort((a, b) => tagRank(a) - tagRank(b) || a.localeCompare(b));
 }
 
-const allTags = Array.from(new Set(seminars.flatMap((s) => s.tags))).sort(
+const allTags = Array.from(new Set(seminars.flatMap((s) => s.tags.filter((tag) => !HIDDEN_TAGS.has(tag))))).sort(
   (a, b) => tagRank(a) - tagRank(b) || a.localeCompare(b)
 );
 const allGroupYears = Array.from(new Set(seminars.map((s) => s.date.slice(0, 4)))).sort(
@@ -152,7 +154,7 @@ export default function SeminarPage() {
       <div className="space-y-12" data-analytics-section="seminar_list">
         {groupedKeys.map((year) => (
           <section key={year}>
-            <h2 className="sticky top-16 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+            <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
               {year}
             </h2>
             <div className="divide-y divide-slate-100">
@@ -177,7 +179,7 @@ export default function SeminarPage() {
                       </p>
                       <p className="text-sm text-slate-500 mb-1.5">{s.presenter}</p>
                       <div className="flex flex-wrap items-center gap-1.5">
-                        {sortTags(s.tags).map((tag) => (
+                        {sortTags(s.tags).filter((tag) => !HIDDEN_TAGS.has(tag)).map((tag) => (
                           <button
                             key={tag}
                             onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}

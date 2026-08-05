@@ -5,7 +5,16 @@
       "date": "2026-07",
       "type": "paper",
       "text": "Congrats! 2 papers accepted at ACL 2026!",
-      "url": "https://2026.aclweb.org/",
+      "papers": [
+        {
+          "title": "Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.2057"
+        },
+        {
+          "title": "Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.2046"
+        }
+      ],
       "source": "publications"
     },
     {

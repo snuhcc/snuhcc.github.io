@@ -6,15 +6,15 @@ type WordCloudItem = {
 const TIER_STYLES = {
   md: [
     "text-2xl font-semibold text-[#0B3D91]",
-    "text-lg font-medium text-[#0B3D91]/80",
-    "text-base text-slate-600",
-    "text-sm text-slate-400",
+    "text-lg font-medium text-[#0B3D91]",
+    "text-base text-slate-700",
+    "text-sm text-slate-600",
   ],
   sm: [
     "text-lg font-semibold text-[#0B3D91]",
-    "text-base font-medium text-[#0B3D91]/80",
-    "text-sm text-slate-600",
-    "text-xs text-slate-400",
+    "text-base font-medium text-[#0B3D91]",
+    "text-sm text-slate-700",
+    "text-xs text-slate-600",
   ],
 } as const;
 
