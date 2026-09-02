@@ -10,6 +10,7 @@ import { type NewsItem, withPaperLinks } from "@/lib/news";
 
 const HOME_SUBJECT_AREA_LIMIT = 12;
 const HOME_KEYWORD_LIMIT = 25;
+const SHOW_RESEARCH_SNAPSHOT = false;
 
 export default function Home() {
   return (
@@ -38,47 +39,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Research Snapshot */}
-      <section
-        className="border-t border-slate-100 py-12"
-        data-analytics-section="home_research_snapshot"
-        data-analytics-page="home"
-      >
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-baseline justify-between mb-8">
-            <h2 className="text-2xl font-bold text-slate-900">Research Snapshot</h2>
-            <Link
-              href="/publications"
-              data-analytics-event="home_section_link_click"
-              data-analytics-label="All publications"
-              data-analytics-destination="/publications"
-              className="text-sm text-slate-600 hover:text-[#0B3D91] transition-colors"
-            >
-              all publications →
-            </Link>
+      {/* Research Snapshot — preserved for later re-enablement. */}
+      {SHOW_RESEARCH_SNAPSHOT && (
+        <section
+          className="border-t border-slate-100 py-12"
+          data-analytics-section="home_research_snapshot"
+          data-analytics-page="home"
+        >
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="flex items-baseline justify-between mb-8">
+              <h2 className="text-2xl font-bold text-slate-900">Research Snapshot</h2>
+              <Link
+                href="/publications"
+                data-analytics-event="home_section_link_click"
+                data-analytics-label="All publications"
+                data-analytics-destination="/publications"
+                className="text-sm text-slate-600 hover:text-[#0B3D91] transition-colors"
+              >
+                all publications →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
+                  Subject Areas
+                </h3>
+                <WordCloud items={keywordsData.subjectAreas.slice(0, HOME_SUBJECT_AREA_LIMIT)} />
+              </div>
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
+                  Published Items by Year
+                </h3>
+                <YearChart years={publicationsData.publications.map((p) => p.year)} />
+              </div>
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
+                  Keywords
+                </h3>
+                <WordCloud items={keywordsData.keywords.slice(0, HOME_KEYWORD_LIMIT)} />
+              </div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
-                Subject Areas
-              </h3>
-              <WordCloud items={keywordsData.subjectAreas.slice(0, HOME_SUBJECT_AREA_LIMIT)} />
-            </div>
-            <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
-                Published Items by Year
-              </h3>
-              <YearChart years={publicationsData.publications.map((p) => p.year)} />
-            </div>
-            <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
-                Keywords
-              </h3>
-              <WordCloud items={keywordsData.keywords.slice(0, HOME_KEYWORD_LIMIT)} />
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* News */}
       <section
