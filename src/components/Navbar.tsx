@@ -32,13 +32,16 @@ export default function Navbar() {
         >
           <Image
             src="/snublue_lablogo.webp"
-            alt="HCC Lab"
+            alt="Human Centered Computing Lab"
             width={105}
             height={28}
             className="h-6 w-auto object-contain"
             priority
           />
-          <span className="text-sm text-slate-700 hidden sm:block font-semibold">
+          <span className="text-sm text-slate-700 hidden lg:block font-semibold whitespace-nowrap">
+            Human Centered Computing Lab
+          </span>
+          <span className="text-sm text-slate-700 hidden sm:block lg:hidden font-semibold">
             HCC Lab
           </span>
         </Link>
