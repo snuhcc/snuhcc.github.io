@@ -39,10 +39,6 @@ export const metadata: Metadata = {
     "Bongwon Suh",
   ],
   robots: { index: true, follow: true },
-  icons: {
-    icon: "/images/assets/lab_logo.png",
-    apple: "/images/assets/lab_logo.png",
-  },
   openGraph: {
     type: "website",
     siteName: "HCC Lab — Seoul National University",
