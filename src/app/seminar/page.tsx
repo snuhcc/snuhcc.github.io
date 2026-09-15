@@ -82,7 +82,7 @@ export default function SeminarPage() {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedYear(null)}
-            className={`text-xs px-3 py-1.5 rounded-none border transition-all ${
+            className={`text-xs px-3 py-1.5 rounded-md border transition-all ${
               !selectedYear
                 ? "bg-slate-900 text-white border-slate-900"
                 : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
@@ -99,7 +99,7 @@ export default function SeminarPage() {
             <button
               key={year}
               onClick={() => setSelectedYear(year === selectedYear ? null : year)}
-              className={`text-xs px-3 py-1.5 rounded-none border transition-all ${
+              className={`text-xs px-3 py-1.5 rounded-md border transition-all ${
                 selectedYear === year
                   ? "bg-slate-900 text-white border-slate-900"
                   : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
@@ -117,7 +117,7 @@ export default function SeminarPage() {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setSelectedTag(null)}
-            className={`text-xs px-3 py-1.5 rounded-none border transition-all ${
+            className={`text-xs px-3 py-1.5 rounded-md border transition-all ${
               !selectedTag
                 ? "bg-[#192e57] text-white border-[#192e57]"
                 : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
@@ -134,7 +134,7 @@ export default function SeminarPage() {
             <button
               key={tag}
               onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
-              className={`text-xs px-3 py-1.5 rounded-none border transition-all ${
+              className={`text-xs px-3 py-1.5 rounded-md border transition-all ${
                 selectedTag === tag
                   ? "bg-[#192e57] text-white border-[#192e57]"
                   : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 hover:font-medium"
@@ -183,7 +183,7 @@ export default function SeminarPage() {
                           <button
                             key={tag}
                             onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
-                            className={`text-xs px-2.5 py-0.5 border transition-colors ${
+                            className={`text-xs px-2.5 py-0.5 rounded-md border transition-colors ${
                               selectedTag === tag
                                 ? "border-[#2563eb] text-[#2563eb]"
                                 : "border-slate-200 text-slate-400 hover:border-slate-400 hover:text-slate-600"
@@ -204,7 +204,7 @@ export default function SeminarPage() {
                             href={s.slides}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xs px-2.5 py-0.5 border border-slate-300 text-slate-500 hover:border-slate-500 hover:text-slate-700 transition-colors"
+                            className="text-xs px-2.5 py-0.5 rounded-md border border-slate-300 text-slate-500 hover:border-slate-500 hover:text-slate-700 transition-colors"
                             data-analytics-event="seminar_slides_click"
                             data-analytics-label={s.title}
                             data-analytics-seminar-title={s.title}

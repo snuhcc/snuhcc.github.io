@@ -75,7 +75,7 @@ export default function BongwonPage() {
             {profile.researchAreas.map((area) => (
               <span
                 key={area}
-                className="text-xs px-3 py-1 border border-slate-200 text-slate-600"
+                className="text-xs px-3 py-1 rounded-md border border-slate-200 text-slate-600"
               >
                 {area}
               </span>
