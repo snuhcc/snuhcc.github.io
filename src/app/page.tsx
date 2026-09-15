@@ -1,8 +1,9 @@
 import Link from "next/link";
 import newsData from "@/data/news.json";
-import publicationsData from "@/data/publications.json";
+import { publications } from "@/lib/publications";
 import keywordsData from "@/data/keywords.json";
 import ShaderHero from "@/components/ShaderHero";
+import HeroPhotoCarousel from "@/components/HeroPhotoCarousel";
 import WordCloud from "@/components/WordCloud";
 import YearChart from "@/components/YearChart";
 import NewsItemText from "@/components/NewsItemText";
@@ -23,19 +24,24 @@ export default function Home() {
       >
         <ShaderHero />
         <div className="absolute inset-0 bg-black/30 z-[1]" />
-        <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-12 md:py-14">
-          <h1 className="text-4xl md:text-[2.9rem] text-white leading-tight font-normal" style={{ fontFamily: "var(--font-mono)" }}>
-            <span className="block">Human Centered</span>
-            <span className="block mt-1">Computing Lab</span>
-          </h1>
-          <p className="text-base md:text-lg text-white/90 max-w-xl leading-relaxed mt-5">
-            Led by <span className="text-white font-medium">Prof. Bongwon Suh</span> at{" "}
-            <span className="text-white font-medium">Seoul National University</span>, we are an
-            interdisciplinary research group at the intersection of{" "}
-            <span className="text-white font-medium">HCI</span>,{" "}
-            <span className="text-white font-medium">Big Data</span>, and{" "}
-            <span className="text-white font-medium">Artificial Intelligence</span>.
-          </p>
+        <div className="relative z-10 max-w-6xl w-full mx-auto px-6 py-12 md:py-14 flex flex-col md:flex-row md:items-center gap-10 md:gap-12">
+          <div className="flex-1 min-w-0">
+            <h1 className="text-4xl md:text-[2.9rem] text-white leading-tight font-normal" style={{ fontFamily: "var(--font-mono)" }}>
+              <span className="block">Human Centered</span>
+              <span className="block mt-1">Computing Lab</span>
+            </h1>
+            <p className="text-base md:text-lg text-white/90 max-w-xl leading-relaxed mt-5">
+              Led by <span className="text-white font-medium">Prof. Bongwon Suh</span> at{" "}
+              <span className="text-white font-medium">Seoul National University</span>, we are an
+              interdisciplinary research group at the intersection of{" "}
+              <span className="text-white font-medium">HCI</span>,{" "}
+              <span className="text-white font-medium">Big Data</span>, and{" "}
+              <span className="text-white font-medium">Artificial Intelligence</span>.
+            </p>
+          </div>
+          <div className="w-full md:w-[400px] lg:w-[440px] shrink-0">
+            <HeroPhotoCarousel />
+          </div>
         </div>
       </section>
 
@@ -70,7 +76,7 @@ export default function Home() {
                 <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
                   Published Items by Year
                 </h3>
-                <YearChart years={publicationsData.publications.map((p) => p.year)} />
+                <YearChart years={publications.map((p) => p.year)} />
               </div>
               <div>
                 <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-700 mb-4">
