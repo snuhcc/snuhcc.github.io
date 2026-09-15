@@ -24,7 +24,9 @@ type CurrentMember = {
 type AlumniMember = {
   name: string;
   current: string | null;
+  email?: string | null;
   url: string | null;
+  photo?: string | null;
 };
 
 const titleOrder = ["Professor", "Ph.D. Student", "Master's Student"];
@@ -186,6 +188,21 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
 function AlumniCard({ member }: { member: AlumniMember }) {
   return (
     <div className="flex flex-col items-center text-center gap-1">
+      <div className="w-24 h-24 mb-1 overflow-hidden bg-slate-100 shrink-0">
+        {member.photo ? (
+          <Image
+            src={member.photo}
+            alt={member.name}
+            width={96}
+            height={96}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-slate-400 text-xl font-semibold">
+            {member.name.charAt(0)}
+          </div>
+        )}
+      </div>
       {member.url ? (
         <a
           href={member.url}
@@ -204,7 +221,19 @@ function AlumniCard({ member }: { member: AlumniMember }) {
         <span className="text-sm font-medium text-slate-700">{member.name}</span>
       )}
       {member.current && (
-        <span className="text-xs text-slate-500">{member.current}</span>
+        <span className="text-xs text-slate-500 leading-snug">{member.current}</span>
+      )}
+      {member.email && (
+        <a
+          href={`mailto:${member.email}`}
+          className="text-xs text-slate-400 hover:text-blue-600 transition-colors break-all"
+          data-analytics-event="member_email_click"
+          data-analytics-label={member.name}
+          data-analytics-member-name={member.name}
+          data-analytics-member-title="Alumni"
+        >
+          {member.email}
+        </a>
       )}
     </div>
   );
