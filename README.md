@@ -207,35 +207,59 @@ OpenAlex fields from the crawler:
 
 Manual fields that are preserved across sync:
 
-- `areas`
+- `areas` (kept in the data, currently not shown on the page)
 - `pdf`
 - `teaserImage`
 - `teaserAlt`
 
-Teaser images should go in:
+Each entry renders as: teaser on the left (or a "Coming soon" box), then the
+title (links to the DOI), authors, a short venue line such as `CHI 2026 ·
+Extended Abstract`, and `DOI | PDF` links.
 
-- `public/images/publications/`
+#### PDFs
 
-Local paper PDFs can go in:
+```bash
+node scripts/fetch-pdfs.mjs --year 2026   # or --all, or no flag for 2014+
+```
 
-- `public/papers/`
+- looks up an open-access PDF (ACL Anthology, arXiv, OpenAlex OA locations,
+  Semantic Scholar) and saves it to `public/papers/<year>-<slug>.pdf`
+- files above 10 MB are linked to their source URL instead of being committed
+- ACM DL blocks scripted downloads; for ACM open-access papers `pdf` is set to
+  `https://dl.acm.org/doi/pdf/<doi>` so the PDF button still opens the paper
+- the script never overwrites an existing `pdf` value — to host a paper the
+  script could not fetch, drop the author version into `public/papers/` and
+  set `"pdf": "/papers/<file>.pdf"` by hand
 
-Example:
+#### Teaser images
+
+```bash
+node scripts/generate-teasers.mjs --year 2026   # needs poppler + the pdf field
+```
+
+- crops the first figure out of the PDF (via its "Figure 1" caption), falls
+  back to the largest raster image on the first pages
+- writes `public/images/publications/<year>-<slug>.webp` (max 800×500) and
+  sets `teaserImage` / `teaserAlt`
+- when no figure can be found the entry is left without a teaser and the page
+  shows "Coming soon" — add an image by hand in that case
+  (`--fallback` uses a first-page crop instead)
+- hand-picked `teaserImage` values are never overwritten unless `--force`
+- requires poppler: `brew install poppler` (macOS) / `apt-get install poppler-utils`
+
+Manual teaser example:
 
 ```json
 {
   "id": "https://openalex.org/W7167931870",
-  "areas": ["human-ai"],
-  "pdf": "/papers/shopping-agents.pdf",
-  "teaserImage": "/images/publications/shopping-agents-teaser.jpg",
-  "teaserAlt": "Teaser image for the shopping agents paper"
+  "pdf": "/papers/2026-who-is-shopping-with-you.pdf",
+  "teaserImage": "/images/publications/2026-who-is-shopping-with-you.webp",
+  "teaserAlt": "Teaser figure of the shopping agents paper"
 }
 ```
 
 Important:
 
-- `teaserImage` is what shows the small paper image on the left
-- if `teaserImage` is missing, the publication is shown without an image
 - the crawler is append-only for publications
 - existing publication entries are kept as-is
 - only brand new OpenAlex records are added during sync
@@ -266,9 +290,8 @@ Notes:
 - use `YYYY-MM` format for `date`
 - add new items near the top
 - items with `"source": "publications"` are auto-generated from the publication sync
-- manual news items without `"source": "publications"` are preserved on future syncs
-- existing generated publication news items are now also preserved
-- the sync only appends new generated publication news when a new publication-news id appears
+  and are refreshed by it (paper counts / links) — see "Publication Auto Sync" below
+- manual news items without `"source": "publications"` are never modified by the sync
 
 ### 6. Homepage Research Snapshot / Word Cloud
 
@@ -294,14 +317,22 @@ In short:
 
 ## Publication Auto Sync
 
-Publication sync source:
+Publication sync source: OpenAlex.
 
-- OpenAlex author ID: `A5027548665` (Bongwon Suh)
+- canonical author ID: `A5027548665` (Bongwon Suh)
+- **plus** a raw-author-name search for `Bongwon Suh`
+
+OpenAlex keeps splitting the PI across many author profiles (a dozen at the
+time of writing), so querying the canonical ID alone silently misses papers.
+The script unions both queries and keeps only works that really list
+"Bongwon Suh" as an author.
 
 Automatic schedule:
 
 - GitHub Actions runs the crawl on the **1st day of every month at 02:00 UTC**
 - it can also be triggered manually from **Actions -> Sync Publications -> Run workflow**
+- when the crawl commits new data it also triggers the Pages deploy
+  (commits made by `GITHUB_TOKEN` do not trigger `deploy.yml` on their own)
 
 Sync command:
 
@@ -309,29 +340,46 @@ Sync command:
 node scripts/fetch-publications.mjs
 ```
 
+Environment variables (all optional):
+
+| Variable | Purpose |
+| --- | --- |
+| `OPENALEX_API_KEY` | Free API key from <https://openalex.org/rest-api>. Removes the anonymous rate limit (`429`). Add it as a repository **secret** with the same name so the Action uses it. |
+| `OPENALEX_MAILTO` | Contact email sent to OpenAlex (polite pool). Defaults to the lab manager's address; can be set as a repository **variable**. |
+| `SYNC_ALL_COAUTHORED=1` | Also add papers where the PI is the only lab author (see below). |
+
+Without an API key the script still works: it retries `429` / `5xx`
+responses with the back-off OpenAlex asks for.
+
 This updates:
 
 - `src/data/publications.json`
 - `src/data/keywords.json`
 - `src/data/news.json`
 
-The GitHub Action also runs this automatically on schedule.
+### Which papers get added
 
-### How `news.json` behaves during sync
+A fetched record is appended only when all of the following hold:
 
-The publication sync script is append-only for publication-derived news.
+1. its OpenAlex ID is not already stored
+2. no same-title entry exists yet — or the new record is a *better* version
+   (e.g. the proceedings paper of an already-listed arXiv preprint). Talk
+   recordings, datasets and duplicate preprints are skipped.
+3. at least one author besides the PI is a lab member listed in
+   `src/data/members.json` (`current` or `alumni`)
 
-In practice:
+Rule 3 keeps collaborations where Prof. Suh is the only lab author (clinical
+studies, other labs' papers) out of the list. The workflow log prints every
+skipped record, so if a lab paper is missing:
 
-- manual news you add yourself stays in `src/data/news.json`
-- existing generated news with `"source": "publications"` also stays as-is
-- new publication news gets added automatically only when a new generated news id appears
-- the script does not rewrite older publication news entries anymore
+- add the student to `members.json` (name in the same romanisation OpenAlex uses), or
+- run once with `SYNC_ALL_COAUTHORED=1`, or
+- paste the entry into `publications.json` by hand
 
 ### How `publications.json` behaves during sync
 
 - existing publication entries stay as-is
-- new OpenAlex publications are appended
+- new OpenAlex publications are appended (newest first within a year)
 - the script does not rewrite or refresh existing publication entries automatically
 
 This is intentional so that local fixes such as:
@@ -342,12 +390,32 @@ This is intentional so that local fixes such as:
 - teaser alt text
 - area labels
 
-are not lost during future crawls
+are not lost during future crawls.
+
+Because the file is append-only it can still hold the same paper twice
+(preprint + proceedings). `src/lib/publications.ts` collapses same-title
+entries for display and merges `areas` / `pdf` / `teaserImage` / `teaserAlt`
+from every copy, so you can put manual fields on whichever copy you like.
+
+### How `news.json` behaves during sync
+
+Venue rules live in `src/lib/paperNewsRules.mjs` (ACL / EMNLP / NAACL / CHI /
+UIST / IUI / CSCW / DIS / ASSETS / SIGIR / CIKM / RecSys / ICWSM / CogSci).
+Each `(venue, year)` group becomes a news item with id `<venue><year>-papers`.
+
+- manual news you add yourself stays in `src/data/news.json`
+- items with `"source": "publications"` are owned by the script: when more
+  papers of the same venue-year show up, their text and paper list are
+  refreshed (the original `date` is kept)
+- a new generated item is only created for the current year, so late-indexed
+  older papers do not produce stale announcements
+- if a **manual** item uses a generated id (e.g. `chi2026-papers`) the script
+  never touches it, but logs a warning when the paper counts no longer match
 
 So:
 
 - safe to manually add your own news item
-- not safe to manually rewrite generated publication news items if you want those exact edits to persist forever
+- to freeze the wording of a generated item, remove its `"source"` field and it becomes manual
 
 ## Deployment
 

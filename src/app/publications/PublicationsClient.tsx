@@ -1,25 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import publicationsData from "@/data/publications.json";
-
-type Publication = {
-  id: string;
-  title: string;
-  year: number;
-  venue: string | null;
-  authors: string[];
-  doi: string | null;
-  pdf?: string | null;
-  teaserImage?: string | null;
-  teaserAlt?: string | null;
-  url: string;
-  openAccess: boolean;
-  type: string;
-  areas?: string[];
-};
+import { type Publication, publications } from "@/lib/publications";
 
 function venueLabel(venue: string | null, year: number, type: string): string | null {
   const yy = String(year).slice(2);
@@ -120,84 +103,88 @@ function venueLabel(venue: string | null, year: number, type: string): string | 
   return isConf ? "Conference Paper" : "Journal Article";
 }
 
-const AREAS: Record<string, string> = {
-  "human-ai": "Human-AI Interaction",
-  "healthcare": "Healthcare & Wellbeing",
-  "social-media": "Social & Media Computing",
-  "accessibility": "Accessible & Inclusive Design",
-  "data-intelligence": "Data Intelligence",
-};
-
 const CUTOFF_YEAR = 2013;
+const LAB_BLUE = "#0B3D91";
 
-function PubCard({
-  pub,
-  activeArea,
-  setArea,
-}: {
-  pub: Publication;
-  activeArea: string | null;
-  setArea: (k: string | null) => void;
-}) {
+// "CHI '26  ·  Extended Abstract" → "CHI 2026 · Extended Abstract";
+// journals / preprints / book chapters fall back to the full venue name.
+function venueLine(pub: Publication): string | null {
+  const label = venueLabel(pub.venue, pub.year, pub.type);
+  const match = label?.match(/^(.+?) '(\d{2})\s+·\s+(.+)$/);
+  if (match) {
+    const [, name, yy, kind] = match;
+    const year = Number(yy) > 50 ? `19${yy}` : `20${yy}`;
+    return kind === "Full Paper" ? `${name} ${year}` : `${name} ${year} · ${kind}`;
+  }
+  if (/preprint/i.test(label ?? "")) return `${/arXiv/i.test(pub.venue ?? "") ? "arXiv" : "Preprint"} ${pub.year}`;
+  if (pub.venue) return `${pub.venue}, ${pub.year}`;
+  return label ? `${label}, ${pub.year}` : null;
+}
+
+function PubCard({ pub }: { pub: Publication }) {
   const publicationYear = String(pub.year);
   const venue = venueLabel(pub.venue, pub.year, pub.type);
+  const link = pub.doi ?? pub.url;
+  const analytics = {
+    "data-analytics-publication-id": pub.id,
+    "data-analytics-publication-year": publicationYear,
+    "data-analytics-publication-type": pub.type,
+    "data-analytics-venue-label": venue ?? "",
+  };
 
   return (
-    <div className={`group py-2 ${pub.teaserImage ? "grid grid-cols-[112px_minmax(0,1fr)] gap-4" : ""}`}>
-      {pub.teaserImage ? (
-        <a
-          href={pub.doi ?? pub.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-          data-analytics-event="publication_open"
-          data-analytics-label={pub.title}
-          data-analytics-publication-id={pub.id}
-          data-analytics-publication-year={publicationYear}
-          data-analytics-publication-type={pub.type}
-          data-analytics-venue-label={venue ?? ""}
-        >
-          <div className="relative aspect-[4/3] overflow-hidden border border-slate-200 bg-slate-50">
+    <article className="group grid grid-cols-1 sm:grid-cols-[220px_minmax(0,1fr)] gap-4 sm:gap-8 py-5">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-full max-w-[280px] sm:max-w-none"
+        data-analytics-event="publication_open"
+        data-analytics-label={pub.title}
+        {...analytics}
+      >
+        <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-slate-300 bg-white">
+          {pub.teaserImage ? (
             <Image
               src={pub.teaserImage}
               alt={pub.teaserAlt ?? `${pub.title} teaser image`}
               fill
-              sizes="112px"
-              className="object-cover"
+              sizes="(min-width: 640px) 220px, 100vw"
+              className="object-contain p-1.5"
             />
-          </div>
-        </a>
-      ) : null}
+          ) : (
+            <div
+              className="flex h-full w-full items-center justify-center text-xs tracking-[0.2em] uppercase text-slate-400"
+              style={{ fontFamily: "var(--font-mono)" }}
+            >
+              Coming soon
+            </div>
+          )}
+        </div>
+      </a>
       <div className="min-w-0">
-        {venue && (
-          <p className="text-xs text-[#2563eb] mb-1 tracking-wide" style={{ fontFamily: "var(--font-mono)" }}>
-            {venue}
-          </p>
-        )}
         <a
-          href={pub.doi ?? pub.url}
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontFamily: "var(--font-sans)" }}
-          className="font-medium text-slate-800 group-hover:text-[#2563eb] transition-colors leading-snug block mb-1"
+          style={{ fontFamily: "var(--font-sans)", color: LAB_BLUE }}
+          className="block text-lg font-semibold leading-snug hover:underline underline-offset-4"
           data-analytics-event="publication_open"
           data-analytics-label={pub.title}
-          data-analytics-publication-id={pub.id}
-          data-analytics-publication-year={publicationYear}
-          data-analytics-publication-type={pub.type}
-          data-analytics-venue-label={venue ?? ""}
+          {...analytics}
         >
           {pub.title}
         </a>
-        <p className="text-sm text-slate-500 mb-1">{pub.authors.join(", ")}</p>
-        {pub.venue && <p className="text-xs text-slate-500 mb-2">{pub.venue}</p>}
-        <div className="flex flex-wrap items-center gap-2 mt-1.5">
+        <p className="mt-1.5 text-[15px] leading-relaxed text-slate-900">{pub.authors.join(", ")}</p>
+        {venueLine(pub) && <p className="mt-0.5 text-[15px] text-slate-900">{venueLine(pub)}</p>}
+        <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-2 text-[15px]">
           {pub.doi && (
             <a
               href={pub.doi}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+              style={{ color: LAB_BLUE }}
+              className="hover:underline underline-offset-4"
               data-analytics-event="publication_asset_click"
               data-analytics-label={`${pub.title} DOI`}
               data-analytics-publication-id={pub.id}
@@ -207,12 +194,14 @@ function PubCard({
               DOI
             </a>
           )}
+          {pub.doi && pub.pdf && <span className="text-slate-900">|</span>}
           {pub.pdf && (
             <a
               href={pub.pdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs px-2 py-0.5 border border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600 transition-colors"
+              style={{ color: LAB_BLUE }}
+              className="hover:underline underline-offset-4"
               data-analytics-event="publication_asset_click"
               data-analytics-label={`${pub.title} PDF`}
               data-analytics-publication-id={pub.id}
@@ -222,44 +211,16 @@ function PubCard({
               PDF
             </a>
           )}
-          {pub.areas && pub.areas.length > 0 && pub.areas.map((a) => (
-            <button
-              key={a}
-              onClick={() => setArea(activeArea === a ? null : a)}
-              className={`text-xs px-2.5 py-0.5 rounded-none border transition-colors ${
-                activeArea === a
-                  ? "border-[#2563eb]/40 text-[#2563eb]"
-                  : "border-slate-100 text-slate-400 hover:border-slate-300 hover:text-slate-600"
-              }`}
-              data-analytics-event="publication_area_chip_click"
-              data-analytics-label={AREAS[a] ?? a}
-              data-analytics-publication-id={pub.id}
-              data-analytics-publication-year={publicationYear}
-              data-analytics-filter-name="area"
-              data-analytics-filter-value={a}
-              data-analytics-filter-state={activeArea === a ? "active" : "inactive"}
-            >
-              {AREAS[a] ?? a}
-            </button>
-          ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 
 export default function PublicationsClient() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const activeArea = searchParams.get("area");
   const [visibleYear, setVisibleYear] = useState<number | "older" | null>(null);
 
-  const allPubs: Publication[] = publicationsData.publications;
-  const filtered = activeArea
-    ? allPubs.filter((p) => p.areas?.includes(activeArea))
-    : allPubs;
-
-  const byYear = filtered.reduce<Record<number, Publication[]>>((acc, p) => {
+  const byYear = publications.reduce<Record<number, Publication[]>>((acc, p) => {
     if (!acc[p.year]) acc[p.year] = [];
     acc[p.year].push(p);
     return acc;
@@ -299,14 +260,7 @@ export default function PublicationsClient() {
     }
     return () => observers.forEach((o) => o.disconnect());
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeArea]);
-
-  function setArea(key: string | null) {
-    const params = new URLSearchParams(searchParams.toString());
-    if (key) params.set("area", key);
-    else params.delete("area");
-    router.push(`/publications?${params.toString()}`);
-  }
+  }, []);
 
   function scrollToYear(year: number | "older") {
     const id = year === "older" ? "year-older" : `year-${year}`;
@@ -322,82 +276,35 @@ export default function PublicationsClient() {
       data-analytics-section="publications_overview"
       data-analytics-page="publications"
     >
-      <h1 className="text-3xl font-bold text-slate-900 mb-2">Publications</h1>
-
-      {/* Area filter chips */}
-      <div
-        className="flex flex-wrap gap-2 mb-10"
-        data-analytics-section="publications_filters"
-      >
-        <button
-          onClick={() => setArea(null)}
-          className={`text-xs px-3 py-1.5 rounded-none border transition-colors ${
-            !activeArea
-              ? "bg-slate-900 text-white border-slate-900"
-              : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 "
-          }`}
-          data-analytics-event="publication_filter_click"
-          data-analytics-label="All"
-          data-analytics-filter-name="area"
-          data-analytics-filter-value="all"
-          data-analytics-filter-state={!activeArea ? "active" : "inactive"}
-        >
-          All
-        </button>
-        {Object.entries(AREAS).map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => setArea(activeArea === key ? null : key)}
-            className={`text-xs px-3 py-1.5 rounded-none border transition-colors ${
-              activeArea === key
-                ? "bg-[#2563eb] text-white border-[#2563eb]"
-                : "border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700 "
-            }`}
-            data-analytics-event="publication_filter_click"
-            data-analytics-label={label}
-            data-analytics-filter-name="area"
-            data-analytics-filter-value={key}
-            data-analytics-filter-state={activeArea === key ? "active" : "inactive"}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
-      {activeArea && (
-        <p className="text-sm text-slate-500 mb-8">
-          Showing <span className="font-medium text-slate-800">{filtered.length}</span> papers in{" "}
-          <span className="font-medium text-[#2563eb]">{AREAS[activeArea]}</span>
-        </p>
-      )}
+      <h1 className="text-3xl font-bold text-slate-900 mb-10">Publications</h1>
 
       <div className="flex gap-10">
         {/* Main publications list */}
         <div
-          className="flex-1 min-w-0 space-y-8"
+          className="flex-1 min-w-0 divide-y divide-slate-200"
           data-analytics-section="publications_list"
         >
           {recentYears.map((year) => (
-            <section key={year} id={`year-${year}`}>
-              <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+            <section key={year} id={`year-${year}`} className="pt-6 first:pt-0">
+              <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-900 py-3 mb-2">
                 {year}
               </h2>
-              <div className="space-y-3">
+              <div>
                 {byYear[year].map((pub) => (
-                  <PubCard key={pub.id} pub={pub} activeArea={activeArea} setArea={setArea} />
+                  <PubCard key={pub.id} pub={pub} />
                 ))}
               </div>
             </section>
           ))}
 
           {olderPubs.length > 0 && (
-            <section id="year-older">
-              <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
+            <section id="year-older" className="pt-6">
+              <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-900 py-3 mb-2">
                 2013 &amp; Earlier
               </h2>
-              <div className="space-y-3">
+              <div>
                 {olderPubs.map((pub) => (
-                  <PubCard key={pub.id} pub={pub} activeArea={activeArea} setArea={setArea} />
+                  <PubCard key={pub.id} pub={pub} />
                 ))}
               </div>
             </section>
@@ -416,8 +323,8 @@ export default function PublicationsClient() {
                 onClick={() => scrollToYear(year)}
                 className={`text-sm transition-colors ${
                   visibleYear === year
-                    ? "text-[#2563eb] font-semibold"
-                    : "text-slate-400 hover:text-[#2563eb] hover:font-semibold"
+                    ? "text-[#0B3D91] font-semibold"
+                    : "text-slate-400 hover:text-[#0B3D91] hover:font-semibold"
                 }`}
                 data-analytics-event="publication_year_jump_click"
                 data-analytics-label={String(year)}
@@ -431,8 +338,8 @@ export default function PublicationsClient() {
                 onClick={() => scrollToYear("older")}
                 className={`text-sm transition-colors ${
                   visibleYear === "older"
-                    ? "text-[#2563eb] font-semibold"
-                    : "text-slate-400 hover:text-[#2563eb] hover:font-semibold"
+                    ? "text-[#0B3D91] font-semibold"
+                    : "text-slate-400 hover:text-[#0B3D91] hover:font-semibold"
                 }`}
                 data-analytics-event="publication_year_jump_click"
                 data-analytics-label="2013+"

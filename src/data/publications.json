@@ -1,6 +1,101 @@
 {
-  "updatedAt": "2026-08-05T00:29:23.274Z",
+  "updatedAt": "2026-09-15T01:19:51.091Z",
   "publications": [
+    {
+      "id": "https://openalex.org/W7168393682",
+      "title": "Mine over Yours: How Authorship Biases Evaluation in Generative Information Retrieval",
+      "year": 2026,
+      "venue": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "authors": [
+        "Jeongwoo Ryu",
+        "Kyusik Kim",
+        "Soomin Kim",
+        "Jinsu Eun",
+        "Changhoon Oh",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3805712.3809948",
+      "url": "https://doi.org/10.1145/3805712.3809948",
+      "openAccess": true,
+      "type": "proceedings-article",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3805712.3809948"
+    },
+    {
+      "id": "https://openalex.org/W7166801226",
+      "title": "CliniCAST: Benchmarking Acoustic Grounding and Text Dominance in Medical Triage",
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "authors": [
+        "Kyusik Kim",
+        "Hyunwoo Yoo",
+        "Jaehoon Choi",
+        "Kitae Kim",
+        "Gail Rosen",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2026.findings-acl.2056",
+      "url": "https://doi.org/10.18653/v1/2026.findings-acl.2056",
+      "openAccess": true,
+      "type": "proceedings-article",
+      "pdf": "/papers/2026-clinicast-benchmarking-acoustic-grounding-and-text-dominance.pdf"
+    },
+    {
+      "id": "https://openalex.org/W7166831681",
+      "title": "Visual Interference in Speech Evaluation: Cultural Asymmetry and Cross-Modal Bias in MLLMs",
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "authors": [
+        "Kyusik Kim",
+        "Hyunwoo Yoo",
+        "Jaehoon Choi",
+        "Gail Rosen",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2026.findings-acl.1362",
+      "url": "https://doi.org/10.18653/v1/2026.findings-acl.1362",
+      "openAccess": true,
+      "type": "proceedings-article",
+      "pdf": "/papers/2026-visual-interference-in-speech-evaluation-cultural-asymmetry.pdf"
+    },
+    {
+      "id": "https://openalex.org/W7140138463",
+      "title": "ECG trained artificial intelligence for the detection of patients with inducible myocardial ischemia",
+      "year": 2026,
+      "venue": "European Heart Journal - Digital Health",
+      "authors": [
+        "Jaehyun Lim",
+        "Gibeom Park",
+        "Hak Seung Lee",
+        "Joon-Myoung Kwon",
+        "Heesun Lee",
+        "Bongwon Suh",
+        "Hyun-Jae Kang",
+        "Yong-Jin Kim",
+        "Bon-Kwon Koo",
+        "H. L. Kim"
+      ],
+      "doi": "https://doi.org/10.1093/ehjdh/ztag050",
+      "url": "https://doi.org/10.1093/ehjdh/ztag050",
+      "openAccess": true,
+      "type": "journal-article"
+    },
+    {
+      "id": "https://openalex.org/W7133355075",
+      "title": "In-Situ Adaptive Interfaces for Online Browsing: Design Dimensions for Intent-Responsive Automation and User Control",
+      "year": 2026,
+      "venue": "Proceedings of the 31st International Conference on Intelligent User Interfaces",
+      "authors": [
+        "Eunhye Kim",
+        "Sadat Shams Chowdhury",
+        "Hyungwoo Song",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3742413.3789092",
+      "url": "https://doi.org/10.1145/3742413.3789092",
+      "openAccess": true,
+      "type": "proceedings-article",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3742413.3789092"
+    },
     {
       "id": "https://openalex.org/W7166882901",
       "title": "Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates",
@@ -15,7 +110,10 @@
       "doi": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
       "url": "https://doi.org/10.18653/v1/2026.findings-acl.2057",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "pdf": "https://aclanthology.org/2026.findings-acl.2057.pdf",
+      "teaserImage": "/images/publications/2026-whose-voice-whose-avatar-gender-matching-bias.webp",
+      "teaserAlt": "Teaser figure from \"Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates\""
     },
     {
       "id": "https://openalex.org/W7166889578",
@@ -33,7 +131,10 @@
       "doi": "https://doi.org/10.18653/v1/2026.acl-long.2046",
       "url": "https://doi.org/10.18653/v1/2026.acl-long.2046",
       "openAccess": false,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "pdf": "/papers/2026-feeling-right-vs-being-right-how-ai.pdf",
+      "teaserImage": "/images/publications/2026-feeling-right-vs-being-right-how-ai.webp",
+      "teaserAlt": "Teaser figure from \"Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation\""
     },
     {
       "id": "https://openalex.org/W7167931870",
@@ -50,7 +151,8 @@
       "doi": "https://doi.org/10.1145/3805712.3809984",
       "url": "https://doi.org/10.1145/3805712.3809984",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3805712.3809984"
     },
     {
       "id": "https://openalex.org/W7166344745",
@@ -87,7 +189,10 @@
       "type": "proceedings-article",
       "areas": [
         "healthcare"
-      ]
+      ],
+      "pdf": "https://arxiv.org/pdf/2603.12632",
+      "teaserImage": "/images/publications/2026-i-should-know-but-i-dare-not.webp",
+      "teaserAlt": "Teaser figure from \"\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Healthcare Journeys to Deriving Design Implications for North Korean Defectors' Adaptation\""
     },
     {
       "id": "https://openalex.org/W7153991775",
@@ -109,7 +214,8 @@
       "type": "proceedings-article",
       "areas": [
         "social-media"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772318.3791932"
     },
     {
       "id": "https://openalex.org/W7153709259",
@@ -148,7 +254,8 @@
       "type": "proceedings-article",
       "areas": [
         "human-ai"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772363.3798788"
     },
     {
       "id": "https://openalex.org/W7153845321",
@@ -169,7 +276,8 @@
       "areas": [
         "accessibility",
         "data-intelligence"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772363.3798494"
     },
     {
       "id": "https://openalex.org/W7153874688",
@@ -211,7 +319,8 @@
         "human-ai",
         "healthcare",
         "accessibility"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772363.3798470"
     },
     {
       "id": "https://openalex.org/W7151806853",
@@ -282,7 +391,10 @@
       "doi": "https://doi.org/10.48550/arxiv.2603.12632",
       "url": "https://doi.org/10.48550/arxiv.2603.12632",
       "openAccess": true,
-      "type": "Preprint"
+      "type": "Preprint",
+      "pdf": "https://arxiv.org/pdf/2603.12632",
+      "teaserImage": "/images/publications/2026-i-should-know-but-i-dare-not.webp",
+      "teaserAlt": "Teaser figure from \"\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Patient Journeys to Deriving Design Implications for North Korean Defectors' Adaptation\""
     },
     {
       "id": "https://openalex.org/W7138824356",
@@ -301,7 +413,10 @@
       "doi": null,
       "url": "https://openalex.org/W7138824356",
       "openAccess": true,
-      "type": "text"
+      "type": "text",
+      "pdf": "https://arxiv.org/pdf/2603.12632",
+      "teaserImage": "/images/publications/2026-i-should-know-but-i-dare-not.webp",
+      "teaserAlt": "Teaser figure from \"\"I Should Know, But I Dare Not Ask\": From Understanding Challenges in Patient Journeys to Deriving Design Implications for North Korean Defectors' Adaptation\""
     },
     {
       "id": "https://openalex.org/W7133309924",
@@ -322,7 +437,27 @@
       "areas": [
         "human-ai",
         "accessibility"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3742413.3789057"
+    },
+    {
+      "id": "https://openalex.org/W4415082972",
+      "title": "LLMDR: LLM-Driven Deadlock Detection and Resolution in Multi-Agent Pathfinding",
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "authors": [
+        "Seo, Seungbae",
+        "Jung Hwan Kim",
+        "Minjeong Shin",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.48550/arxiv.2503.00717",
+      "url": "https://doi.org/10.48550/arxiv.2503.00717",
+      "openAccess": true,
+      "type": "text",
+      "pdf": "/papers/2025-llmdr-llm-driven-deadlock-detection-and-resolution.pdf",
+      "teaserImage": "/images/publications/2025-llmdr-llm-driven-deadlock-detection-and-resolution.webp",
+      "teaserAlt": "Teaser figure from \"LLMDR: LLM-Driven Deadlock Detection and Resolution in Multi-Agent Pathfinding\""
     },
     {
       "id": "https://openalex.org/W4415444971",
@@ -343,7 +478,8 @@
       "areas": [
         "social-media",
         "accessibility"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3663547.3759732"
     },
     {
       "id": "https://openalex.org/W4412377098",
@@ -365,7 +501,8 @@
       "areas": [
         "human-ai",
         "social-media"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3726302.3730175"
     },
     {
       "id": "https://openalex.org/W4417175677",
@@ -387,7 +524,10 @@
       "type": "text",
       "areas": [
         "human-ai"
-      ]
+      ],
+      "pdf": "/papers/2025-dice-bench-evaluating-the-tool-use-capabilities.pdf",
+      "teaserImage": "/images/publications/2025-dice-bench-evaluating-the-tool-use-capabilities.webp",
+      "teaserAlt": "Teaser figure from \"DICE-BENCH: Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues\""
     },
     {
       "id": "https://openalex.org/W4415311623",
@@ -408,7 +548,8 @@
       "areas": [
         "human-ai",
         "social-media"
-      ]
+      ],
+      "pdf": "/papers/2025-mas-liteval-multi-agent-system-for-literary.pdf"
     },
     {
       "id": "https://openalex.org/W4409883750",
@@ -429,7 +570,8 @@
       "areas": [
         "human-ai",
         "social-media"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3706598.3714178"
     },
     {
       "id": "https://openalex.org/W4409767187",
@@ -451,7 +593,8 @@
       "areas": [
         "human-ai",
         "social-media"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3706598.3713641"
     },
     {
       "id": "https://openalex.org/W4409720233",
@@ -557,7 +700,10 @@
       "areas": [
         "human-ai",
         "data-intelligence"
-      ]
+      ],
+      "pdf": "/papers/2025-blinded-by-context-unveiling-the-halo-effect.pdf",
+      "teaserImage": "/images/publications/2025-blinded-by-context-unveiling-the-halo-effect.webp",
+      "teaserAlt": "Teaser figure from \"Blinded by Context: Unveiling the Halo Effect of MLLM in AI Hiring\""
     },
     {
       "id": "https://openalex.org/W4409175691",
@@ -617,7 +763,43 @@
       "doi": "https://doi.org/10.18653/v1/2025.findings-acl.1375",
       "url": "https://doi.org/10.18653/v1/2025.findings-acl.1375",
       "openAccess": true,
-      "type": "proceedings-article"
+      "type": "proceedings-article",
+      "pdf": "/papers/2025-dice-bench-evaluating-the-tool-use-capabilities.pdf",
+      "teaserImage": "/images/publications/2025-dice-bench-evaluating-the-tool-use-capabilities.webp",
+      "teaserAlt": "Teaser figure from \"DICE-BENCH: Evaluating the Tool-Use Capabilities of Large Language Models in Multi-Round, Multi-Party Dialogues\""
+    },
+    {
+      "id": "https://openalex.org/W4403372167",
+      "title": "Utilizing Large Language Models for Social Simulations: Responding to the Degree of Freedom Questionnaire with ChatGPT",
+      "year": 2024,
+      "venue": "Journal of the HCI Society of Korea",
+      "authors": [
+        "Jaeyoun You",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.17210/jhsk.2024.09.19.3.49",
+      "url": "https://doi.org/10.17210/jhsk.2024.09.19.3.49",
+      "openAccess": false,
+      "type": "journal-article"
+    },
+    {
+      "id": "https://openalex.org/W4404792825",
+      "title": "Will LLMs Sink or Swim? Exploring Decision-Making Under Pressure",
+      "year": 2024,
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+      "authors": [
+        "Kyusik Kim",
+        "Hyeonseok Jeon",
+        "Jeongwoo Ryu",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/v1/2024.findings-emnlp.668",
+      "url": "https://doi.org/10.18653/v1/2024.findings-emnlp.668",
+      "openAccess": true,
+      "type": "proceedings-article",
+      "pdf": "/papers/2024-will-llms-sink-or-swim-exploring-decision.pdf",
+      "teaserImage": "/images/publications/2024-will-llms-sink-or-swim-exploring-decision.webp",
+      "teaserAlt": "Teaser figure from \"Will LLMs Sink or Swim? Exploring Decision-Making Under Pressure\""
     },
     {
       "id": "https://openalex.org/W4403577451",
@@ -635,7 +817,8 @@
       "type": "proceedings-article",
       "areas": [
         "data-intelligence"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3627673.3679956"
     },
     {
       "id": "https://openalex.org/W4400525719",
@@ -654,7 +837,8 @@
       "areas": [
         "social-media",
         "data-intelligence"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3626772.3657969"
     },
     {
       "id": "https://openalex.org/W4399205917",
@@ -673,7 +857,10 @@
         "human-ai",
         "social-media",
         "data-intelligence"
-      ]
+      ],
+      "pdf": "/papers/2024-evaluating-and-improving-value-judgments-in-ai.pdf",
+      "teaserImage": "/images/publications/2024-evaluating-and-improving-value-judgments-in-ai.webp",
+      "teaserAlt": "Teaser figure from \"Evaluating and Improving Value Judgments in AI: A Scenario-Based Study on Large Language Models’ Depiction of Social Conventions\""
     },
     {
       "id": "https://openalex.org/W4396833095",
@@ -692,7 +879,8 @@
       "type": "proceedings-article",
       "areas": [
         "healthcare"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3613904.3642305"
     },
     {
       "id": "https://openalex.org/W4396827361",
@@ -731,7 +919,8 @@
       "type": "proceedings-article",
       "areas": [
         "social-media"
-      ]
+      ],
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3613904.3642021"
     },
     {
       "id": "https://openalex.org/W4402029501",
@@ -914,6 +1103,21 @@
       "areas": [
         "data-intelligence"
       ]
+    },
+    {
+      "id": "https://openalex.org/W4323027428",
+      "title": "Classification of Phonocardiogram Recordings using Vision Transformer Architecture",
+      "year": 2022,
+      "venue": "Computing in cardiology",
+      "authors": [
+        "Joonyeob Kim",
+        "Gibeom Park",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.22489/cinc.2022.084",
+      "url": "https://doi.org/10.22489/cinc.2022.084",
+      "openAccess": true,
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W4318147789",
@@ -1841,6 +2045,24 @@
       ]
     },
     {
+      "id": "https://openalex.org/W1991371098",
+      "title": "Travel Q",
+      "year": 2015,
+      "venue": "Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems",
+      "authors": [
+        "Yoojung Kim",
+        "Changhoon Oh",
+        "Taeyoung Lee",
+        "Donghun Lee",
+        "Joongseek Lee",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/2702613.2732889",
+      "url": "https://doi.org/10.1145/2702613.2732889",
+      "openAccess": false,
+      "type": "proceedings-article"
+    },
+    {
       "id": "https://openalex.org/W2397425342",
       "title": "N-Polar Visualization: Visual Analytics for Exploring Data Objects with Multiple Interactive Anchors",
       "year": 2015,
@@ -2083,6 +2305,21 @@
       "areas": [
         "accessibility"
       ]
+    },
+    {
+      "id": "https://openalex.org/W2147867558",
+      "title": "Gravity",
+      "year": 2014,
+      "venue": "Proceedings of the 16th international conference on Human-computer interaction with mobile devices &amp; services",
+      "authors": [
+        "Changhoon Oh",
+        "Jeongsoo Park",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/2628363.2634226",
+      "url": "https://doi.org/10.1145/2628363.2634226",
+      "openAccess": false,
+      "type": "proceedings-article"
     },
     {
       "id": "https://openalex.org/W2266627096",

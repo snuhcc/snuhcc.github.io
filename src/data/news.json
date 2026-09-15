@@ -1,11 +1,25 @@
 {
   "news": [
     {
+      "id": "grad-aug-2026",
+      "date": "2026-08",
+      "type": "graduation",
+      "text": "Jeongwoo Ryu (Ph.D.), Kitae Kim (M.S.) and Minjeong Shin (M.S.) wrapped up their degrees this August. Congrats!"
+    },
+    {
       "id": "acl2026-papers",
       "date": "2026-07",
       "type": "paper",
-      "text": "Congrats! 2 papers accepted at ACL 2026!",
+      "text": "Congrats! 1 paper and 3 Findings papers accepted at ACL 2026!",
       "papers": [
+        {
+          "title": "CliniCAST: Benchmarking Acoustic Grounding and Text Dominance in Medical Triage",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.2056"
+        },
+        {
+          "title": "Visual Interference in Speech Evaluation: Cultural Asymmetry and Cross-Modal Bias in MLLMs",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.1362"
+        },
         {
           "title": "Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates",
           "url": "https://doi.org/10.18653/v1/2026.findings-acl.2057"
@@ -21,8 +35,18 @@
       "id": "sigir2026-papers",
       "date": "2026-07",
       "type": "paper",
-      "text": "Congrats! 1 paper accepted at SIGIR 2026!",
-      "source": "publications"
+      "text": "Congrats! 2 papers accepted at SIGIR 2026!",
+      "source": "publications",
+      "papers": [
+        {
+          "title": "Mine over Yours: How Authorship Biases Evaluation in Generative Information Retrieval",
+          "url": "https://doi.org/10.1145/3805712.3809948"
+        },
+        {
+          "title": "Who Is Shopping With You? How Persona Design Shapes Cognitive and Social Engagement in AI Shopping Agents",
+          "url": "https://doi.org/10.1145/3805712.3809984"
+        }
+      ]
     },
     {
       "id": "its2026-best-paper-award",
@@ -41,7 +65,7 @@
       "id": "iui2026-papers",
       "date": "2026-03",
       "type": "paper",
-      "text": "1 paper accepted at IUI 2026!",
+      "text": "2 papers accepted at IUI 2026!",
       "url": "https://iui.acm.org/2026/"
     },
     {

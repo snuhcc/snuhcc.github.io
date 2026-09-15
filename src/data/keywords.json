@@ -1,32 +1,32 @@
 {
-  "updatedAt": "2026-08-05T00:29:23.277Z",
+  "updatedAt": "2026-09-15T01:19:51.094Z",
   "subjectAreas": [
     {
       "name": "Human–computer interaction",
-      "count": 43
+      "count": 46
     },
     {
       "name": "Artificial intelligence",
-      "count": 37
+      "count": 41
     },
     {
       "name": "World Wide Web",
-      "count": 30
+      "count": 31
     },
     {
       "name": "Multimedia",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Data science",
       "count": 20
     },
     {
-      "name": "Internet privacy",
-      "count": 17
+      "name": "Information retrieval",
+      "count": 18
     },
     {
-      "name": "Information retrieval",
+      "name": "Internet privacy",
       "count": 17
     },
     {
@@ -42,7 +42,15 @@
       "count": 6
     },
     {
+      "name": "Natural language processing",
+      "count": 6
+    },
+    {
       "name": "Data mining",
+      "count": 6
+    },
+    {
+      "name": "Computer vision",
       "count": 6
     },
     {
@@ -54,11 +62,7 @@
       "count": 5
     },
     {
-      "name": "Natural language processing",
-      "count": 5
-    },
-    {
-      "name": "Computer vision",
+      "name": "Speech recognition",
       "count": 5
     },
     {
@@ -70,15 +74,11 @@
       "count": 4
     },
     {
-      "name": "Cognitive psychology",
-      "count": 3
-    },
-    {
-      "name": "Speech recognition",
-      "count": 3
-    },
-    {
       "name": "Computer security",
+      "count": 4
+    },
+    {
+      "name": "Cognitive psychology",
       "count": 3
     }
   ],
@@ -92,15 +92,15 @@
       "count": 13
     },
     {
+      "name": "User interface",
+      "count": 9
+    },
+    {
       "name": "Chatbot",
       "count": 8
     },
     {
       "name": "Artificial neural network",
-      "count": 8
-    },
-    {
-      "name": "User interface",
       "count": 8
     },
     {
@@ -140,11 +140,19 @@
       "count": 4
     },
     {
+      "name": "Generative grammar",
+      "count": 4
+    },
+    {
       "name": "Virtual reality",
       "count": 4
     },
     {
       "name": "Deep learning",
+      "count": 4
+    },
+    {
+      "name": "Usability",
       "count": 4
     },
     {
@@ -168,7 +176,7 @@
       "count": 3
     },
     {
-      "name": "Generative grammar",
+      "name": "User experience design",
       "count": 3
     },
     {
@@ -185,10 +193,6 @@
     },
     {
       "name": "Crowdsourcing",
-      "count": 3
-    },
-    {
-      "name": "Usability",
       "count": 3
     },
     {
@@ -217,10 +221,6 @@
     },
     {
       "name": "Sensemaking",
-      "count": 3
-    },
-    {
-      "name": "Encyclopedia",
       "count": 3
     }
   ]

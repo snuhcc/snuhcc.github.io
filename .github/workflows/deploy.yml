@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+  workflow_dispatch: # sync-publications.yml 이 데이터 커밋 후 호출
 
 permissions:
   contents: read

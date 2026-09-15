@@ -13,12 +13,12 @@ function CelebrationEmoji({ item }: { item: NewsItem }) {
 
 function AnnouncementText({ item, text }: { item: NewsItem; text: string }) {
   if (item.type === "graduation") {
-    const match = text.match(/^(.*?)( wrapped up their.*)$/);
+    const match = text.match(/^(.*?)( (?:wrapped up|completed|received|earned) .*)$/);
     return match ? <><strong className="font-semibold text-slate-900">{match[1]}</strong>{match[2]}</> : text;
   }
 
   const pattern = item.type === "paper"
-    ? /(\b\d+ papers?(?: and \d+ posters?)?\b|\b(?:Findings of )?(?:ACL|CHI|SIGIR|IUI|ASSETS|CIKM|ICWSM) \d{4}\b)/g
+    ? /(\b\d+ (?:Findings )?papers?\b|\b\d+ posters?\b|\b(?:Findings of )?(?:ACL|EMNLP|NAACL|CHI|UIST|IUI|CSCW|DIS|ASSETS|SIGIR|CIKM|RecSys|ICWSM|CogSci) \d{4}\b)/g
     : item.type === "award"
       ? /(\bBest Full Paper Award\b)/g
       : null;
