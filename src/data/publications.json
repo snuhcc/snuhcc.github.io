@@ -2,6 +2,117 @@
   "updatedAt": "2026-09-15T01:19:51.091Z",
   "publications": [
     {
+      "id": "manual:2026-casesense",
+      "title": "CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration",
+      "year": 2026,
+      "venue": "Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology",
+      "authors": [
+        "Junghwan Kim",
+        "Hyeonseok Jeon",
+        "Jung Lee",
+        "Dongseok Heo",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3830398.3830479",
+      "url": "https://doi.org/10.1145/3830398.3830479",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "data-intelligence"
+      ],
+      "teaserImage": "/images/publications/2026-casesense-mapping-the-legal-case-landscape-with.webp",
+      "teaserAlt": "CaseSense interface: exploration panel with natural-language search and axis weighting, a tri-axial graph view of legal cases, and a case info panel with structured extractions"
+    },
+    {
+      "id": "manual:2026-debsim",
+      "title": "DEBSIM: Productive Friction for Learning Transfer in LLM-Based Argumentation Tutoring",
+      "year": 2026,
+      "venue": "Proceedings of the ACM International Conference on Interactive Surfaces and Spaces",
+      "authors": [
+        "Junghwan Kim",
+        "Kieun Park",
+        "Hyungwoo Song",
+        "Bongwon Suh"
+      ],
+      "doi": null,
+      "url": "",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ],
+      "award": "Best Full Paper Award",
+      "teaserImage": "/images/publications/2026-debsim-productive-friction-for-learning-transfer-in.webp",
+      "teaserAlt": "DEBSIM interface with three friction points: editable Toulmin claim cards, keyword selection and evidence search, an auto-generated speech outline, and a counterargument simulation chat"
+    },
+    {
+      "id": "manual:2026-co-overcooked",
+      "title": "Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition",
+      "year": 2026,
+      "venue": "Proceedings of the Annual Meeting of the Cognitive Science Society",
+      "authors": [
+        "Junghwan Kim",
+        "Dongseok Heo",
+        "Kyusik Kim",
+        "Jung Lee",
+        "Bongwon Suh"
+      ],
+      "doi": null,
+      "url": "https://escholarship.org/uc/item/39n1g8g6",
+      "openAccess": true,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ],
+      "award": "Student Travel Award",
+      "teaserImage": "/images/publications/2026-co-overcooked-cognitive-constraints-on-partner-modeling.webp",
+      "teaserAlt": "Co-Overcooked task environment: sequential soup preparation workflow, pre-game planning chat, and the main game grid where four players coordinate in real time"
+    },
+    {
+      "id": "manual:2026-tonecanvas",
+      "title": "ToneCanvas: Visually Painting Character Tone and Terms for Narrative Consistency",
+      "year": 2026,
+      "venue": "Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology",
+      "authors": [
+        "Junghwan Kim",
+        "Hana Oh",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3830397.3841808",
+      "url": "https://doi.org/10.1145/3830397.3841808",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai"
+      ],
+      "teaserImage": "/images/publications/2026-tonecanvas-visually-painting-character-tone-and-terms.webp",
+      "teaserAlt": "ToneCanvas manuscript editor with watercolor tone overlays, a tone palette with sliders and live preview, and character layers with reusable tone chips"
+    },
+    {
+      "id": "manual:2026-between-the-clinic-and-the-kitchen",
+      "title": "Between the Clinic and the Kitchen: A Constraint RAG Chatbot as Boundary Infrastructure for Dialysis Care",
+      "year": 2026,
+      "venue": "Companion Publication of the 2026 ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+      "authors": [
+        "Junghwan Kim",
+        "Dongseok Heo",
+        "Hee Jeong Hwang",
+        "Jeong Yun You",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3785651.3831499",
+      "url": "https://doi.org/10.1145/3785651.3831499",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "healthcare"
+      ],
+      "teaserImage": "/images/publications/2026-between-the-clinic-and-the-kitchen-a.webp",
+      "teaserAlt": "A constraint RAG chatbot bridging the clinical lab layer and the patient's living room layer, with four study phases from formative interviews to stakeholder debriefs"
+    },
+    {
       "id": "https://openalex.org/W7168393682",
       "title": "Mine over Yours: How Authorship Biases Evaluation in Generative Information Retrieval",
       "year": 2026,
@@ -327,9 +438,9 @@
     },
     {
       "id": "https://openalex.org/W7151806853",
-      "title": "Effects of a Personalized Retrieval-Augmented Generation Chatbot on Information Needs in Chronic Kidney Disease Patients: Mixed Methods Randomized Controlled Trial (Preprint)",
+      "title": "Effects of a Personalized Retrieval-Augmented Generation Chatbot on Information Needs in Chronic Kidney Disease Patients: Mixed Methods Randomized Controlled Trial",
       "year": 2026,
-      "venue": null,
+      "venue": "Interactive Journal of Medical Research",
       "authors": [
         "Hee Jeong Hwang",
         "Junghwan Kim",
@@ -341,12 +452,12 @@
         "Jung Han Yoon Park",
         "Bongwon Suh",
         "Jung Pyo Lee",
-        "Ki Bong Lee"
+        "Ki Won Lee"
       ],
-      "doi": "https://doi.org/10.2196/preprints.96501",
-      "url": "https://doi.org/10.2196/preprints.96501",
+      "doi": "https://doi.org/10.2196/96501",
+      "url": "https://doi.org/10.2196/96501",
       "openAccess": true,
-      "type": "posted-content",
+      "type": "journal-article",
       "areas": [
         "human-ai",
         "healthcare"
@@ -442,6 +553,29 @@
         "accessibility"
       ],
       "pdf": "https://dl.acm.org/doi/pdf/10.1145/3742413.3789057"
+    },
+    {
+      "id": "manual:2025-legisflow",
+      "title": "LegisFlow: Enhancing Korean Legal Research with Temporal-Aware LLM Interfaces",
+      "year": 2025,
+      "venue": "Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology",
+      "authors": [
+        "Junghwan Kim",
+        "Hyeonseok Jeon",
+        "Dongseok Heo",
+        "Jung Lee",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.1145/3746059.3747752",
+      "url": "https://doi.org/10.1145/3746059.3747752",
+      "openAccess": false,
+      "type": "proceedings-article",
+      "areas": [
+        "human-ai",
+        "data-intelligence"
+      ],
+      "teaserImage": "/images/publications/2025-legisflow-enhancing-korean-legal-research-with-temporal.webp",
+      "teaserAlt": "Baseline keyword search, manual scrolling and tab switching compared with LegisFlow's natural-language search, amendment timeline visualization, and multi-statute LLM analysis"
     },
     {
       "id": "https://openalex.org/W4415082972",

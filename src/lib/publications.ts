@@ -11,6 +11,7 @@ export type Publication = {
   pdf?: string | null;
   teaserImage?: string | null;
   teaserAlt?: string | null;
+  award?: string | null;
   url: string;
   openAccess: boolean;
   type: string;

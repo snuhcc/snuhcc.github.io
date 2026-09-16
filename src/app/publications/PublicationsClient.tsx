@@ -36,7 +36,14 @@ function venueLabel(venue: string | null, year: number, type: string): string | 
     return /Long Papers/i.test(v) ? `ACL '${yy}  ·  Long Paper` : `ACL '${yy}  ·  Full Paper`;
 
   // UIST
-  if (/\bUIST\b|User Interface Software and Technology/i.test(v)) return `UIST '${yy}  ·  Full Paper`;
+  if (/\bUIST\b|User Interface Software and Technology/i.test(v))
+    return /adjunct/i.test(v) ? `UIST '${yy}  ·  Poster` : `UIST '${yy}  ·  Full Paper`;
+
+  // ITS (Interactive Surfaces and Spaces)
+  if (/Interactive Surfaces and Spaces/i.test(v)) return `ITS '${yy}  ·  Full Paper`;
+
+  // CogSci
+  if (/Cognitive Science Society/i.test(v)) return `CogSci '${yy}  ·  Full Paper`;
 
   // IUI
   if (/Intelligent User Interface/i.test(v))
@@ -124,7 +131,7 @@ function venueLine(pub: Publication): string | null {
 function PubCard({ pub }: { pub: Publication }) {
   const publicationYear = String(pub.year);
   const venue = venueLabel(pub.venue, pub.year, pub.type);
-  const link = pub.doi ?? pub.url;
+  const link = pub.doi ?? (pub.url || undefined);
   const analytics = {
     "data-analytics-publication-id": pub.id,
     "data-analytics-publication-year": publicationYear,
@@ -177,6 +184,16 @@ function PubCard({ pub }: { pub: Publication }) {
         </a>
         <p className="mt-1.5 text-[15px] leading-relaxed text-slate-900">{pub.authors.join(", ")}</p>
         {venueLine(pub) && <p className="mt-0.5 text-[15px] text-slate-900">{venueLine(pub)}</p>}
+        {pub.award && (
+          <p className="mt-1.5">
+            <span
+              className="inline-flex items-center gap-1 rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-[13px] font-medium text-amber-800"
+            >
+              <span aria-hidden="true">🏆</span>
+              {pub.award}
+            </span>
+          </p>
+        )}
         <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-2 text-[15px]">
           {pub.doi && (
             <a

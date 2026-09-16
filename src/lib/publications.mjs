@@ -19,6 +19,7 @@
  * @property {string | null} [pdf]
  * @property {string | null} [teaserImage]
  * @property {string | null} [teaserAlt]
+ * @property {string | null} [award]
  */
 
 const PI_NAME_KEYS = new Set(["bongwonsuh", "suhbongwon"]);
@@ -109,7 +110,7 @@ export function pickPreferredPublication(group) {
 
 /**
  * Collapse same-title records into one entry for display. The preferred record
- * is kept and manual fields (areas / pdf / teaserImage / teaserAlt) are merged
+ * is kept and manual fields (areas / pdf / teaserImage / teaserAlt / award) are merged
  * in from its siblings so that curated metadata is never lost by the collapse.
  * The original order of the surviving entries is preserved.
  * @template {PublicationLike} T
@@ -134,7 +135,7 @@ export function collapsePublications(publications) {
     if (group.length === 1) continue;
     const preferred = pickPreferredPublication(group);
     const areas = [...new Set(group.flatMap((pub) => pub.areas ?? []))];
-    const pickManual = (/** @type {"pdf" | "teaserImage" | "teaserAlt"} */ field) =>
+    const pickManual = (/** @type {"pdf" | "teaserImage" | "teaserAlt" | "award"} */ field) =>
       preferred[field] ?? group.map((pub) => pub[field]).find(Boolean) ?? null;
 
     const merged = {
@@ -143,6 +144,7 @@ export function collapsePublications(publications) {
       ...(pickManual("pdf") ? { pdf: pickManual("pdf") } : {}),
       ...(pickManual("teaserImage") ? { teaserImage: pickManual("teaserImage") } : {}),
       ...(pickManual("teaserAlt") ? { teaserAlt: pickManual("teaserAlt") } : {}),
+      ...(pickManual("award") ? { award: pickManual("award") } : {}),
     };
     replacement.set(preferred, merged);
     for (const pub of group) if (pub !== preferred) dropped.add(pub);
