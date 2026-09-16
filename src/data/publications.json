@@ -297,7 +297,10 @@
       "type": "proceedings-article",
       "areas": [
         "human-ai"
-      ]
+      ],
+      "pdf": "/papers/2026-what-can-i-control-designing-an-attribution.pdf",
+      "teaserImage": "/images/publications/2026-what-can-i-control-designing-an-attribution.webp",
+      "teaserAlt": "Pipeline of the attribution reframing chatbot, from risk detection and problem analysis through therapy mapping to a therapeutic response, with strategy feedback every five turns"
     },
     {
       "id": "https://openalex.org/W7153894086",
