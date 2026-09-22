@@ -30,14 +30,19 @@ export default function Home() {
               <span className="block">Human Centered</span>
               <span className="block mt-1">Computing Lab</span>
             </h1>
-            <p className="text-base md:text-lg text-white/90 max-w-xl leading-relaxed mt-5">
-              Led by <span className="text-white font-medium">Prof. Bongwon Suh</span> at{" "}
-              <span className="text-white font-medium">Seoul National University</span>, we are an
-              interdisciplinary research group at the intersection of{" "}
-              <span className="text-white font-medium">HCI</span>,{" "}
-              <span className="text-white font-medium">Big Data</span>, and{" "}
-              <span className="text-white font-medium">Artificial Intelligence</span>.
-            </p>
+            <div className="mt-6 max-w-2xl text-white">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+                Our Mission
+              </p>
+              <p className="mt-3 text-xl md:text-2xl leading-snug font-medium">
+                To harness the power of AI in ways that are beneficial and useful to people
+                <span className="font-bold"> (Value &amp; Purpose)</span>, while ensuring it is
+                usable and enjoyable through human-centered design
+                <span className="font-bold"> (Interaction &amp; Experience)</span>, and ultimately
+                effective and efficient in practice
+                <span className="font-bold"> (Performance &amp; Impact)</span>.
+              </p>
+            </div>
           </div>
           <div className="w-full md:w-[400px] lg:w-[440px] shrink-0">
             <HeroPhotoCarousel />

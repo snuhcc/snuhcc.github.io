@@ -138,7 +138,9 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
         {member.profilePath ? (
           <Link
             href={member.profilePath}
-            className="inline-flex text-base font-semibold text-slate-900 mb-2 hover:text-[#0B3D91] transition-colors"
+            aria-label={`View ${member.name}'s profile`}
+            title="View profile"
+            className="group inline-flex items-center gap-2 text-base font-semibold text-[#0B3D91] underline decoration-[#0B3D91]/40 underline-offset-4 hover:decoration-[#0B3D91] transition-colors mb-2"
             data-analytics-event="member_internal_profile_click"
             data-analytics-label={member.name}
             data-analytics-member-name={member.name}
@@ -146,6 +148,24 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
             data-analytics-profile-type="internal_profile"
           >
             {member.name}
+            <span className="text-xs font-medium no-underline opacity-70 group-hover:opacity-100">
+              View profile
+            </span>
+            <svg
+              aria-hidden="true"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" />
+            </svg>
           </Link>
         ) : (
           <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
