@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-09-15T01:19:51.091Z",
+  "updatedAt": "2026-10-01T08:07:14.953Z",
   "publications": [
+    {
+      "id": "https://openalex.org/W7213542443",
+      "title": "From selfies to synthetic faces: selective aesthetic compression in East Asian beauty representation",
+      "year": 2026,
+      "venue": "AI & Society",
+      "authors": [
+        "Jaeyoun You",
+        "Sojeong Park",
+        "Bongwon Suh",
+        "Seok-Kyeong Hong"
+      ],
+      "doi": "https://doi.org/10.1007/s00146-026-03318-w",
+      "url": "https://doi.org/10.1007/s00146-026-03318-w",
+      "openAccess": false,
+      "type": "journal-article"
+    },
     {
       "id": "manual:2026-casesense",
       "title": "CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration",

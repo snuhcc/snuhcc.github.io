@@ -1,6 +1,49 @@
 {
   "news": [
     {
+      "id": "cogsci2026-papers",
+      "date": "2026-10",
+      "type": "paper",
+      "text": "Congrats! 1 paper accepted at CogSci 2026!",
+      "papers": [
+        {
+          "title": "Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition",
+          "url": "https://escholarship.org/uc/item/39n1g8g6"
+        }
+      ],
+      "source": "publications"
+    },
+    {
+      "id": "cscw2026-papers",
+      "date": "2026-10",
+      "type": "paper",
+      "text": "Congrats! 1 poster accepted at CSCW 2026!",
+      "papers": [
+        {
+          "title": "Between the Clinic and the Kitchen: A Constraint RAG Chatbot as Boundary Infrastructure for Dialysis Care",
+          "url": "https://doi.org/10.1145/3785651.3831499"
+        }
+      ],
+      "source": "publications"
+    },
+    {
+      "id": "uist2026-papers",
+      "date": "2026-10",
+      "type": "paper",
+      "text": "Congrats! 1 paper and 1 poster accepted at UIST 2026!",
+      "papers": [
+        {
+          "title": "CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration",
+          "url": "https://doi.org/10.1145/3830398.3830479"
+        },
+        {
+          "title": "ToneCanvas: Visually Painting Character Tone and Terms for Narrative Consistency",
+          "url": "https://doi.org/10.1145/3830397.3841808"
+        }
+      ],
+      "source": "publications"
+    },
+    {
       "id": "grad-aug-2026",
       "date": "2026-08",
       "type": "graduation",
