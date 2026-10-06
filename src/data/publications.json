@@ -171,7 +171,9 @@
       "url": "https://doi.org/10.18653/v1/2026.findings-acl.2056",
       "openAccess": true,
       "type": "proceedings-article",
-      "pdf": "/papers/2026-clinicast-benchmarking-acoustic-grounding-and-text-dominance.pdf"
+      "pdf": "/papers/2026-clinicast-benchmarking-acoustic-grounding-and-text-dominance.pdf",
+      "teaserImage": "/images/publications/2026-clinicast-benchmarking-acoustic-grounding-and-text-dominance.webp",
+      "teaserAlt": "Heatmap of age-by-gender interaction in acoustic symptom tag effects across diseases and audio-language models"
     },
     {
       "id": "https://openalex.org/W7166831681",
@@ -189,7 +191,9 @@
       "url": "https://doi.org/10.18653/v1/2026.findings-acl.1362",
       "openAccess": true,
       "type": "proceedings-article",
-      "pdf": "/papers/2026-visual-interference-in-speech-evaluation-cultural-asymmetry.pdf"
+      "pdf": "/papers/2026-visual-interference-in-speech-evaluation-cultural-asymmetry.pdf",
+      "teaserImage": "/images/publications/2026-visual-interference-in-speech-evaluation-cultural-asymmetry.webp",
+      "teaserAlt": "Four radar charts comparing Gemini 2.5 Flash evaluations across Korean, White, and Black visual personas for occupational and interpersonal tasks"
     },
     {
       "id": "https://openalex.org/W7140138463",
@@ -247,7 +251,7 @@
       "type": "proceedings-article",
       "pdf": "https://aclanthology.org/2026.findings-acl.2057.pdf",
       "teaserImage": "/images/publications/2026-whose-voice-whose-avatar-gender-matching-bias.webp",
-      "teaserAlt": "Teaser figure from \"Whose Voice, Whose Avatar? Gender Matching Bias in Multimodal AI Teammates\""
+      "teaserAlt": "Voice gender effects with 95% confidence intervals across multimodal models, showing differences in voice-avatar gender matching"
     },
     {
       "id": "https://openalex.org/W7166889578",
@@ -349,7 +353,9 @@
       "areas": [
         "social-media"
       ],
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772318.3791932"
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772318.3791932",
+      "teaserImage": "/images/publications/2026-what-keeps-fans-on-the-silent-field.webp",
+      "teaserAlt": "A football viewer disengaged during traditional commentary alongside the same viewer engaged by an AI commentary panel"
     },
     {
       "id": "https://openalex.org/W7153709259",
@@ -795,6 +801,8 @@
       "url": "https://doi.org/10.1145/3706599.3719797",
       "openAccess": false,
       "type": "proceedings-article",
+      "teaserImage": "/images/publications/2025-i-feel-you-but-pragmatic-markers.webp",
+      "teaserAlt": "A user speaking with a voice agent, example dialogue, and a system diagram linking pragmatic marker selection with sentiment analysis",
       "areas": [
         "human-ai"
       ]
