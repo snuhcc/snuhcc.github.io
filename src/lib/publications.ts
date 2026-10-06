@@ -12,6 +12,7 @@ export type Publication = {
   teaserImage?: string | null;
   teaserAlt?: string | null;
   award?: string | null;
+  projectPage?: string | null;
   url: string;
   openAccess: boolean;
   type: string;

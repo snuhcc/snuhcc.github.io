@@ -15,7 +15,9 @@
       "doi": "https://doi.org/10.1007/s00146-026-03318-w",
       "url": "https://doi.org/10.1007/s00146-026-03318-w",
       "openAccess": false,
-      "type": "journal-article"
+      "type": "journal-article",
+      "teaserImage": "/images/publications/2026-from-selfies-to-synthetic-faces-selective-aesthetic.webp",
+      "teaserAlt": "Pipeline for extracting representative skin colors from selfies: face detection, facial attribute detection with twenty cheek coordinates, HSL value retrieval, per-group collection, and K-means clustering"
     },
     {
       "id": "manual:2026-casesense",
@@ -38,7 +40,8 @@
         "data-intelligence"
       ],
       "teaserImage": "/images/publications/2026-casesense-mapping-the-legal-case-landscape-with.webp",
-      "teaserAlt": "CaseSense interface: exploration panel with natural-language search and axis weighting, a tri-axial graph view of legal cases, and a case info panel with structured extractions"
+      "teaserAlt": "CaseSense interface: exploration panel with natural-language search and axis weighting, a tri-axial graph view of legal cases, and a case info panel with structured extractions",
+      "projectPage": "https://jhbale11.github.io/publications/casesense/"
     },
     {
       "id": "manual:2026-debsim",
@@ -60,7 +63,8 @@
       ],
       "award": "Best Full Paper Award",
       "teaserImage": "/images/publications/2026-debsim-productive-friction-for-learning-transfer-in.webp",
-      "teaserAlt": "DEBSIM interface with three friction points: editable Toulmin claim cards, keyword selection and evidence search, an auto-generated speech outline, and a counterargument simulation chat"
+      "teaserAlt": "DEBSIM interface with three friction points: editable Toulmin claim cards, keyword selection and evidence search, an auto-generated speech outline, and a counterargument simulation chat",
+      "projectPage": "https://jhbale11.github.io/publications/debsim/"
     },
     {
       "id": "manual:2026-co-overcooked",
@@ -83,7 +87,8 @@
       ],
       "award": "Student Travel Award",
       "teaserImage": "/images/publications/2026-co-overcooked-cognitive-constraints-on-partner-modeling.webp",
-      "teaserAlt": "Co-Overcooked task environment: sequential soup preparation workflow, pre-game planning chat, and the main game grid where four players coordinate in real time"
+      "teaserAlt": "Co-Overcooked task environment: sequential soup preparation workflow, pre-game planning chat, and the main game grid where four players coordinate in real time",
+      "projectPage": "https://jhbale11.github.io/publications/co-overcooked/"
     },
     {
       "id": "manual:2026-tonecanvas",
@@ -103,7 +108,8 @@
         "human-ai"
       ],
       "teaserImage": "/images/publications/2026-tonecanvas-visually-painting-character-tone-and-terms.webp",
-      "teaserAlt": "ToneCanvas manuscript editor with watercolor tone overlays, a tone palette with sliders and live preview, and character layers with reusable tone chips"
+      "teaserAlt": "ToneCanvas manuscript editor with watercolor tone overlays, a tone palette with sliders and live preview, and character layers with reusable tone chips",
+      "projectPage": "https://jhbale11.github.io/publications/tonecanvas/"
     },
     {
       "id": "manual:2026-between-the-clinic-and-the-kitchen",
@@ -126,7 +132,8 @@
         "healthcare"
       ],
       "teaserImage": "/images/publications/2026-between-the-clinic-and-the-kitchen-a.webp",
-      "teaserAlt": "A constraint RAG chatbot bridging the clinical lab layer and the patient's living room layer, with four study phases from formative interviews to stakeholder debriefs"
+      "teaserAlt": "A constraint RAG chatbot bridging the clinical lab layer and the patient's living room layer, with four study phases from formative interviews to stakeholder debriefs",
+      "projectPage": "https://jhbale11.github.io/publications/clinic-and-kitchen/"
     },
     {
       "id": "https://openalex.org/W7168393682",
@@ -450,7 +457,9 @@
         "healthcare",
         "accessibility"
       ],
-      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772363.3798470"
+      "pdf": "https://dl.acm.org/doi/pdf/10.1145/3772363.3798470",
+      "teaserImage": "/images/publications/2026-when-nurses-meet-vibe-coding-shifting-from.webp",
+      "teaserAlt": "Study session timeline with nurses: pre-session briefing, initial exploration of EMR pain points, problem-tree discovery and scenario selection, real-time generative AI vibe coding, and a post-session survey"
     },
     {
       "id": "https://openalex.org/W7151806853",

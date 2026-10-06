@@ -131,7 +131,7 @@ function venueLine(pub: Publication): string | null {
 function PubCard({ pub }: { pub: Publication }) {
   const publicationYear = String(pub.year);
   const venue = venueLabel(pub.venue, pub.year, pub.type);
-  const link = pub.doi ?? (pub.url || undefined);
+  const link = pub.projectPage ?? pub.doi ?? (pub.url || undefined);
   const analytics = {
     "data-analytics-publication-id": pub.id,
     "data-analytics-publication-year": publicationYear,
