@@ -1,14 +1,18 @@
 {
   "news": [
     {
-      "id": "cogsci2026-papers",
-      "date": "2026-10",
+      "id": "uist2026-papers",
+      "date": "2026-11",
       "type": "paper",
-      "text": "Congrats! 1 paper accepted at CogSci 2026!",
+      "text": "Congrats! 1 paper and 1 poster accepted at UIST 2026!",
       "papers": [
         {
-          "title": "Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition",
-          "url": "https://escholarship.org/uc/item/39n1g8g6"
+          "title": "CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration",
+          "url": "https://doi.org/10.1145/3830398.3830479"
+        },
+        {
+          "title": "ToneCanvas: Visually Painting Character Tone and Terms for Narrative Consistency",
+          "url": "https://doi.org/10.1145/3830397.3841808"
         }
       ],
       "source": "publications"
@@ -22,23 +26,6 @@
         {
           "title": "Between the Clinic and the Kitchen: A Constraint RAG Chatbot as Boundary Infrastructure for Dialysis Care",
           "url": "https://doi.org/10.1145/3785651.3831499"
-        }
-      ],
-      "source": "publications"
-    },
-    {
-      "id": "uist2026-papers",
-      "date": "2026-10",
-      "type": "paper",
-      "text": "Congrats! 1 paper and 1 poster accepted at UIST 2026!",
-      "papers": [
-        {
-          "title": "CaseSense: Mapping the Legal Case Landscape with Multi-Dimensional Visual Exploration",
-          "url": "https://doi.org/10.1145/3830398.3830479"
-        },
-        {
-          "title": "ToneCanvas: Visually Painting Character Tone and Terms for Narrative Consistency",
-          "url": "https://doi.org/10.1145/3830397.3841808"
         }
       ],
       "source": "publications"
@@ -70,6 +57,19 @@
         {
           "title": "Feeling Right vs. Being Right: How AI Sycophancy Affects Value-Laden Deliberation",
           "url": "https://doi.org/10.18653/v1/2026.acl-long.2046"
+        }
+      ],
+      "source": "publications"
+    },
+    {
+      "id": "cogsci2026-papers",
+      "date": "2026-07",
+      "type": "paper",
+      "text": "Congrats! 1 paper accepted at CogSci 2026!",
+      "papers": [
+        {
+          "title": "Co-Overcooked: Cognitive Constraints on Partner Modeling in Human-AI Team Composition",
+          "url": "https://escholarship.org/uc/item/39n1g8g6"
         }
       ],
       "source": "publications"
