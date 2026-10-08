@@ -374,7 +374,9 @@
       "type": "proceedings-article",
       "areas": [
         "human-ai"
-      ]
+      ],
+      "teaserImage": "/images/publications/2026-just-listening-was-enough-until-it-wasn.webp",
+      "teaserAlt": "Teaser figure from \"“Just Listening Was Enough—Until It Wasn't”: Relationship-Stage-Aware Cognitive Scaffolding in AI Companions\""
     },
     {
       "id": "https://openalex.org/W7153788075",
