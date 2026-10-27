@@ -113,7 +113,7 @@ Main fields:
 | --- | --- |
 | `name` | Full name |
 | `email` | SNU email |
-| `title` | e.g. `Professor`, `Ph.D. Student`, `Master's Student` |
+| `title` | One of `Professor`, `Postdoctoral Researcher`, `Ph.D. Student`, `Master's Student`, `Undergraduate Intern` (must match exactly — it decides the section on /people) |
 | `photo` | Profile image path |
 | `url` | Personal website, GitHub, Google Scholar, LinkedIn, etc. |
 

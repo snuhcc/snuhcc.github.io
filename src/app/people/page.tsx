@@ -6,7 +6,7 @@ import membersData from "@/data/members.json";
 export const metadata: Metadata = {
   title: "People",
   description:
-    "Meet the members of HCC Lab — professors, PhD students, and master's students at Seoul National University working on HCI, AI, and social computing.",
+    "Meet the members of HCC Lab — professors, postdoctoral researchers, PhD and master's students, and undergraduate interns at Seoul National University working on HCI, AI, and social computing.",
   openGraph: { title: "People | HCC Lab", description: "Meet the HCC Lab team at Seoul National University." },
 };
 
@@ -29,7 +29,13 @@ type AlumniMember = {
   photo?: string | null;
 };
 
-const titleOrder = ["Professor", "Ph.D. Student", "Master's Student"];
+const titleOrder = [
+  "Professor",
+  "Postdoctoral Researcher",
+  "Ph.D. Student",
+  "Master's Student",
+  "Undergraduate Intern",
+];
 
 function sectionKey(title: string) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");

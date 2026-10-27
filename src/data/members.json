@@ -13,7 +13,7 @@
     {
       "name": "Jeongwoo Ryu",
       "email": "jeongwoo@snu.ac.kr",
-      "title": "Ph.D. Student",
+      "title": "Postdoctoral Researcher",
       "fields": ["HAI", "HCI", "LLM", "NLP", "UX"],
       "photo": "/images/people/jeongwoo-ryu.jpeg",
       "bio": "AI Deliberation",
@@ -65,15 +65,6 @@
       "url": "https://halfhoon.github.io/"
     },
     {
-      "name": "Kitae Kim",
-      "email": "joseph423@snu.ac.kr",
-      "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "Embodied AI"],
-      "photo": "/images/people/kitae-kim.jpeg",
-      "bio": "Embodied AI",
-      "url": "https://githae1337.github.io/"
-    },
-    {
       "name": "Gibeom Park",
       "email": "skymind@snu.ac.kr",
       "title": "Ph.D. Student",
@@ -81,15 +72,6 @@
       "photo": "/images/people/gibeom-park.jpg",
       "bio": "Medical AI",
       "url": null
-    },
-    {
-      "name": "Minjeong Shin",
-      "email": "shinmj1024@snu.ac.kr",
-      "title": "Master's Student",
-      "fields": ["HCI", "UX"],
-      "photo": "/images/people/minjeong-shin.jpg",
-      "bio": "Physical AI",
-      "url": "https://queriamin.github.io/"
     },
     {
       "name": "Jung Lee",
@@ -183,6 +165,8 @@
     { "name": "Changhoon Oh", "current": "Assistant Professor, Graduate School of Information, Yonsei University", "email": "changhoonoh@yonsei.ac.kr", "url": "http://www.changhoonoh.com/", "photo": "/images/alumni/changhoon-oh.jpg" },
     { "name": "Seonghyeon Lee", "current": null, "email": null, "url": null, "photo": null },
     { "name": "Jaeyoun You", "current": "Committee Member, Presidential Committee on AI Strategy", "email": "you.jae@snu.ac.kr", "url": "https://jaeyyou.com", "photo": null },
-    { "name": "Kyusik Kim", "current": "Postdoctoral Researcher, SNU AI Institute", "email": "kyu823@snu.ac.kr", "url": "https://kyu823.github.io/", "photo": "/images/alumni/kyusik-kim.jpg" }
+    { "name": "Kyusik Kim", "current": "Postdoctoral Researcher, SNU AI Institute", "email": "kyu823@snu.ac.kr", "url": "https://kyu823.github.io/", "photo": "/images/alumni/kyusik-kim.jpg" },
+    { "name": "Kitae Kim", "current": "UC Santa Barbara", "email": "joseph423@snu.ac.kr", "url": "https://githae1337.github.io/", "photo": "/images/alumni/kitae-kim.jpeg" },
+    { "name": "Minjeong Shin", "current": "Samsung", "email": "shinmj1024@snu.ac.kr", "url": "https://queriamin.github.io/", "photo": "/images/alumni/minjeong-shin.jpg" }
   ]
 }
