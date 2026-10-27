@@ -130,7 +130,7 @@
   ],
   "alumni": [
     { "name": "Woochang Hyun", "current": null, "email": null, "url": "https://scholar.google.com/citations?user=lswcPDIAAAAJ", "photo": null },
-    { "name": "Hyeonseok Jeon", "current": null, "email": "ikidson@snu.ac.kr", "url": null, "photo": "/images/alumni/hyeonseok-jeon.jpg" },
+    { "name": "Hyeonseok Jeon", "current": "Upstage AI", "email": "ikidson@snu.ac.kr", "url": null, "photo": "/images/alumni/hyeonseok-jeon.jpg" },
     { "name": "Sangrok Song", "current": null, "email": "drinkingstraw33@snu.ac.kr", "url": null, "photo": null },
     { "name": "Yeonjoon Kim", "current": null, "email": "artechne@snu.ac.kr", "url": null, "photo": null },
     { "name": "Seungmin Han", "current": null, "email": null, "url": null, "photo": null },
