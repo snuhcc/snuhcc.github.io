@@ -129,10 +129,13 @@
     }
   ],
   "alumni": [
-    { "name": "Woochang Hyun", "current": null, "email": null, "url": "https://scholar.google.com/citations?user=lswcPDIAAAAJ", "photo": null },
+    { "name": "Kitae Kim", "current": "UC Santa Barbara", "email": "joseph423@snu.ac.kr", "url": "https://githae1337.github.io/", "photo": "/images/alumni/kitae-kim.jpeg" },
+    { "name": "Minjeong Shin", "current": "Samsung", "email": "shinmj1024@snu.ac.kr", "url": "https://queriamin.github.io/", "photo": "/images/alumni/minjeong-shin.jpg" },
     { "name": "Hyeonseok Jeon", "current": "Upstage AI", "email": "ikidson@snu.ac.kr", "url": null, "photo": "/images/alumni/hyeonseok-jeon.jpg" },
-    { "name": "Sangrok Song", "current": null, "email": "drinkingstraw33@snu.ac.kr", "url": null, "photo": null },
     { "name": "Yeonjoon Kim", "current": null, "email": "artechne@snu.ac.kr", "url": null, "photo": null },
+    { "name": "Kyusik Kim", "current": "Postdoctoral Researcher, SNU AI Institute", "email": "kyu823@snu.ac.kr", "url": "https://kyu823.github.io/", "photo": "/images/alumni/kyusik-kim.jpg" },
+    { "name": "Woochang Hyun", "current": null, "email": null, "url": "https://scholar.google.com/citations?user=lswcPDIAAAAJ", "photo": null },
+    { "name": "Sangrok Song", "current": null, "email": "drinkingstraw33@snu.ac.kr", "url": null, "photo": null },
     { "name": "Seungmin Han", "current": null, "email": null, "url": null, "photo": null },
     { "name": "Seungbae Seo", "current": null, "email": "wiki1177@snu.ac.kr", "url": null, "photo": null },
     { "name": "Sejun Park", "current": null, "email": null, "url": null, "photo": null },
@@ -164,9 +167,6 @@
     { "name": "Hyuncheol Lim", "current": null, "email": "hyunchul@snu.ac.kr", "url": null, "photo": null },
     { "name": "Changhoon Oh", "current": "Assistant Professor, Graduate School of Information, Yonsei University", "email": "changhoonoh@yonsei.ac.kr", "url": "http://www.changhoonoh.com/", "photo": "/images/alumni/changhoon-oh.jpg" },
     { "name": "Seonghyeon Lee", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Jaeyoun You", "current": "Committee Member, Presidential Committee on AI Strategy", "email": "you.jae@snu.ac.kr", "url": "https://jaeyyou.com", "photo": null },
-    { "name": "Kyusik Kim", "current": "Postdoctoral Researcher, SNU AI Institute", "email": "kyu823@snu.ac.kr", "url": "https://kyu823.github.io/", "photo": "/images/alumni/kyusik-kim.jpg" },
-    { "name": "Kitae Kim", "current": "UC Santa Barbara", "email": "joseph423@snu.ac.kr", "url": "https://githae1337.github.io/", "photo": "/images/alumni/kitae-kim.jpeg" },
-    { "name": "Minjeong Shin", "current": "Samsung", "email": "shinmj1024@snu.ac.kr", "url": "https://queriamin.github.io/", "photo": "/images/alumni/minjeong-shin.jpg" }
+    { "name": "Jaeyoun You", "current": "Committee Member, Presidential Committee on AI Strategy", "email": "you.jae@snu.ac.kr", "url": "https://jaeyyou.com", "photo": null }
   ]
 }
