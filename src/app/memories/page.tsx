@@ -52,14 +52,14 @@ export default function MemoriesPage() {
 
       <div className="flex items-end justify-center gap-4 mb-12">
         <Image
-          src="/images/assets/sticker_prof.png"
+          src="/images/assets/sticker_stu.png"
           alt=""
           width={80}
           height={80}
           className="object-contain transition-transform duration-300 hover:-rotate-12"
         />
         <Image
-          src="/images/assets/sticker_stu.png"
+          src="/images/assets/sticker_prof.png"
           alt=""
           width={80}
           height={80}
