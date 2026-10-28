@@ -213,54 +213,63 @@ function ProfessorCard({ member }: { member: CurrentMember }) {
 
 function AlumniCard({ member }: { member: AlumniMember }) {
   return (
-    <div className="flex flex-col items-center text-center gap-1">
-      <div className="w-24 h-24 mb-1 overflow-hidden bg-slate-100 shrink-0">
+    <div className="flex flex-col items-start text-left gap-3">
+      {/* Photo */}
+      <div className="w-44 h-44 overflow-hidden bg-slate-100 shrink-0">
         {member.photo ? (
           <Image
             src={member.photo}
             alt={member.name}
-            width={96}
-            height={96}
+            width={176}
+            height={176}
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-slate-400 text-xl font-semibold">
+          <div className="w-full h-full flex items-center justify-center text-slate-400 text-3xl font-semibold">
             {member.name.charAt(0)}
           </div>
         )}
       </div>
-      {member.url ? (
-        <a
-          href={member.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-          data-analytics-event="member_profile_click"
-          data-analytics-label={member.name}
-          data-analytics-member-name={member.name}
-          data-analytics-member-title="Alumni"
-          data-analytics-profile-type="alumni_profile"
-        >
-          {member.name}
-        </a>
-      ) : (
-        <span className="text-sm font-medium text-slate-700">{member.name}</span>
-      )}
-      {member.current && (
-        <span className="text-xs text-slate-500 leading-snug">{member.current}</span>
-      )}
-      {member.email && (
-        <a
-          href={`mailto:${member.email}`}
-          className="text-xs text-slate-400 hover:text-blue-600 transition-colors break-all"
-          data-analytics-event="member_email_click"
-          data-analytics-label={member.name}
-          data-analytics-member-name={member.name}
-          data-analytics-member-title="Alumni"
-        >
-          {member.email}
-        </a>
-      )}
+
+      {/* Info */}
+      <div className="min-w-0 w-full">
+        {member.url ? (
+          <a
+            href={member.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-base font-semibold text-slate-900 mb-2 hover:text-[#0B3D91] hover:underline underline-offset-2 transition-colors"
+            data-analytics-event="member_profile_click"
+            data-analytics-label={member.name}
+            data-analytics-member-name={member.name}
+            data-analytics-member-title="Alumni"
+            data-analytics-profile-type="alumni_profile"
+          >
+            {member.name}
+          </a>
+        ) : (
+          <p className="text-base font-semibold text-slate-900 mb-2">{member.name}</p>
+        )}
+        <div className="flex flex-col items-start gap-1 text-xs text-slate-500">
+          {member.current && <span className="leading-snug">{member.current}</span>}
+          {member.email && (
+            <a
+              href={`mailto:${member.email}`}
+              className="inline-flex items-center gap-1.5 break-all hover:text-[#0B3D91] hover:underline underline-offset-2 transition-colors"
+              data-analytics-event="member_email_click"
+              data-analytics-label={member.name}
+              data-analytics-member-name={member.name}
+              data-analytics-member-title="Alumni"
+            >
+              <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              {member.email}
+            </a>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
@@ -316,10 +325,10 @@ export default function PeoplePage() {
         data-analytics-section="people_alumni"
         data-analytics-member-group="Alumni"
       >
-        <h2 className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-10 pb-3 border-b border-slate-100">
+        <h2 className="sticky top-12 z-10 bg-white text-base font-bold text-slate-700 py-3 mb-5 border-b-2 border-slate-200">
           Alumni
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-10">
           {(membersData.alumni as AlumniMember[]).map((member) => (
             <AlumniCard key={member.name} member={member} />
           ))}
