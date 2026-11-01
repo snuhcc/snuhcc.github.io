@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-01T08:07:14.955Z",
+  "updatedAt": "2026-11-01T08:32:08.556Z",
   "subjectAreas": [
     {
       "name": "Human–computer interaction",
-      "count": 46
+      "count": 44
     },
     {
       "name": "Artificial intelligence",
-      "count": 40
+      "count": 38
     },
     {
       "name": "World Wide Web",
@@ -15,19 +15,19 @@
     },
     {
       "name": "Multimedia",
-      "count": 23
-    },
-    {
-      "name": "Data science",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Information retrieval",
       "count": 18
     },
     {
+      "name": "Data science",
+      "count": 18
+    },
+    {
       "name": "Internet privacy",
-      "count": 16
+      "count": 15
     },
     {
       "name": "Knowledge management",
@@ -35,7 +35,7 @@
     },
     {
       "name": "Machine learning",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Natural language processing",
@@ -43,10 +43,6 @@
     },
     {
       "name": "Data mining",
-      "count": 6
-    },
-    {
-      "name": "Computer vision",
       "count": 6
     },
     {
@@ -58,11 +54,11 @@
       "count": 5
     },
     {
-      "name": "Applied psychology",
+      "name": "Speech recognition",
       "count": 5
     },
     {
-      "name": "Speech recognition",
+      "name": "Computer vision",
       "count": 5
     },
     {
@@ -70,7 +66,7 @@
       "count": 4
     },
     {
-      "name": "Computer security",
+      "name": "Applied psychology",
       "count": 4
     },
     {
@@ -80,12 +76,16 @@
     {
       "name": "Public relations",
       "count": 3
+    },
+    {
+      "name": "Computer security",
+      "count": 3
     }
   ],
   "keywords": [
     {
       "name": "Visualization",
-      "count": 16
+      "count": 13
     },
     {
       "name": "Social media",
@@ -93,11 +93,11 @@
     },
     {
       "name": "User interface",
-      "count": 9
+      "count": 8
     },
     {
       "name": "Chatbot",
-      "count": 8
+      "count": 7
     },
     {
       "name": "Artificial neural network",
@@ -105,14 +105,14 @@
     },
     {
       "name": "Graph",
-      "count": 6
-    },
-    {
-      "name": "Smartwatch",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Data visualization",
+      "count": 5
+    },
+    {
+      "name": "Smartwatch",
       "count": 5
     },
     {
@@ -121,10 +121,6 @@
     },
     {
       "name": "Cluster analysis",
-      "count": 4
-    },
-    {
-      "name": "Narrative",
       "count": 4
     },
     {
@@ -152,6 +148,10 @@
       "count": 4
     },
     {
+      "name": "Situated",
+      "count": 3
+    },
+    {
       "name": "Generative grammar",
       "count": 3
     },
@@ -177,6 +177,10 @@
     },
     {
       "name": "User experience design",
+      "count": 3
+    },
+    {
+      "name": "Narrative",
       "count": 3
     },
     {
@@ -217,10 +221,6 @@
     },
     {
       "name": "Encyclopedia",
-      "count": 3
-    },
-    {
-      "name": "Metadata",
       "count": 3
     }
   ]

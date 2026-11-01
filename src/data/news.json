@@ -1,6 +1,19 @@
 {
   "news": [
     {
+      "id": "assets2026-papers",
+      "date": "2026-11",
+      "type": "paper",
+      "text": "Congrats! 1 paper accepted at ASSETS 2026!",
+      "papers": [
+        {
+          "title": "Translating Blind and Low-Vision Users' Feedback into Domain-Specific Criteria for AI-Generated Alt Text: Evidence from E-Commerce",
+          "url": "https://doi.org/10.1145/3797867.3828985"
+        }
+      ],
+      "source": "publications"
+    },
+    {
       "id": "uist2026-papers",
       "date": "2026-11",
       "type": "paper",

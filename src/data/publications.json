@@ -1,6 +1,39 @@
 {
-  "updatedAt": "2026-10-01T08:07:14.953Z",
+  "updatedAt": "2026-11-01T08:32:08.551Z",
   "publications": [
+    {
+      "id": "https://openalex.org/W7223301233",
+      "title": "Translating Blind and Low-Vision Users' Feedback into Domain-Specific Criteria for AI-Generated Alt Text: Evidence from E-Commerce",
+      "year": 2026,
+      "venue": "International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS)",
+      "authors": [
+        "Hyungwoo Song",
+        "Minjeong Shin",
+        "Jaehoon Choi",
+        "Yeonjoon Kim",
+        "Kyochul Jang",
+        "Bongwon Suh",
+        "Hyunggu Jung"
+      ],
+      "doi": "https://doi.org/10.1145/3797867.3828985",
+      "url": "https://doi.org/10.1145/3797867.3828985",
+      "openAccess": true,
+      "type": "proceedings-article"
+    },
+    {
+      "id": "https://openalex.org/W7224642920",
+      "title": "Team hccl-jy at SHROOM-Visions: Confidence Signals from an Unmodified VLM Verifier",
+      "year": 2026,
+      "venue": "The Proceedings of the Third Workshop on Uncertainty-Aware NLP",
+      "authors": [
+        "Junyoung Jeon",
+        "Bongwon Suh"
+      ],
+      "doi": "https://doi.org/10.18653/2026.uncertainlp-main.60",
+      "url": "https://doi.org/10.18653/2026.uncertainlp-main.60",
+      "openAccess": true,
+      "type": "proceedings-article"
+    },
     {
       "id": "https://openalex.org/W7213542443",
       "title": "From selfies to synthetic faces: selective aesthetic compression in East Asian beauty representation",
