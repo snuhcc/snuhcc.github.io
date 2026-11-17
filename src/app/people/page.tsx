@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 type CurrentMember = {
   name: string;
-  email: string;
+  email: string | null;
   title: string;
   fields: string[];
   photo: string | null;

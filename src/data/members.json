@@ -4,7 +4,10 @@
       "name": "Bongwon Suh",
       "email": "bongwon@snu.ac.kr",
       "title": "Professor",
-      "fields": ["HAI", "HCI"],
+      "fields": [
+        "HAI",
+        "HCI"
+      ],
       "photo": "/images/people/bongwon-suh.png",
       "bio": "Human-AI Interaction",
       "profilePath": "/bongwon",
@@ -14,7 +17,13 @@
       "name": "Jeongwoo Ryu",
       "email": "jeongwoo@snu.ac.kr",
       "title": "Postdoctoral Researcher",
-      "fields": ["HAI", "HCI", "LLM", "NLP", "UX"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "LLM",
+        "NLP",
+        "UX"
+      ],
       "photo": "/images/people/jeongwoo-ryu.jpeg",
       "bio": "AI Deliberation",
       "url": "https://jeongwoo-ryu.net/"
@@ -23,7 +32,13 @@
       "name": "Junghwan Kim",
       "email": "jhbale11@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "Time Series", "XAI"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "LLM",
+        "Time Series",
+        "XAI"
+      ],
       "photo": "/images/people/junghwan-kim.jpeg",
       "bio": "Explainable AI",
       "url": "https://jhbale11.github.io/"
@@ -32,7 +47,12 @@
       "name": "Kieun Park",
       "email": "kieun.park@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "NLP"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "LLM",
+        "NLP"
+      ],
       "photo": "/images/people/kieun-park.jpeg",
       "bio": "LLM Evaluation",
       "url": null
@@ -41,7 +61,12 @@
       "name": "Hyungwoo Song",
       "email": "rotto95@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "NLP"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "LLM",
+        "NLP"
+      ],
       "photo": "/images/people/hyungwoo-song.jpg",
       "bio": "Multimodal AI",
       "url": "https://hyungwoosong.notion.site"
@@ -50,7 +75,13 @@
       "name": "Dongseok Heo",
       "email": "ty8900@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "Medical AI", "NLP"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "LLM",
+        "Medical AI",
+        "NLP"
+      ],
       "photo": "/images/people/dongseok-heo.jpeg",
       "bio": "Clinical LLM Agents",
       "url": "https://bit.ly/dongseok"
@@ -59,7 +90,11 @@
       "name": "Jaehoon Choi",
       "email": "hoon95@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["HCI", "LLM", "NLP"],
+      "fields": [
+        "HCI",
+        "LLM",
+        "NLP"
+      ],
       "photo": "/images/people/jaehoon-choi.png",
       "bio": "Conversational AI",
       "url": "https://halfhoon.github.io/"
@@ -68,7 +103,11 @@
       "name": "Gibeom Park",
       "email": "skymind@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["Medical AI", "Time Series", "XAI"],
+      "fields": [
+        "Medical AI",
+        "Time Series",
+        "XAI"
+      ],
       "photo": "/images/people/gibeom-park.jpg",
       "bio": "Medical AI",
       "url": null
@@ -77,7 +116,12 @@
       "name": "Jung Lee",
       "email": "leejungp2@snu.ac.kr",
       "title": "Ph.D. Student",
-      "fields": ["HAI", "HCI", "LLM", "UX"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "LLM",
+        "UX"
+      ],
       "photo": "/images/people/jung-lee.png",
       "bio": "AI-Assisted Work",
       "url": "https://leejungp2.github.io/"
@@ -86,7 +130,12 @@
       "name": "Hana Oh",
       "email": "hana2001@snu.ac.kr",
       "title": "Master's Student",
-      "fields": ["HAI", "HCI", "NLP", "Agentic AI"],
+      "fields": [
+        "HAI",
+        "HCI",
+        "NLP",
+        "Agentic AI"
+      ],
       "photo": "/images/people/hana-oh.jpg",
       "bio": "Healthcare AI",
       "url": "https://hanaisreal.github.io/"
@@ -95,7 +144,10 @@
       "name": "Jueon Lee",
       "email": "audreylee@snu.ac.kr",
       "title": "Master's Student",
-      "fields": ["Responsible AI", "Algorithmic Fairness"],
+      "fields": [
+        "Responsible AI",
+        "Algorithmic Fairness"
+      ],
       "photo": "/images/people/jueon-lee.jpeg",
       "bio": "Responsible AI",
       "url": "https://audreylee23.github.io"
@@ -104,7 +156,11 @@
       "name": "Minchae Kim",
       "email": "minchae@snu.ac.kr",
       "title": "Master's Student",
-      "fields": ["HCI", "LLM", "Embodied AI"],
+      "fields": [
+        "HCI",
+        "LLM",
+        "Embodied AI"
+      ],
       "photo": "/images/people/minchae-kim.jpg",
       "bio": "Embodied AI",
       "url": "https://minchaekim02.github.io/"
@@ -135,47 +191,290 @@
       "photo": "/images/people/jiyou-son.jpg",
       "bio": "",
       "url": "https://www.linkedin.com/in/jiyou-son-a9869a347"
+    },
+    {
+      "name": "Yunseo Lee",
+      "email": null,
+      "title": "Undergraduate Intern",
+      "fields": [],
+      "photo": "/images/people/yunseo-lee.jpg",
+      "bio": "",
+      "url": null
     }
   ],
   "alumni": [
-    { "name": "Kitae Kim", "current": "UC Santa Barbara", "email": "joseph423@snu.ac.kr", "url": "https://githae1337.github.io/", "photo": "/images/alumni/kitae-kim.jpeg" },
-    { "name": "Minjeong Shin", "current": "Samsung", "email": "shinmj1024@snu.ac.kr", "url": "https://queriamin.github.io/", "photo": "/images/alumni/minjeong-shin.jpg" },
-    { "name": "Hyeonseok Jeon", "current": "Upstage AI", "email": "ikidson@snu.ac.kr", "url": null, "photo": "/images/alumni/hyeonseok-jeon.jpg" },
-    { "name": "Yeonjoon Kim", "current": null, "email": "artechne@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Kyusik Kim", "current": "Postdoctoral Researcher, SNU AI Institute", "email": "kyu823@snu.ac.kr", "url": "https://kyu823.github.io/", "photo": "/images/alumni/kyusik-kim.jpg" },
-    { "name": "Woochang Hyun", "current": null, "email": null, "url": "https://scholar.google.com/citations?user=lswcPDIAAAAJ", "photo": null },
-    { "name": "Sangrok Song", "current": null, "email": "drinkingstraw33@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Seungmin Han", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Seungbae Seo", "current": null, "email": "wiki1177@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Sejun Park", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Yonghwan Jung", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Sangah Lee", "current": null, "email": "sangahlee718@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Sohyun Park", "current": "NAVER Cloud", "email": "sohyun@snu.ac.kr", "url": "https://scholar.google.com/citations?user=GjWpV_UAAAAJ", "photo": "/images/alumni/sohyun-park.jpg" },
-    { "name": "Seonhoon Kim", "current": "Naver", "email": null, "url": null, "photo": null },
-    { "name": "Taeyoung Lee", "current": "Naver", "email": "taeyoung.lee@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Hajin Lim", "current": "Assistant Professor, Dept. of Communication, Seoul National University", "email": "hajin@snu.ac.kr", "url": "https://www.hajinlim.com/", "photo": "/images/alumni/hajin-lim.jpg" },
-    { "name": "Jihyun Lee", "current": "Google", "email": "jihyunlee@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Yoori Kim", "current": "LG U+", "email": null, "url": null, "photo": null },
-    { "name": "Seonghyun Kim", "current": "Naver", "email": "kim.seonghyeon@navercorp.com", "url": null, "photo": null },
-    { "name": "Jungwoo Song", "current": "Naver Webtoon", "email": "jwsong0617@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Daeryong Kim", "current": "Kakao", "email": "daeryong@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Sungwoo Lee", "current": "Obzen", "email": "lsw0504@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Jinwoo Park", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Wondo Rhee", "current": "Naver", "email": null, "url": null, "photo": null },
-    { "name": "Hyunhoon Jeong", "current": "Naver CLOVA", "email": "hyunhoon.j@navercorp.com", "url": null, "photo": null },
-    { "name": "Beomgeun Bae", "current": "LG Electronics", "email": null, "url": null, "photo": null },
-    { "name": "Jooyeong Song", "current": "Obzen", "email": null, "url": null, "photo": null },
-    { "name": "Sinwoo Kang", "current": "SK Hynix", "email": null, "url": null, "photo": null },
-    { "name": "Joonyeob Kim", "current": "Kakao", "email": null, "url": null, "photo": null },
-    { "name": "Heekang Park", "current": "Hyundai Mobis", "email": null, "url": null, "photo": null },
-    { "name": "Jaehong Lee", "current": "LG CNS", "email": null, "url": null, "photo": null },
-    { "name": "Taeil Jeon", "current": "SK Broadband", "email": "taeil@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Wonho Lee", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Hyeseng Suh", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Donghun Lee", "current": null, "email": "donghun@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Hyuncheol Lim", "current": null, "email": "hyunchul@snu.ac.kr", "url": null, "photo": null },
-    { "name": "Changhoon Oh", "current": "Assistant Professor, Graduate School of Information, Yonsei University", "email": "changhoonoh@yonsei.ac.kr", "url": "http://www.changhoonoh.com/", "photo": "/images/alumni/changhoon-oh.jpg" },
-    { "name": "Seonghyeon Lee", "current": null, "email": null, "url": null, "photo": null },
-    { "name": "Jaeyoun You", "current": "Committee Member, Presidential Committee on AI Strategy", "email": "you.jae@snu.ac.kr", "url": "https://jaeyyou.com", "photo": null }
+    {
+      "name": "Kitae Kim",
+      "current": "UC Santa Barbara",
+      "email": "joseph423@snu.ac.kr",
+      "url": "https://githae1337.github.io/",
+      "photo": "/images/alumni/kitae-kim.jpeg"
+    },
+    {
+      "name": "Minjeong Shin",
+      "current": "Samsung",
+      "email": "shinmj1024@snu.ac.kr",
+      "url": "https://queriamin.github.io/",
+      "photo": "/images/alumni/minjeong-shin.jpg"
+    },
+    {
+      "name": "Hyeonseok Jeon",
+      "current": "Upstage AI",
+      "email": "ikidson@snu.ac.kr",
+      "url": null,
+      "photo": "/images/alumni/hyeonseok-jeon.jpg"
+    },
+    {
+      "name": "Yeonjoon Kim",
+      "current": null,
+      "email": "artechne@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Kyusik Kim",
+      "current": "Postdoctoral Researcher, SNU AI Institute",
+      "email": "kyu823@snu.ac.kr",
+      "url": "https://kyu823.github.io/",
+      "photo": "/images/alumni/kyusik-kim.jpg"
+    },
+    {
+      "name": "Woochang Hyun",
+      "current": null,
+      "email": null,
+      "url": "https://scholar.google.com/citations?user=lswcPDIAAAAJ",
+      "photo": null
+    },
+    {
+      "name": "Sangrok Song",
+      "current": null,
+      "email": "drinkingstraw33@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Seungmin Han",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Seungbae Seo",
+      "current": null,
+      "email": "wiki1177@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Sejun Park",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Yonghwan Jung",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Sangah Lee",
+      "current": null,
+      "email": "sangahlee718@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Sohyun Park",
+      "current": "NAVER Cloud",
+      "email": "sohyun@snu.ac.kr",
+      "url": "https://scholar.google.com/citations?user=GjWpV_UAAAAJ",
+      "photo": "/images/alumni/sohyun-park.jpg"
+    },
+    {
+      "name": "Seonhoon Kim",
+      "current": "Naver",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Taeyoung Lee",
+      "current": "Naver",
+      "email": "taeyoung.lee@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Hajin Lim",
+      "current": "Assistant Professor, Dept. of Communication, Seoul National University",
+      "email": "hajin@snu.ac.kr",
+      "url": "https://www.hajinlim.com/",
+      "photo": "/images/alumni/hajin-lim.jpg"
+    },
+    {
+      "name": "Jihyun Lee",
+      "current": "Google",
+      "email": "jihyunlee@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Yoori Kim",
+      "current": "LG U+",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Seonghyun Kim",
+      "current": "Naver",
+      "email": "kim.seonghyeon@navercorp.com",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Jungwoo Song",
+      "current": "Naver Webtoon",
+      "email": "jwsong0617@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Daeryong Kim",
+      "current": "Kakao",
+      "email": "daeryong@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Sungwoo Lee",
+      "current": "Obzen",
+      "email": "lsw0504@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Jinwoo Park",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Wondo Rhee",
+      "current": "Naver",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Hyunhoon Jeong",
+      "current": "Naver CLOVA",
+      "email": "hyunhoon.j@navercorp.com",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Beomgeun Bae",
+      "current": "LG Electronics",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Jooyeong Song",
+      "current": "Obzen",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Sinwoo Kang",
+      "current": "SK Hynix",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Joonyeob Kim",
+      "current": "Kakao",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Heekang Park",
+      "current": "Hyundai Mobis",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Jaehong Lee",
+      "current": "LG CNS",
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Taeil Jeon",
+      "current": "SK Broadband",
+      "email": "taeil@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Wonho Lee",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Hyeseng Suh",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Donghun Lee",
+      "current": null,
+      "email": "donghun@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Hyuncheol Lim",
+      "current": null,
+      "email": "hyunchul@snu.ac.kr",
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Changhoon Oh",
+      "current": "Assistant Professor, Graduate School of Information, Yonsei University",
+      "email": "changhoonoh@yonsei.ac.kr",
+      "url": "http://www.changhoonoh.com/",
+      "photo": "/images/alumni/changhoon-oh.jpg"
+    },
+    {
+      "name": "Seonghyeon Lee",
+      "current": null,
+      "email": null,
+      "url": null,
+      "photo": null
+    },
+    {
+      "name": "Jaeyoun You",
+      "current": "Committee Member, Presidential Committee on AI Strategy",
+      "email": "you.jae@snu.ac.kr",
+      "url": "https://jaeyyou.com",
+      "photo": null
+    }
   ]
 }

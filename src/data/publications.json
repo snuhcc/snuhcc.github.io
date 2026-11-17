@@ -504,7 +504,7 @@
     },
     {
       "id": "https://openalex.org/W7151806853",
-      "title": "Effects of a Personalized Retrieval-Augmented Generation Chatbot on Information Needs in Chronic Kidney Disease Patients: Mixed Methods Randomized Controlled Trial",
+      "title": "Effects of a Personalized Retrieval-Augmented Generation Chatbot on Information Needs in Patients With Chronic Kidney Disease: Mixed Methods Randomized Controlled Trial",
       "year": 2026,
       "venue": "Interactive Journal of Medical Research",
       "authors": [
@@ -521,13 +521,15 @@
         "Ki Won Lee"
       ],
       "doi": "https://doi.org/10.2196/96501",
-      "url": "https://doi.org/10.2196/96501",
+      "url": "https://www.i-jmr.org/2026/1/e96501/",
       "openAccess": true,
       "type": "journal-article",
       "areas": [
         "human-ai",
         "healthcare"
-      ]
+      ],
+      "teaserImage": "/images/publications/2026-effects-of-a-personalized-retrieval-augmented-generation.webp",
+      "teaserAlt": "Trial design: 45 dialysis patients randomized into constraint RAG, open-domain RAG, and control groups, each querying examination, medicine, and nutrition topics over 28 days before interviews"
     },
     {
       "id": "https://openalex.org/W7148750382",
